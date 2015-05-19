@@ -1,0 +1,255 @@
+﻿/*PRIMARY COLORS*/
+@primary: #B62025;
+@primary-light: #FFEBEE;
+@primary-regular: #EF5350;
+@primary-dark: #D32F2F;
+
+@test: fade(#B62025, 50%);
+
+/*ACCENT COLORS*/
+@accent: #96cb4b;
+
+
+@accent-light: #80D8FF;
+@accent-dark: #00B0FF;
+
+@background: #181818;
+
+/*TYPOGRAPHY COLORS*/
+@divider: fade(black, 12%);
+@disabled: fade(black, 26%);
+@hint: fade(black, 26%);
+@secondary: fade(black, 54%);
+@icons: fade(black, 54%);
+@text: fade(black, 87%);
+
+.intro {
+    background: url('/Content/Images/Wallpapers/pirate_girl_1.jpg');
+    background-color: @primary;
+}
+
+.intro .phone {
+    background-image: none;
+}
+
+.intro .nav-toggle span {
+    background-color: @primary-regular;
+}
+
+.offcanvas-nav .nav-head {
+    background-color: @primary;
+}
+
+.form-control {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.btn-primary {
+    background-color: @primary;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: @primary;
+}
+
+.btn-flat.btn-primary,
+.btn-flat.btn-primary:hover {
+    color: white;
+}
+
+.modal-buttons .btn:hover,
+.modal-buttons .btn {
+    background-color: #fff;
+}
+
+a {
+    color: @primary;
+}
+
+a:hover {
+    color: @accent;
+}
+
+#subscribe-form input {
+    color: white;
+}
+
+.icon-block .icon {
+    color: @primary;
+}
+
+.intro .logo-main {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.intro .logo-main img {
+    display: block;
+    width: 100%;
+    max-width: 178px;
+    margin: 0 auto 30px auto;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.intro .logo-main span {
+    display: block;
+    font-size: 16px;
+    margin-top: 25px;
+    opacity: .5;
+}
+
+.navbar .container {
+    background-color: @primary;
+}
+
+.badge {
+    display: block;
+    font-weight: inherit;
+    line-height: inherit;
+    background: none;
+    padding: 0;
+}
+
+.badge.badge-success .icon {
+    background-color: @primary;
+}
+
+.post-title h2, .post-title h3 {
+    color: @primary;
+}
+
+.footer {
+    background-color: @background;
+}
+
+body {
+    background-color: @background;
+}
+
+.fw-bg.top-inner-shadow hr {
+  -webkit-box-shadow: inset 0 6px 10px 0 rgba(0,0,0,.25);
+  -moz-box-shadow: inset 0 6px 10px 0 rgba(0,0,0,.25);
+  box-shadow: inset 0 6px 10px 0 rgba(0,0,0,.25);
+}
+
+.btn.icon-left {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 9px;
+}
+
+hr.with-shadow {
+    border: none;
+}
+
+hr.with-shadow:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 10px;
+  content: "";
+  top: 0px;
+  left: 0;
+  -webkit-box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px -4px 10px 0px rgba(0,0,0,0.25);
+}
+
+.feature-tabs .nav-tabs>li>a>i {
+  color: @primary;
+  font-size: 50px;
+}
+
+.timeline-row a {
+    text-transform: none;
+    color: #757575;
+}
+
+.post-title span, .post-title p {
+  display: block;
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 0;
+}
+
+.post-title {
+  padding: 15px 22px 15px 22px;
+}
+
+.forum thead tr {
+    background-color: @primary;
+    color: white;
+}
+
+.forum tbody tr {
+    background-color: white;
+}
+
+.forum tbody tr td {
+    border-top: none;
+}
+
+.forum tbody tr td a {
+    text-transform: none;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: @primary;
+  border-color: @primary;
+}
+
+.pagination>li>a, .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: @primary;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.breadcrumb {
+   padding: 0; 
+   margin-bottom: 0; 
+  list-style: none;
+   background: none; 
+  border-radius: 4px;
+}
+
+.page-heading {
+  padding-top: 0;
+}
+
+.bc-container {
+    padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+// Mobile
+@media screen and (max-width: 991px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .toolbar .action-btn {
+        line-height: 65px;
+    }
+}
+
+// Tablet / Desktop
+@media screen and (min-width: 991px) {
+}

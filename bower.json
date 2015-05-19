@@ -1,0 +1,22 @@
+{
+  "name": "OneSecretFantasy",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "fontawesome": "~4.3.0",
+    "bootstrap-sass-official": "~3.3.4",
+    "modernizr": "~2.8.3",
+    "detectizr": "~2.0.0",
+    "jquery-easing-original": "~1.3.2",
+    "seiyria-bootstrap-slider": "~4.8.1",
+    "magnific-popup": "~1.0.0",
+    "isotope": "~2.2.0",
+    "jquery-waypoints": "~3.1.1",
+    "waves": "~0.7.2",
+    "velocity": "~1.2.2",
+    "pace": "~1.0.2",
+    "malihu-custom-scrollbar-plugin": "~3.0.8"
+  },
+  "resolutions": {
+    "modernizr": "~2.8.3"
+  }
+}
