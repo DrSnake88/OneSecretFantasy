@@ -20,4 +20,4 @@
 </footer><!-- Footer End -->
 
 <!-- Scripts -->
-<script src="{{ asset('/js/vendor.js') }}"></script>
+<script async src="{{ asset('/js/vendor.js') }}"></script>
