@@ -19,5 +19,6 @@
     </div>
 </footer><!-- Footer End -->
 
+<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 <!-- Scripts -->
 <script async src="{{ asset('/js/vendor.js') }}"></script>
