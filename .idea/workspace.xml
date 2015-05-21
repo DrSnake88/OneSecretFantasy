@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/people/banner1.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo-big-ns.png" afterPath="$PROJECT_DIR$/public/img/logo-big-ns.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/man1-small.jpg" afterPath="$PROJECT_DIR$/public/img/people/man1-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/man2-small.jpg" afterPath="$PROJECT_DIR$/public/img/people/man2-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/man3-small.jpg" afterPath="$PROJECT_DIR$/public/img/people/man3-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/parallax1.jpg" afterPath="$PROJECT_DIR$/public/img/people/parallax1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/parallax2.jpg" afterPath="$PROJECT_DIR$/public/img/people/parallax2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/parallax3.jpg" afterPath="$PROJECT_DIR$/public/img/people/parallax3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/post1.jpg" afterPath="$PROJECT_DIR$/public/img/people/post1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/post2.jpg" afterPath="$PROJECT_DIR$/public/img/people/post2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/post3.jpg" afterPath="$PROJECT_DIR$/public/img/people/post3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/post4.jpg" afterPath="$PROJECT_DIR$/public/img/people/post4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/woman1-small.jpg" afterPath="$PROJECT_DIR$/public/img/people/woman1-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/woman2-small.jpg" afterPath="$PROJECT_DIR$/public/img/people/woman2-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/people/woman3-small.jpg" afterPath="$PROJECT_DIR$/public/img/people/woman3-small.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/people/banner1.jpg" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -202,6 +187,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OneSecretFantasy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OneSecretFantasy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="people" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
