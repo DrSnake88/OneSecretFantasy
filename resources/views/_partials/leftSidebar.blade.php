@@ -3,7 +3,7 @@
     <div class="sidebar space-bottom-3x">
         <!-- Categories -->
         <div class="categories with-grid-btn">
-            <a href="blog.html" class="grid-btn">
+            <a href="/blog" class="grid-btn">
                 <span></span>
                 <span></span>
             </a>

@@ -16,6 +16,11 @@
 Route::get('/', 'HomeController@index');
 Route::get('/contact', 'HomeController@contact');
 
+Route::resource("blogs","BlogController");
+Route::resource("forum","ForumController");
+Route::resource("media","MediaController");
+Route::resource("game","GameController");
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

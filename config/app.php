@@ -145,6 +145,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+        "Laralib\L5scaffold\GeneratorsServiceProvider",
 	],
 
 	/*

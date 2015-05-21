@@ -4,7 +4,9 @@
     <body class="fixed-footer">
         @include('_partials.sideMenu')
         @include('_partials.modals')
-        @include('_partials.splash')
+        @if(Request::is('/'))
+            @include('_partials.splash')
+        @endif
 
         <!-- Content Wrap -->
         <div class="content-wrap" style="background-color: #181818">

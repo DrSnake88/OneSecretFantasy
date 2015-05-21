@@ -1,5 +1,8 @@
-@extens('app')
-
+@extends('app')
+@section('page-scripts')
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+@stop
 @section('content')
     <!-- Team -->
     <section class="space-bottom-3x">

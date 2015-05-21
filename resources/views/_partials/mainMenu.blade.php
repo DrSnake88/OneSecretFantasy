@@ -12,11 +12,11 @@
         <!-- Toolbar -->
         <div class="toolbar">
             <span class="main-menu">
-                <a href="/Game" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-gamepad4"></i> Game</a>
-                <a href="/Forum" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-chat75"></i> Forum</a>
-                <a href="/Blog" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-chat76"></i> Blog</a>
-                <a href="/Media" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-camera59"></i> Media</a>
-                <a href="/Home/Contact" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-write20"></i> Contact</a>
+                <a href="/game" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-gamepad4"></i> Game</a>
+                <a href="/forum" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-chat75"></i> Forum</a>
+                <a href="/blogs" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-chat76"></i> Blog</a>
+                <a href="/media" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-camera59"></i> Media</a>
+                <a href="/contact" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-write20"></i> Contact</a>
             </span>
 
             <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"><i class="flaticon-locked57"></i> Sign in</a>

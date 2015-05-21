@@ -64,11 +64,11 @@
                     </div>
 
                     <ul class="pages">
-                        <li><a href="/Game">Game</a></li>
-                        <li><a href="/Forum">Forum</a></li>
-                        <li><a href="/Blog">Blog</a></li>
-                        <li><a href="/Media">Media</a></li>
-                        <li><a href="/Home/Contact">Contact</a></li>
+                        <li><a href="/game">Game</a></li>
+                        <li><a href="/forum">Forum</a></li>
+                        <li><a href="/blogs">Blog</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
 
