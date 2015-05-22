@@ -95,30 +95,30 @@
                     <!-- <a href="#" class="sb-youtube"><i class="bi-youtube"></i></a> -->
                 </div>
 
-                <!-- Features -->
-                <div class="intro-features">
-                    <div class="icon-block icon-block-horizontal box-float" data-transition-delay="100">
-                        <div class="icon va-middle"><i class="flaticon-favorite21"></i></div>
-                        <div class="text">
-                            <h3>Date anyone</h3>
-                            <p>Find your secret fantasy partner and enjoy life!</p>
-                        </div>
-                    </div>
-                    <div class="icon-block icon-block-horizontal box-float" data-transition-delay="300">
-                        <div class="icon va-middle"><i class="flaticon-cloud302"></i></div>
-                        <div class="text">
-                            <h3>NO Limits</h3>
-                            <p>There is only one limit... your imagination!</p>
-                        </div>
-                    </div>
-                    <div class="icon-block icon-block-horizontal box-float" data-transition-delay="500">
-                        <div class="icon va-middle"><i class="flaticon-visibility1"></i></div>
-                        <div class="text">
-                            <h3>Virtual Reality</h3>
-                            <p>Full Virtual Reality, immerse into your fantasy!</p>
-                        </div>
-                    </div>
-                </div>
+                {{--<!-- Features -->--}}
+                {{--<div class="intro-features">--}}
+                    {{--<div class="icon-block icon-block-horizontal box-float" data-transition-delay="100">--}}
+                        {{--<div class="icon va-middle"><i class="flaticon-favorite21"></i></div>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3>Date anyone</h3>--}}
+                            {{--<p>Find your secret fantasy partner and enjoy life!</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="icon-block icon-block-horizontal box-float" data-transition-delay="300">--}}
+                        {{--<div class="icon va-middle"><i class="flaticon-cloud302"></i></div>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3>NO Limits</h3>--}}
+                            {{--<p>There is only one limit... your imagination!</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="icon-block icon-block-horizontal box-float" data-transition-delay="500">--}}
+                        {{--<div class="icon va-middle"><i class="flaticon-visibility1"></i></div>--}}
+                        {{--<div class="text">--}}
+                            {{--<h3>Virtual Reality</h3>--}}
+                            {{--<p>Full Virtual Reality, immerse into your fantasy!</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
                 <!-- Download Button -->
                 {{--<div class="download">--}}

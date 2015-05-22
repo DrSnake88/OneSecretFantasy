@@ -4511,7 +4511,7 @@ jQuery(document).ready(function($) {
 
 			/** Pushing Content down to the height equal to Intro height + height necessary to finish animation
 			******************************************************************************************************/
-			content.css('margin-top', intro.height()*1.5);
+			content.css('margin-top', intro.height());
 
 			/** Content 'margin-bottom' equals footer height to reveal footer
 			********************************************************************************/
