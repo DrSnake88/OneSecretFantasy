@@ -73,7 +73,7 @@
                         <div class="timeline-row">
                             <a href="#skills">
                                 <div class="date">Skills</div>
-                                <div class="event">How do we excel?</div>
+                                <div class="event">How to become a better person, how do you excel?</div>
                             </a>
                         </div>
                         <div class="timeline-row">
