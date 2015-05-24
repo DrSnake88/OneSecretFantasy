@@ -11640,9 +11640,6 @@ a.icon-block {
 .masonry-grid .item.w2 {
   width: 65.3%; }
 
-.masonry-grid .item .post-tile {
-  margin-bottom: 0; }
-
 @media screen and (max-width: 768px) {
   .masonry-grid .grid-sizer, .masonry-grid .item {
     width: 48%;
@@ -12320,7 +12317,8 @@ a:hover {
   background-color: #181818; }
 
 body {
-  background-color: #181818; }
+  background-color: #181818;
+  color: #757575 !important; }
 
 .fw-bg.top-inner-shadow hr {
   box-shadow: inset 0 6px 10px 0 rgba(0, 0, 0, 0.25); }
