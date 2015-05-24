@@ -16,7 +16,7 @@
 Route::get('/', 'HomeController@index');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/info', function() {
-    return phpinfo();
+    return print_r(get_loaded_extensions());
 });
 
 Route::resource("blogs","BlogController");
