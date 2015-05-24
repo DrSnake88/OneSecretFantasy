@@ -15,6 +15,9 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/contact', 'HomeController@contact');
+Route::get('/info', function() {
+    return phpinfo();
+});
 
 Route::resource("blogs","BlogController");
 Route::resource("forum","ForumController");
