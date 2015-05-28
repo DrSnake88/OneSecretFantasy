@@ -14,7 +14,8 @@
     "waves": "~0.7.2",
     "velocity": "~1.2.2",
     "pace": "~1.0.2",
-    "malihu-custom-scrollbar-plugin": "~3.0.8"
+    "malihu-custom-scrollbar-plugin": "~3.0.8",
+    "jquery.kinetic": "~2.0.5"
   },
   "resolutions": {
     "modernizr": "~2.8.3"

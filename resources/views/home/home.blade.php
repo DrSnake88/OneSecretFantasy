@@ -35,8 +35,9 @@
 
                 <!-- Blog Posts -->
                 <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8">
-                    <div class="scroller light-color posts">
-                        <div class="item">
+                    <div class="light-color posts">
+                        @for($i = 0; $i < 3; $i++)
+                        <div class="item col-md-4">
                             <div class="post-tile">
                                 <a href="/blog" class="post-thumb waves-effect">
                                     <img src="/img/people/post1.jpg" alt="Title">
@@ -49,45 +50,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="post-tile">
-                                <a href="#" class="post-thumb waves-effect">
-                                    <img src="/img/people/post2.jpg" alt="Title">
-                                </a>
-                                <div class="post-body">
-                                    <div class="post-title">
-                                        <a href="/blog"><h3>Title</h3></a>
-                                        <span>Description</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="post-tile">
-                                <a href="#" class="post-thumb waves-effect">
-                                    <img src="/img/people/post3.jpg" alt="Title">
-                                </a>
-                                <div class="post-body">
-                                    <div class="post-title">
-                                        <a href="/blog"><h3>Title</h3></a>
-                                        <span>Description</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="post-tile">
-                                <a href="#" class="post-thumb waves-effect">
-                                    <img src="/img/people/post4.jpg" alt="Title">
-                                </a>
-                                <div class="post-body">
-                                    <div class="post-title">
-                                        <a href="/blog"><h3>Title</h3></a>
-                                        <span>Description</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endfor
                     </div>
                 </div>
             </div>
@@ -242,66 +205,74 @@
             </div>
         </div>
     </section><!-- Features End -->
-    <!-- App Gallery -->
-    <section class="fw-bg top-inner-shadow gallery padding-top-3x padding-bottom-3x" id="gallery" style="background-color: #181818;">
+
+    <!-- Gallery -->
+    <section class="padding-bottom">
         <div class="container">
+            <hr class="with-shadow">
+            <!-- Badge -->
+            <div class="badge badge-primary">
+                <span class="icon"><i class="flaticon-camera59"></i></span>
+                Moments of our game
+            </div>
             <div class="row">
-                <div class="col-md-3 col-sm-4">
-                    <div class="block-heading light-color text-right">
-                        <h2>Gallery</h2>
-                        <span>The best way to show off</span>
-                    </div>
-                    <div class="text-right">
-                        <div class="padding-top-2x hidden-sm hidden-xs"></div>
-                        <ul class="nav-tabs alt-tabs nav-vertical">
-                            <li class="active"><a class="waves-effect" href="#screens" data-toggle="tab">Concept Art</a></li>
-                        </ul>
+                <!-- Heading -->
+                <div class="col-lg-4 col-lg-push-8 col-md-5 col-md-push-7 col-sm-6 col-sm-push-6">
+                    <div class="block-heading">
+                        <h2>Our Gallery</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
                     </div>
                 </div>
-                <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8">
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="screens">
-                            <div class="scroller app-gallery light-color">
-                                <div class="item">
-                                    <a href="/img/gallery/01.png" class="waves-effect">
-                                        <img src="/img/people/parallax1.jpg" alt="Thumbnail">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="/img/gallery/02.png" class="waves-effect">
-                                        <img src="/img/people/parallax3.jpg" alt="Thumbnail">
-                                    </a>
-                                    <a href="/img/gallery/02.png" class="waves-effect">
-                                        <img src="/img/people/parallax3.jpg" alt="Thumbnail">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="/img/gallery/01.png" class="waves-effect">
-                                        <img src="/img/people/parallax2.jpg" alt="Thumbnail">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="/img/gallery/02.png" class="waves-effect">
-                                        <img src="/img/people/parallax3.jpg" alt="Thumbnail">
-                                    </a>
-                                    <a href="/img/gallery/02.png" class="waves-effect">
-                                        <img src="/img/people/parallax3.jpg" alt="Thumbnail">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="video-prev">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="//player.vimeo.com/video/113575647?title=0&amp;byline=0&amp;portrait=0&amp;color=008fed" width="500" height="281" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="proto">
-                            {{--<img src="/img/gallery/prototype.png" alt="Prototype">--}}
-                        </div>
-                    </div>
+                <!-- Filters -->
+                <div class="col-lg-8 col-lg-pull-4 col-md-7 col-md-pull-5 col-sm-6 col-sm-pull-6">
+                    <ul class="nav-filters text-right space-top-3x">
+                        <li class="active"><a class="waves-effect waves-primary" data-filter="*" href="#">All</a></li>
+                        <li><a class="waves-effect waves-primary" data-filter=".picture" href="#">Pictures</a></li>
+                        <li><a class="waves-effect waves-primary" data-filter=".video" href="#">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="masonry-grid filter-grid space-top-2x">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+                <!-- Item -->
+                <div class="item picture">
+                    <a href="/img/gallery/03.png" class="gallery-item image-item popup-image waves-effect">
+                        <figure>
+                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <figcaption>
+                                <h3>Our Team</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <!-- Item -->
+                <div class="item video">
+                    <a href="http://vimeo.com/109648489" class="gallery-item video-item popup-video waves-effect">
+                        <figure>
+                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <figcaption>
+                                <h3>Our Office</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <!-- Item -->
+                <div class="item picture">
+                    <a href="/img/gallery/03.png" class="gallery-item image-item popup-image waves-effect">
+                        <figure>
+                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <figcaption>
+                                <h3>Process</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
         </div>
-    </section><!-- App Gallery End -->
+    </section><!-- Gallery End -->
     
 @endsection

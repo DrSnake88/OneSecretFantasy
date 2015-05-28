@@ -268,31 +268,38 @@ jQuery(document).ready(function($) {
 	
 	/** Custom Horizontal Scrollbar for Gallery/Blog (Home Page)
 	**************************************************************/
-  $(window).load(function(){
-    $('.scroller').mCustomScrollbar({
-			axis:"x",
-			theme:"dark",
-			scrollInertia: 300,
-			advanced:{autoExpandHorizontalScroll:true}
-    });
-  });
+  //$(window).load(function(){
+  //  $('.scroller').mCustomScrollbar({
+	//		axis:"x",
+	//		theme:"dark",
+	//		scrollInertia: 300,
+	//		advanced:{autoExpandHorizontalScroll:true}
+  //  });
+  //});
 
 
 	/** Custom Vertical Scrollbar for Off-Canvas Navigation
 	**************************************************************/
-	var navBodyScroll = $('.nav-body');
-  $(window).load(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
-    navBodyScroll.mCustomScrollbar({
-			theme:"dark",
-			scrollInertia: 300,
-			scrollbarPosition:"outside"
+	//var navBodyScroll = $('.nav-body');
+  //$(window).load(function(){
+  //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  //  navBodyScroll.mCustomScrollbar({
+	//		theme:"dark",
+	//		scrollInertia: 300,
+	//		scrollbarPosition:"outside"
+  //  });
+  //});
+  //$(window).resize(function(){
+  //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  //});
+    $(document).ready(function () {
+       $(".overflow").smoothDivScroll({
+           hotSpotScrolling: false,
+           touchScrolling: true,
+           manualContinuousScrolling: true,
+           mousewheelScrolling: false
+       });
     });
-  });
-  $(window).resize(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
-  });
-
 
 	/** App Gallery
 	*********************************************************/
