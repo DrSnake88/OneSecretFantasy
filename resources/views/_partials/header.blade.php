@@ -31,5 +31,11 @@
     <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png?v=A0vQ0kpxbR">
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=A0vQ0kpxbR">
     <meta name="theme-color" content="#ffffff">
+
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+
+    <!-- Preloader (Pace.js) -->
+    <script src="/js/pace.min.js"></script>
+
     @yield('page-scripts')
 </head>

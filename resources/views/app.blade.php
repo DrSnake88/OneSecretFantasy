@@ -2,6 +2,14 @@
 <html lang="en">
     @include('_partials.header')
     <body class="fixed-footer">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="logo">
+                <img src="/img/logo-big-ns.png" alt="OneSecretFantasy"/>
+                <span>OneSecretFantasy</span>
+            </div>
+        </div>
+
         @include('_partials.sideMenu')
         @include('_partials.modals')
         @if(Request::is('/'))

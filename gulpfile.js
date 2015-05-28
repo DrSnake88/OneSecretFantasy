@@ -25,7 +25,8 @@ elixir(function(mix) {
     mix.copy('resources/assets/bower/jquery-waypoints/lib/shortcuts/sticky.min.js', 'resources/js/waypoints-sticky.min.js');
     mix.copy('resources/assets/bower/waves/dist/waves.min.js', 'resources/js/waves.min.js');
     mix.copy('resources/assets/bower/velocity/velocity.min.js', 'resources/js/velocity.min.js');
-    mix.copy('resources/assets/bower/pace/pace.min.js', 'resources/js/pace.min.js');
+    //mix.copy('resources/assets/bower/pace/pace.min.js', 'resources/js/pace.min.js');
+    mix.copy('resources/assets/bower/pace/pace.min.js', 'public/js/pace.min.js');
     mix.copy('resources/assets/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js', 'resources/js/jquery.mCustomScrollbar.js');
 
     mix.copy('resources/assets/bower/fontawesome/fonts', 'public/fonts');
@@ -48,7 +49,7 @@ elixir(function(mix) {
         'jquery.mCustomScrollbar.js',
         'isotope.pkgd.min.js',
         'bootstrap-slider.min.js',
-        'pace.min.js',
+        //'pace.min.js',
         //'waypoint.js',
         'scripts.js'
 
