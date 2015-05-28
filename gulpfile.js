@@ -46,7 +46,7 @@ elixir(function(mix) {
         'waypoints-sticky.min.js',
         'form-plugins.js',
         'jquery.magnific-popup.min.js',
-        //'jquery.mCustomScrollbar.js',
+        'jquery.mCustomScrollbar.js',
         'isotope.pkgd.min.js',
         'bootstrap-slider.min.js',
         //'pace.min.js',
