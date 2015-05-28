@@ -292,13 +292,13 @@ jQuery(document).ready(function($) {
   //$(window).resize(function(){
   //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
   //});
-    $(document).ready(function () {
-       $(".overflow").smoothDivScroll({
-           hotSpotScrolling: false,
-           touchScrolling: true,
-           manualContinuousScrolling: true,
-           mousewheelScrolling: false
-       });
+    $(document).ready(function() {
+        $("html").niceScroll();
+    });
+
+    // 3. Style a DIV and chage cursor color:
+    $(document).ready(function() {
+        $("#ninescroll").niceScroll({cursorcolor:"#00F"});
     });
 
 	/** App Gallery

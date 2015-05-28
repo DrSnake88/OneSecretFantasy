@@ -28,8 +28,8 @@ elixir(function(mix) {
     //mix.copy('resources/assets/bower/pace/pace.min.js', 'resources/js/pace.min.js');
     mix.copy('resources/assets/bower/pace/pace.min.js', 'public/js/pace.min.js');
     mix.copy('resources/assets/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js', 'resources/js/jquery.mCustomScrollbar.js');
-    mix.copy('resources/assets/bower/jquery-mousewheel/jquery.mousewheel.min.js', 'resources/js/jquery.mousewheel.min.js');
-    mix.copy('resources/assets/bower/jquery.kinetic/jquery.kinetic.min.js', 'resources/js/jquery.kinetic.min.js');
+    //mix.copy('resources/assets/bower/jquery-mousewheel/jquery.mousewheel.min.js', 'resources/js/jquery.mousewheel.min.js');
+    //mix.copy('resources/assets/bower/jquery.kinetic/jquery.kinetic.min.js', 'resources/js/jquery.kinetic.min.js');
 
     mix.copy('resources/assets/bower/fontawesome/fonts', 'public/fonts');
     mix.copy('resources/assets/bower/fontawesome/scss', 'resources/assets/sass/');
@@ -51,9 +51,7 @@ elixir(function(mix) {
         //'jquery.mCustomScrollbar.js',
         'isotope.pkgd.min.js',
         'bootstrap-slider.min.js',
-        'jquery-ui-1.10.3.custom.min.js',
-        'jquery.smoothdivscroll-1.3-min.js',
-        'jquery.kinetic.min.js',
+        'jquery.ninescroll.min.js',
         //'pace.min.js',
         //'waypoint.js',
         'scripts.js'
