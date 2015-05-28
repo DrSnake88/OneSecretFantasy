@@ -16,5 +16,8 @@ body {
 }
 
 .offcanvas-nav {
-  overflow: scroll;
+  height: 100%;
+  
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
