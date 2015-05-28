@@ -280,7 +280,7 @@ jQuery(document).ready(function($) {
 
 	/** Custom Vertical Scrollbar for Off-Canvas Navigation
 	**************************************************************/
-	var navBodyScroll = $('.nav-body .overflow');
+	var navBodyScroll = $('.nav-body');
   $(window).load(function(){
   	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
     navBodyScroll.mCustomScrollbar({
