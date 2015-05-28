@@ -33,58 +33,63 @@
                 </div>
 
 
-                {{--<section class="padding-bottom col-md-offset-3 col-md-9">--}}
-                    {{--<div class="container col-md-offset-3 col-md-9">--}}
-                        <div class="masonry-grid col-md-offset-3">
-                            <div class="grid-sizer"></div>
-                            <div class="gutter-sizer"></div>
-                            <div class="item">
-                                <div class="post-tile">
-                                    <a href="/Blog/Post" class="post-thumb waves-effect">
-                                        <img src="/img/blog/post02.png" alt="Post 2">
-                                    </a>
-                                    <div class="post-body">
-                                        <div class="post-title">
-                                            <a href="/Blog/Post"><h3>Lifetime Happines</h3></a>
-                                            <span>Summer mood</span>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div class="column">
-                                                <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">Bedismo</a>
-                                            </div>
-                                            <div class="column text-right">
-                                                <span>October 08, 2014</span>
-                                            </div>
-                                        </div>
+                <!-- Blog Posts -->
+                <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8">
+                    <div class="scroller light-color posts">
+                        <div class="item">
+                            <div class="post-tile">
+                                <a href="/blog" class="post-thumb waves-effect">
+                                    <img src="/img/people/post1.jpg" alt="Title">
+                                </a>
+                                <div class="post-body">
+                                    <div class="post-title">
+                                        <a href="#"><h3>Title</h3></a>
+                                        <span>Description</span>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Item -->
-                            <div class="item w2">
-                                <div class="post-tile">
-                                    <a href="/Blog/Post" class="post-thumb waves-effect">
-                                        <img src="/img/blog/post01.png" alt="Post 1">
-                                    </a>
-                                    <div class="post-body">
-                                        <div class="post-title">
-                                            <a href="/Blog/Post"><h3>Change Is Coming. No Regrets.</h3></a>
-                                            <span>Our powers is unlimitless, faith is strong.</span>
-                                        </div>
-                                        <div class="post-meta">
-                                            <div class="column">
-                                                <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">Bedismo</a>
-                                            </div>
-                                            <div class="column text-right">
-                                                <span>January 14, 2015</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                    {{--</div>--}}
-                {{--</section>--}}
+                        <div class="item">
+                            <div class="post-tile">
+                                <a href="#" class="post-thumb waves-effect">
+                                    <img src="/img/people/post2.jpg" alt="Title">
+                                </a>
+                                <div class="post-body">
+                                    <div class="post-title">
+                                        <a href="/blog"><h3>Title</h3></a>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="post-tile">
+                                <a href="#" class="post-thumb waves-effect">
+                                    <img src="/img/people/post3.jpg" alt="Title">
+                                </a>
+                                <div class="post-body">
+                                    <div class="post-title">
+                                        <a href="/blog"><h3>Title</h3></a>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="post-tile">
+                                <a href="#" class="post-thumb waves-effect">
+                                    <img src="/img/people/post4.jpg" alt="Title">
+                                </a>
+                                <div class="post-body">
+                                    <div class="post-title">
+                                        <a href="/blog"><h3>Title</h3></a>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

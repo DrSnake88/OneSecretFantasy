@@ -48,7 +48,7 @@ elixir(function(mix) {
         'jquery.mCustomScrollbar.js',
         'isotope.pkgd.min.js',
         'bootstrap-slider.min.js',
-        //'pace.min.js',
+        'pace.min.js',
         //'waypoint.js',
         'scripts.js'
 
