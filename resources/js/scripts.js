@@ -268,30 +268,30 @@ jQuery(document).ready(function($) {
 	
 	/** Custom Horizontal Scrollbar for Gallery/Blog (Home Page)
 	**************************************************************/
-  $(window).load(function(){
-    $('.scroller').mCustomScrollbar({
-			axis:"x",
-			theme:"dark",
-			scrollInertia: 300,
-			advanced:{autoExpandHorizontalScroll:true}
-    });
-  });
+  //$(window).load(function(){
+  //  $('.scroller').mCustomScrollbar({
+	//		axis:"x",
+	//		theme:"dark",
+	//		scrollInertia: 300,
+	//		advanced:{autoExpandHorizontalScroll:true}
+  //  });
+  //});
 
 
 	/** Custom Vertical Scrollbar for Off-Canvas Navigation
 	**************************************************************/
-	var navBodyScroll = $('.nav-body .overflow');
-  $(window).load(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
-    navBodyScroll.mCustomScrollbar({
-			theme:"dark",
-			scrollInertia: 300,
-			scrollbarPosition:"outside"
-    });
-  });
-  $(window).resize(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
-  });
+	//var navBodyScroll = $('.nav-body .overflow');
+  //$(window).load(function(){
+  //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  //  navBodyScroll.mCustomScrollbar({
+	//		theme:"dark",
+	//		scrollInertia: 300,
+	//		scrollbarPosition:"outside"
+  //  });
+  //});
+  //$(window).resize(function(){
+  //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  //});
 
 
 	/** App Gallery
