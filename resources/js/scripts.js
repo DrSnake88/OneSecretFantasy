@@ -292,7 +292,7 @@ jQuery(document).ready(function($) {
   $(window).resize(function(){
   	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
   });
-    
+
     $( '.scrollable' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
         var e0 = e.originalEvent,
             delta = e0.wheelDelta || -e0.detail;
