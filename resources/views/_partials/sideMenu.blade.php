@@ -27,15 +27,21 @@
         <a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>
     </div>
     <!-- Body (Scroll Part) -->
-    <div class="nav-body">
-        <div class="overflow" id="ninescroll">
-            <div class="inner">
-                <!-- Navigation -->
-                <nav class="nav-link">
-                    <div class="scroll-nav" id="scroll-nav">
-                        <ul>
-                            <!-- Add ".scroll" class to anchor tag to enable smooth scrolling -->
-                            <li class="active"><a class="scrollup" href="#">Home</a></li>
+    <div class="nav-body scrollable">
+        <div class="overflow">
+            <div class="inner ">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi debitis distinctio ex, facere facilis, fuga inventore itaque minus nemo non omnis optio pariatur quae quaerat quia quibusdam quis voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores illo itaque pariatur perspiciatis provident rem soluta temporibus. Accusantium asperiores consequuntur cumque ducimus et iusto minima nesciunt odit veniam, voluptatibus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem culpa, ea enim ex impedit incidunt ipsa iure laudantium porro vel! Beatae commodi consectetur fuga molestiae nobis sit tempora velit vero.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores earum, laborum neque perferendis suscipit tempore. Minus, nemo, soluta? Dolorem doloribus, minus modi molestias natus possimus provident quam rerum sit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur, cum cupiditate eius fugiat harum minus sed sequi veniam vitae? Asperiores est id minima reiciendis. Ipsum molestiae qui saepe totam.
+
+                {{--<!-- Navigation -->--}}
+                {{--<nav class="nav-link">--}}
+                    {{--<div class="scroll-nav" id="scroll-nav">--}}
+                        {{--<ul>--}}
+                            {{--<!-- Add ".scroll" class to anchor tag to enable smooth scrolling -->--}}
+                            {{--<li class="active"><a class="scrollup" href="#">Home</a></li>--}}
 
                             {{--@if ((string) ViewContext.RouteData.Values["action"] == "Index")--}}
                                 {{--{--}}
@@ -45,12 +51,12 @@
                                 {{--}--}}
                                 {{--else--}}
                                 {{--{--}}
-                                <li><a class="scroll" href="#posts" data-offset-top="100">Posts</a></li>
-                                <li><a class="scroll" href="#features" data-offset-top="-5">Features</a></li>
-                                <li><a class="scroll" href="#gallery" data-offset-top="100">Gallery</a></li>
+                                {{--<li><a class="scroll" href="#posts" data-offset-top="100">Posts</a></li>--}}
+                                {{--<li><a class="scroll" href="#features" data-offset-top="-5">Features</a></li>--}}
+                                {{--<li><a class="scroll" href="#gallery" data-offset-top="100">Gallery</a></li>--}}
                                 {{--}--}}
 
-                        </ul>
+                        {{--</ul>--}}
 
                         {{--<ul>--}}
                             {{--<li><a class="scroll" href="#versions" data-offset-top="100">Versions</a></li>--}}
@@ -61,75 +67,75 @@
                             {{--<li><a class="scroll" href="#web-app" data-offset-top="100">Web App</a></li>--}}
                         {{--</ul>--}}
 
-                    </div>
+                    {{--</div>--}}
 
-                    <ul class="pages">
-                        <li><a href="/game">Game</a></li>
-                        <li><a href="/forum">Forum</a></li>
-                        <li><a href="/blogs">Blog</a></li>
-                        <li><a href="/media">Media</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </nav>
-
-
-                <!-- Twitter/Blog Tabs -->
-                <div class="offcanvas-tabs">
-                    <ul class="nav-tabs clearfix">
-                        <li class="active"><a class="waves-effect waves-primary" href="#twitter" data-toggle="tab">Twitter</a></li>
-                        <li><a class="waves-effect waves-primary" href="#blog" data-toggle="tab">Blog</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="twitter">
-                            <div class="twitter-feed">
-                                <div class="tweet">
-                                    <a href="#" class="author">@@OneSecretFantasy</a>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et <a href="#">#magna aliqua</a>.
-                                    </p>
-                                </div>
-                                <div class="tweet">
-                                    <a href="#" class="author">@@OneSecretFantasy</a>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                                </div>
-                                <a href="#" class="text-smaller">Follow us on twitter</a>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="blog">
-                            <div class="offcanvas-posts">
-                                <a href="/Blog/Post" class="post">
-                                    Blog Title
-                                    <span>Lorem ipsum dolor sit</span>
-                                </a>
-                                <a href="/Blog/Post" class="post">
-                                    Blog Title
-                                    <span>Tenetur omnis sit odit velit quaerat deserunt cupiditate.</span>
-                                </a>
-                                <a href="/Blog/Post" class="post">
-                                    Blog Title
-                                    <span>Sed ut perspiciatis unde omnis</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    {{--<ul class="pages">--}}
+                        {{--<li><a href="/game">Game</a></li>--}}
+                        {{--<li><a href="/forum">Forum</a></li>--}}
+                        {{--<li><a href="/blogs">Blog</a></li>--}}
+                        {{--<li><a href="/media">Media</a></li>--}}
+                        {{--<li><a href="/contact">Contact</a></li>--}}
+                    {{--</ul>--}}
+                {{--</nav>--}}
 
 
+                {{--<!-- Twitter/Blog Tabs -->--}}
+                {{--<div class="offcanvas-tabs">--}}
+                    {{--<ul class="nav-tabs clearfix">--}}
+                        {{--<li class="active"><a class="waves-effect waves-primary" href="#twitter" data-toggle="tab">Twitter</a></li>--}}
+                        {{--<li><a class="waves-effect waves-primary" href="#blog" data-toggle="tab">Blog</a></li>--}}
+                    {{--</ul>--}}
+                    {{--<div class="tab-content">--}}
+                        {{--<div class="tab-pane fade in active" id="twitter">--}}
+                            {{--<div class="twitter-feed">--}}
+                                {{--<div class="tweet">--}}
+                                    {{--<a href="#" class="author">@@OneSecretFantasy</a>--}}
+                                    {{--<p>--}}
+                                        {{--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et <a href="#">#magna aliqua</a>.--}}
+                                    {{--</p>--}}
+                                {{--</div>--}}
+                                {{--<div class="tweet">--}}
+                                    {{--<a href="#" class="author">@@OneSecretFantasy</a>--}}
+                                    {{--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>--}}
+                                {{--</div>--}}
+                                {{--<a href="#" class="text-smaller">Follow us on twitter</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="tab-pane fade" id="blog">--}}
+                            {{--<div class="offcanvas-posts">--}}
+                                {{--<a href="/Blog/Post" class="post">--}}
+                                    {{--Blog Title--}}
+                                    {{--<span>Lorem ipsum dolor sit</span>--}}
+                                {{--</a>--}}
+                                {{--<a href="/Blog/Post" class="post">--}}
+                                    {{--Blog Title--}}
+                                    {{--<span>Tenetur omnis sit odit velit quaerat deserunt cupiditate.</span>--}}
+                                {{--</a>--}}
+                                {{--<a href="/Blog/Post" class="post">--}}
+                                    {{--Blog Title--}}
+                                    {{--<span>Sed ut perspiciatis unde omnis</span>--}}
+                                {{--</a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
-                <!-- Instagram Posts -->
-                <div class="offcanvas-instagram">
-                    <div class="instgr-row clearfix">
-                        <a class="waves-effect" href="#"><img src="/img/people/man1-small.jpg" alt="Thumbnail"></a>
-                        <a class="waves-effect" href="#"><img src="/img/people/woman1-small.jpg" alt="Thumbnail"></a>
-                        <a class="waves-effect" href="#"><img src="/img/people/man2-small.jpg" alt="Thumbnail"></a>
-                    </div>
-                    <div class="instgr-row clearfix">
-                        <a class="waves-effect" href="#"><img src="/img/people/woman2-small.jpg" alt="Thumbnail"></a>
-                        <a class="waves-effect" href="#"><img src="/img/people/man3-small.jpg" alt="Thumbnail"></a>
-                        <a class="waves-effect" href="#"><img src="/img/people/woman3-small.jpg" alt="Thumbnail"></a>
-                    </div>
-                    <a href="#" class="text-smaller">Follow us on Instagram</a>
-                </div>
+
+
+                {{--<!-- Instagram Posts -->--}}
+                {{--<div class="offcanvas-instagram">--}}
+                    {{--<div class="instgr-row clearfix">--}}
+                        {{--<a class="waves-effect" href="#"><img src="/img/people/man1-small.jpg" alt="Thumbnail"></a>--}}
+                        {{--<a class="waves-effect" href="#"><img src="/img/people/woman1-small.jpg" alt="Thumbnail"></a>--}}
+                        {{--<a class="waves-effect" href="#"><img src="/img/people/man2-small.jpg" alt="Thumbnail"></a>--}}
+                    {{--</div>--}}
+                    {{--<div class="instgr-row clearfix">--}}
+                        {{--<a class="waves-effect" href="#"><img src="/img/people/woman2-small.jpg" alt="Thumbnail"></a>--}}
+                        {{--<a class="waves-effect" href="#"><img src="/img/people/man3-small.jpg" alt="Thumbnail"></a>--}}
+                        {{--<a class="waves-effect" href="#"><img src="/img/people/woman3-small.jpg" alt="Thumbnail"></a>--}}
+                    {{--</div>--}}
+                    {{--<a href="#" class="text-smaller">Follow us on Instagram</a>--}}
+                {{--</div>--}}
 
 
 

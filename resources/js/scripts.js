@@ -280,25 +280,25 @@ jQuery(document).ready(function($) {
 
 	/** Custom Vertical Scrollbar for Off-Canvas Navigation
 	**************************************************************/
-	//var navBodyScroll = $('.nav-body');
-  //$(window).load(function(){
-  //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
-  //  navBodyScroll.mCustomScrollbar({
-	//		theme:"dark",
-	//		scrollInertia: 300,
-	//		scrollbarPosition:"outside"
-  //  });
-  //});
-  //$(window).resize(function(){
-  //	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
-  //});
-    $(document).ready(function() {
-        $("html").niceScroll();
+	var navBodyScroll = $('.nav-body .overflow');
+  $(window).load(function(){
+  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+    navBodyScroll.mCustomScrollbar({
+			theme:"dark",
+			scrollInertia: 300,
+			scrollbarPosition:"outside"
     });
+  });
+  $(window).resize(function(){
+  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  });
+    
+    $( '.scrollable' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
+        var e0 = e.originalEvent,
+            delta = e0.wheelDelta || -e0.detail;
 
-    // 3. Style a DIV and chage cursor color:
-    $(document).ready(function() {
-        $("#ninescroll").niceScroll({cursorcolor:"#00F"});
+        this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+        e.preventDefault();
     });
 
 	/** App Gallery

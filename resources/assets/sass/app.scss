@@ -14,10 +14,3 @@ body {
   font: 100% $font-stack;
   color: $primary-color;
 }
-
-.offcanvas-nav {
-  height: 100%;
-
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
