@@ -168,16 +168,26 @@ jQuery(document).ready(function($) {
 	var openOffcanvas = $('[data-offcanvas="open"]');
 	var closeOffcanvas = $('[data-offcanvas="close"]');
 	var offcanvasNav = $('.offcanvas-nav');
+    var intro = $('.intro');
+    var body = $('.content-wrap');
+    var offcanvasNavWidth = offcanvasNav.width();
+
 	openOffcanvas.click(function(){
 		offcanvasNav.addClass('open');
+        intro.css("transform", "translateX("+offcanvasNavWidth+"px)");
+        body.css("transform", "translateX("+offcanvasNavWidth+"px)");
 		$('body').append('<div class="offcanvas-backdrop"></div>');
 	});
 	closeOffcanvas.click(function(){
 		offcanvasNav.removeClass('open');
+        intro.css("transform", "translateX(0)");
+        body.css("transform", "translateX(0)");
 		$('.offcanvas-backdrop').remove();
 	});
 	$(document).on('click', '.offcanvas-backdrop', function(){
 		offcanvasNav.removeClass('open');
+        intro.css("transform", "translateX(0)");
+        body.css("transform", "translateX(0)");
 		$('.offcanvas-backdrop').remove();
 	});
 

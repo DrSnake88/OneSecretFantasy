@@ -2,86 +2,46 @@
 <div class="offcanvas-nav">
     <!-- Head (Fixed Part) -->
     <div class="nav-head">
-        <div class="top-bar">
-            <form class="search-box">
-                <span class="search-toggle waves-effect waves-light"></span>
-                <input type="text" id="search-field">
-                <button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>
-            </form>
-            <div class="nav-close waves-effect waves-light waves-circle" data-offcanvas="close"><i class="flaticon-close47"></i></div>
-            <div class="social-buttons">
-                <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-                <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-                <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
-            </div>
-        </div>
-        <a href="index.html" class="offcanvas-logo">
-            <div class="icon"><img src="/img/logo-big-ns.png" alt="One Secret Fantasy"></div>
-            <div class="title">
-                One Secret Fantasy
-                <span>Life your dream!</span>
-            </div>
-        </a>
+        {{--<div class="top-bar">--}}
+            {{--<form class="search-box">--}}
+                {{--<span class="search-toggle waves-effect waves-light"></span>--}}
+                {{--<input type="text" id="search-field">--}}
+                {{--<button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>--}}
+            {{--</form>--}}
+            {{--<div class="nav-close waves-effect waves-light waves-circle" data-offcanvas="close"><i class="flaticon-close47"></i></div>--}}
+            {{--<div class="social-buttons">--}}
+                {{--<a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>--}}
+                {{--<a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>--}}
+                {{--<a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<a href="index.html" class="offcanvas-logo">--}}
+            {{--<div class="icon"><img src="/img/logo-big-ns.png" alt="One Secret Fantasy"></div>--}}
+            {{--<div class="title">--}}
+                {{--One Secret Fantasy--}}
+                {{--<span>Life your dream!</span>--}}
+            {{--</div>--}}
+        {{--</a>--}}
         <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="light-color nav-link">Sign In</a>
         <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="light-color nav-link">Sign Up</a>
-        <a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>
+        {{--<a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>--}}
     </div>
     <!-- Body (Scroll Part) -->
-    <div class="nav-body scrollable">
+    <div class="nav-body">
         <div class="overflow">
             <div class="inner ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi debitis distinctio ex, facere facilis, fuga inventore itaque minus nemo non omnis optio pariatur quae quaerat quia quibusdam quis voluptate.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores illo itaque pariatur perspiciatis provident rem soluta temporibus. Accusantium asperiores consequuntur cumque ducimus et iusto minima nesciunt odit veniam, voluptatibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem culpa, ea enim ex impedit incidunt ipsa iure laudantium porro vel! Beatae commodi consectetur fuga molestiae nobis sit tempora velit vero.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores earum, laborum neque perferendis suscipit tempore. Minus, nemo, soluta? Dolorem doloribus, minus modi molestias natus possimus provident quam rerum sit.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur, cum cupiditate eius fugiat harum minus sed sequi veniam vitae? Asperiores est id minima reiciendis. Ipsum molestiae qui saepe totam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi debitis distinctio ex, facere facilis, fuga inventore itaque minus nemo non omnis optio pariatur quae quaerat quia quibusdam quis voluptate.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores illo itaque pariatur perspiciatis provident rem soluta temporibus. Accusantium asperiores consequuntur cumque ducimus et iusto minima nesciunt odit veniam, voluptatibus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem culpa, ea enim ex impedit incidunt ipsa iure laudantium porro vel! Beatae commodi consectetur fuga molestiae nobis sit tempora velit vero.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores earum, laborum neque perferendis suscipit tempore. Minus, nemo, soluta? Dolorem doloribus, minus modi molestias natus possimus provident quam rerum sit.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur, cum cupiditate eius fugiat harum minus sed sequi veniam vitae? Asperiores est id minima reiciendis. Ipsum molestiae qui saepe totam.
 
-                {{--<!-- Navigation -->--}}
-                {{--<nav class="nav-link">--}}
-                    {{--<div class="scroll-nav" id="scroll-nav">--}}
-                        {{--<ul>--}}
-                            {{--<!-- Add ".scroll" class to anchor tag to enable smooth scrolling -->--}}
-                            {{--<li class="active"><a class="scrollup" href="#">Home</a></li>--}}
+                <!-- Navigation -->
+                <nav class="nav-link">
 
-                            {{--@if ((string) ViewContext.RouteData.Values["action"] == "Index")--}}
-                                {{--{--}}
-                                {{--<li><a class="scroll" href="#posts" data-offset-top="100">Posts</a></li>--}}
-                                {{--<li><a class="scroll" href="#features" data-offset-top="-5">Features</a></li>--}}
-                                {{--<li><a class="scroll" href="#gallery" data-offset-top="100">Gallery</a></li>--}}
-                                {{--}--}}
-                                {{--else--}}
-                                {{--{--}}
-                                {{--<li><a class="scroll" href="#posts" data-offset-top="100">Posts</a></li>--}}
-                                {{--<li><a class="scroll" href="#features" data-offset-top="-5">Features</a></li>--}}
-                                {{--<li><a class="scroll" href="#gallery" data-offset-top="100">Gallery</a></li>--}}
-                                {{--}--}}
-
-                        {{--</ul>--}}
-
-                        {{--<ul>--}}
-                            {{--<li><a class="scroll" href="#versions" data-offset-top="100">Versions</a></li>--}}
-                            {{--<li><a class="scroll" href="#figures" data-offset-top="100">Figures</a></li>--}}
-                            {{--<li><a class="scroll" href="#reviews" data-offset-top="115">Reviews</a></li>--}}
-                            {{--<li><a class="scroll" href="#team" data-offset-top="100">Team</a></li>--}}
-                            {{--<li><a class="scroll" href="#pricing" data-offset-top="100">Pricing</a></li>--}}
-                            {{--<li><a class="scroll" href="#web-app" data-offset-top="100">Web App</a></li>--}}
-                        {{--</ul>--}}
-
-                    {{--</div>--}}
-
-                    {{--<ul class="pages">--}}
-                        {{--<li><a href="/game">Game</a></li>--}}
-                        {{--<li><a href="/forum">Forum</a></li>--}}
-                        {{--<li><a href="/blogs">Blog</a></li>--}}
-                        {{--<li><a href="/media">Media</a></li>--}}
-                        {{--<li><a href="/contact">Contact</a></li>--}}
-                    {{--</ul>--}}
-                {{--</nav>--}}
+                    <ul class="pages">
+                        <li><a href="/game">Game</a></li>
+                        <li><a href="/forum">Forum</a></li>
+                        <li><a href="/blogs">Blog</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
 
 
                 {{--<!-- Twitter/Blog Tabs -->--}}
