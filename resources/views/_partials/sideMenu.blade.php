@@ -15,13 +15,13 @@
                 {{--<a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>--}}
             {{--</div>--}}
         {{--</div>--}}
-        <a href="index.html" class="offcanvas-logo">
-            <div class="icon"><img src="/img/logo-big-ns.png" alt="One Secret Fantasy"></div>
-            <div class="title">
-                One Secret Fantasy
-                <span>Life your dream!</span>
-            </div>
-        </a>
+        {{--<a href="index.html" class="offcanvas-logo">--}}
+            {{--<div class="icon"><img src="/img/logo-big-ns.png" alt="One Secret Fantasy"></div>--}}
+            {{--<div class="title">--}}
+                {{--One Secret Fantasy--}}
+                {{--<span>Life your dream!</span>--}}
+            {{--</div>--}}
+        {{--</a>--}}
         <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="light-color nav-link">Sign In</a>
         <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="light-color nav-link">Sign Up</a>
         {{--<a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>--}}
