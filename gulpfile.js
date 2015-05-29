@@ -30,9 +30,11 @@ elixir(function(mix) {
     mix.copy('resources/assets/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js', 'resources/js/jquery.mCustomScrollbar.js');
     //mix.copy('resources/assets/bower/jquery-mousewheel/jquery.mousewheel.min.js', 'resources/js/jquery.mousewheel.min.js');
     //mix.copy('resources/assets/bower/jquery.kinetic/jquery.kinetic.min.js', 'resources/js/jquery.kinetic.min.js');
+    mix.copy('resources/assets/bower/jasny-bootstrap/dist/js/jasny-bootstrap.min.js', 'resources/js/jasny-bootstrap.min.js');
 
     mix.copy('resources/assets/bower/fontawesome/fonts', 'public/fonts');
     mix.copy('resources/assets/bower/fontawesome/scss', 'resources/assets/sass/');
+    mix.copy('resources/assets/bower/jasny-bootstrap/scss', 'resources/assets/sass/jasny-bootstrap');
     mix.copy('resources/assets/bower/bootstrap-sass-official/assets/stylesheets/', 'resources/assets/sass/');
     mix.scripts([
         'jquery.min.js',
@@ -51,6 +53,7 @@ elixir(function(mix) {
         'jquery.mCustomScrollbar.js',
         'isotope.pkgd.min.js',
         'bootstrap-slider.min.js',
+        //'jasny-bootstrap.min.js',
         //'pace.min.js',
         //'waypoint.js',
         'scripts.js'

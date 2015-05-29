@@ -6,7 +6,8 @@
             <!-- Left Column -->
             <div class="column c-left">
                 <div class="navi">
-                    <div class="nav-toggle nav-toggle-float" data-offcanvas="open">
+                    {{--<div class="nav-toggle nav-toggle-float" data-offcanvas="open">--}}
+                    <div class="nav-toggle nav-toggle-float" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
                         <span class="waves-effect waves-light">
                             <i class="flaticon-menu55"></i>
                         </span>

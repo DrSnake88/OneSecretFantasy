@@ -37,7 +37,7 @@
                 <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8">
                     <div class="light-color posts">
                         @for($i = 0; $i < 3; $i++)
-                        <div class="item col-md-4">
+                        <div class="item col-md-4 col-sm-6">
                             <div class="post-tile">
                                 <a href="/blog" class="post-thumb waves-effect">
                                     <img src="/img/people/post1.jpg" alt="Title">

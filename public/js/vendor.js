@@ -4758,14 +4758,6 @@ jQuery(document).ready(function($) {
   	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
   });
 
-    $( '.scrollable' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
-        var e0 = e.originalEvent,
-            delta = e0.wheelDelta || -e0.detail;
-
-        this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-        e.preventDefault();
-    });
-
 	/** App Gallery
 	*********************************************************/
 	if($('.app-gallery a').length > 0) {

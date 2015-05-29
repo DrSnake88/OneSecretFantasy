@@ -2,8 +2,14 @@
 <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
 <header class="navbar navbar-sticky">
     <div class="container">
+
         <!-- Nav Toggle -->
-        <div class="nav-toggle waves-effect waves-light waves-circle" data-offcanvas="open"><i class="flaticon-menu55"></i></div>
+        <div class="nav-toggle waves-effect waves-light waves-circle" data-target="#sidemenu" data-offcanvas="open">
+            <i class="flaticon-menu55"></i>
+        </div>
+
+
+
         <!-- Logo -->
         <a href="/" class="logo">
             <img src="/img/logo-big-ns.png" alt="One Secret Fantasy">

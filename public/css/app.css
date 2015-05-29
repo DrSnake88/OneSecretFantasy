@@ -12427,5 +12427,22 @@ body {
 .offcanvas-nav {
   width: auto; }
 
+.offcanvas-nav a.nav-link, .offcanvas-nav .nav-link a {
+  margin-right: 0px; }
+
+.offcanvas-logo {
+  margin-bottom: 0px;
+  text-align: center; }
+
+.offcanvas-nav .nav-head {
+  padding: 10px 0; }
+
+.pages hr {
+  border-color: #B62025; }
+
+.nav-item .fa {
+  color: #B62025; }
+
+
 
 /*# sourceMappingURL=app.css.map */

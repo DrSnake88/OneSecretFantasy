@@ -15,17 +15,19 @@
                 {{--<a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>--}}
             {{--</div>--}}
         {{--</div>--}}
-        {{--<a href="index.html" class="offcanvas-logo">--}}
-            {{--<div class="icon"><img src="/img/logo-big-ns.png" alt="One Secret Fantasy"></div>--}}
+        <a href="index.html" class="offcanvas-logo">
+            <img width="32px" src="/img/logo-big-ns.png" alt="One Secret Fantasy">
             {{--<div class="title">--}}
                 {{--One Secret Fantasy--}}
                 {{--<span>Life your dream!</span>--}}
             {{--</div>--}}
-        {{--</a>--}}
-        <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="light-color nav-link">Sign In</a>
-        <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="light-color nav-link">Sign Up</a>
+        </a>
+        {{--<a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="light-color nav-link">Sign In</a>--}}
+        {{--<a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="light-color nav-link">Sign Up</a>--}}
         {{--<a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>--}}
     </div>
+
+
     <!-- Body (Scroll Part) -->
     <div class="nav-body">
         <div class="overflow">
@@ -34,12 +36,41 @@
                 <!-- Navigation -->
                 <nav class="nav-link">
 
-                    <ul class="pages">
-                        <li><a href="/game">Game</a></li>
-                        <li><a href="/forum">Forum</a></li>
-                        <li><a href="/blogs">Blog</a></li>
-                        <li><a href="/media">Media</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                    <ul class="pages" style="text-align: center">
+                        <a href="/game">
+                            <div class="nav-item">
+                                <li><div class="fa fa-gamepad fa-2x"></div></li>
+                                <li>Game</li>
+                            </div>
+                        </a>
+                        <hr/><br/>
+                        <a href="/forum">
+                            <div class="nav-item">
+                                <li><div class="fa fa-comments-o fa-2x"></div></li>
+                                <li>Forum</li>
+                            </div>
+                        </a>
+                        <hr/><br/>
+                        <a href="/blogs">
+                            <div class="nav-item">
+                                <li><div class="fa fa-rss fa-2x"></div></li>
+                                <li>Blog</li>
+                            </div>
+                        </a>
+                        <hr/><br/>
+                        <a href="/media">
+                            <div class="nav-item">
+                                <li><div class="fa fa-camera fa-2x"></div></li>
+                                <li>Media</li>
+                            </div>
+                        </a>
+                        <hr/><br/>
+                        <a href="/contact">
+                            <div class="nav-item">
+                                <li><div class="fa fa-phone fa-2x"></div></li>
+                                <li>Contact</li>
+                            </div>
+                        </a>
                     </ul>
                 </nav>
 
