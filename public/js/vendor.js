@@ -4747,7 +4747,7 @@ jQuery(document).ready(function($) {
 	**************************************************************/
 	var navBodyScroll = $('.nav-body .overflow');
   $(window).load(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  	navBodyScroll.height($(window).height() - $('.nav-head').height());
     navBodyScroll.mCustomScrollbar({
 			theme:"dark",
 			scrollInertia: 300,
@@ -4755,7 +4755,7 @@ jQuery(document).ready(function($) {
     });
   });
   $(window).resize(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height()-80);
+  	navBodyScroll.height($(window).height() - $('.nav-head').height());
   });
 
 	/** App Gallery
