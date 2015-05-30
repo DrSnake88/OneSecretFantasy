@@ -166,7 +166,6 @@ jQuery(document).ready(function($) {
 	/** Off-Canvas Navigation Open/Close
 	*******************************************/
 
-    /*
 	var openOffcanvas = $('[data-offcanvas="open"]');
 	var closeOffcanvas = $('[data-offcanvas="close"]');
 	var offcanvasNav = $('.offcanvas-nav');
@@ -192,44 +191,8 @@ jQuery(document).ready(function($) {
         //body.css("transform", "");
 		$('.offcanvas-backdrop').remove();
 	});
-    */
 
-    var openOffcanvas = $('[data-offcanvas="open"]');
-
-    var closeOffcanvas = $('[data-offcanvas="close"]');
-
-    var offcanvasNav = $('.offcanvas-nav');
-
-    openOffcanvas.click(function(){
-
-        offcanvasNav.addClass('open');
-
-        $('body').addClass('navbarOpen').append('<div class="offcanvas-backdrop"></div>');
-
-    });
-
-    closeOffcanvas.click(function(){
-
-        $('body').removeClass('navbarOpen');
-
-        offcanvasNav.removeClass('open');
-
-        $('.offcanvas-backdrop').remove();
-
-    });
-
-    $(document).on('click', '.offcanvas-backdrop', function(){
-
-        $('body').removeClass('navbarOpen');
-
-        offcanvasNav.removeClass('open');
-
-        $('.offcanvas-backdrop').remove();
-
-    });
-
-
-    /** Searchbox Expand
+	/** Searchbox Expand
 	*********************************************************/
 	var searchBox = $('.search-box');
 	var searchInput = $('.search-box input');
