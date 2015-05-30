@@ -2,29 +2,29 @@
 <div class="offcanvas-nav">
     <!-- Head (Fixed Part) -->
     <div class="nav-head">
-        <div class="top-bar">
-            <form class="search-box">
-                <span class="search-toggle waves-effect waves-light"></span>
-                <input type="text" id="search-field">
-                <button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>
-            </form>
-            <div class="nav-close waves-effect waves-light waves-circle" data-offcanvas="close"><i class="flaticon-close47"></i></div>
-            <div class="social-buttons">
-                <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-                <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-                <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
-            </div>
-        </div>
+        {{--<div class="top-bar">--}}
+            {{--<form class="search-box">--}}
+                {{--<span class="search-toggle waves-effect waves-light"></span>--}}
+                {{--<input type="text" id="search-field">--}}
+                {{--<button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>--}}
+            {{--</form>--}}
+            {{--<div class="nav-close waves-effect waves-light waves-circle" data-offcanvas="close"><i class="flaticon-close47"></i></div>--}}
+            {{--<div class="social-buttons">--}}
+                {{--<a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>--}}
+                {{--<a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>--}}
+                {{--<a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         <a href="index.html" class="offcanvas-logo">
             <img width="32px" src="/img/logo-big-ns.png" alt="One Secret Fantasy">
-            <div class="title">
-                One Secret Fantasy
-                <span>Life your dream!</span>
-            </div>
+            {{--<div class="title">--}}
+                {{--One Secret Fantasy--}}
+                {{--<span>Life your dream!</span>--}}
+            {{--</div>--}}
         </a>
-        <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="light-color nav-link">Sign In</a>
-        <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="light-color nav-link">Sign Up</a>
-        <a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>
+        {{--<a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="light-color nav-link">Sign In</a>--}}
+        {{--<a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="light-color nav-link">Sign Up</a>--}}
+        {{--<a href="#" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="flaticon-download164"></i> Download</a>--}}
     </div>
 
 
