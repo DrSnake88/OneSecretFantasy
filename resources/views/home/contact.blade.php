@@ -10,7 +10,7 @@
             <!-- Badge -->
             <div class="badge badge-primary badge-reverse">
                 Smart people in here
-                <span class="icon"><i class="flaticon-users25"></i></span>
+                <span class="icon"><i class="fa fa-users"></i></span>
             </div>
             <!-- Grid -->
             <div class="team-grid space-top-2x">
@@ -143,7 +143,7 @@
             <!-- Badge -->
             <div class="badge badge-primary badge-reverse">
                 Drop us a line
-                <span class="icon"><i class="flaticon-email107"></i></span>
+                <span class="icon"><i class="fa fa-envelope-o"></i></span>
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">

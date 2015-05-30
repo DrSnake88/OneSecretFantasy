@@ -18,11 +18,11 @@
                             <!-- Twitter Feed -->
                     <div class="twitter-feed">
                         <div class="tweet tweet-float">
-                            <a href="#" class="author">@@OneSecretFantasy</a>
+                            <a href="#" class="author">@OneSecretFantasy</a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod... <a href="#">#magna aliqua</a>.</p>
                         </div>
                         <div class="tweet tweet-float">
-                            <a href="#" class="author">@@OneSecretFantasy</a>
+                            <a href="#" class="author">@OneSecretFantasy</a>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
                         </div>
                         <div class="text-right">
@@ -108,10 +108,10 @@
                     <!-- Nav Tabs -->
                     <!-- Remove data-autoswitch="true" to disable automatic tabs change. -->
                     <ul class="nav-tabs" data-autoswitch="true" data-interval="3000">
-                        <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="flaticon-black397"></i></a></li>
-                        <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="flaticon-settings49"></i></a></li>
-                        <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="flaticon-share39"></i></a></li>
-                        <li><a href="#chat" data-toggle="tab" data-tablet="#ts04" data-phone="#ps04"><i class="flaticon-chat75"></i></a></li>
+                        <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="fa fa-video-camera"></i></a></li>
+                        <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="fa fa-cogs"></i></a></li>
+                        <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="fa fa-share"></i></a></li>
+                        <li><a href="#chat" data-toggle="tab" data-tablet="#ts04" data-phone="#ps04"><i class="fa fa-weixin"></i></a></li>
                     </ul>
                     <!-- Tab panes -->
                     <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
@@ -143,7 +143,7 @@
             <!-- Badge -->
             <div class="badge badge-success badge-reverse">
                 No other game has this!
-                <span class="icon"><i class="flaticon-bookmark45"></i></span>
+                <span class="icon"><i class="fa fa-bookmark"></i></span>
             </div>
             <!-- Content -->
             <div class="row">
@@ -158,14 +158,14 @@
                                     <a href="#" class="link">See more</a>
                                 </div>
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="flaticon-screen47"></i>
+                                    <i class="fa fa-desktop"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-block icon-block-horizontal">
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="flaticon-magic20"></i>
+                                    <i class="fa fa-magic"></i>
                                 </div>
                                 <div class="text">
                                     <h3>USP #2</h3>
@@ -184,14 +184,14 @@
                                     <a href="#" class="link">See more</a>
                                 </div>
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="flaticon-cloud304"></i>
+                                    <i class="fa fa-cloud"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-block icon-block-horizontal">
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="flaticon-camera59"></i>
+                                    <i class="fa fa-camera"></i>
                                 </div>
                                 <div class="text">
                                     <h3>USP #4</h3>
@@ -212,7 +212,7 @@
             <hr class="with-shadow">
             <!-- Badge -->
             <div class="badge badge-primary">
-                <span class="icon"><i class="flaticon-camera59"></i></span>
+                <span class="icon"><i class="fa fa-camera"></i></span>
                 Moments of our game
             </div>
             <div class="row">

@@ -9,7 +9,7 @@
                     <div class="nav-toggle nav-toggle-float" data-offcanvas="open">
                     {{--<div class="nav-toggle nav-toggle-float" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">--}}
                         <span class="waves-effect waves-light">
-                            <i class="flaticon-menu55"></i>
+                            <i class="fa fa-bars" style="margin-top:15px !important;"></i>
                         </span>
                     </div>
                     <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Sign in</a>

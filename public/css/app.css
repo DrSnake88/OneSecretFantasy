@@ -12443,6 +12443,21 @@ body {
 .nav-item .fa {
   color: #B62025; }
 
+.main-menu a i, .toolbar a i {
+  margin-right: 5px; }
+
+.twitter-feed .tweet-float:before {
+  font-family: 'FontAwesome';
+  content: "\f081"; }
+
+.gallery-item.video-item:before {
+  font-family: "FontAwesome";
+  content: "\f01d"; }
+
+.gallery-item.image-item:before {
+  font-family: "FontAwesome";
+  content: "\f030"; }
+
 @media screen and (max-width: 480px) {
   .offcanvas-nav .nav-link ul, .offcanvas-nav .nav-link ul:first-child {
     margin-right: 0; } }

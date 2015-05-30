@@ -19,7 +19,7 @@
             <hr class="with-shadow">
             <!-- Badge -->
             <div class="badge badge-primary">
-                <span class="icon"><i class="flaticon-camera59"></i></span>
+                <span class="icon"><i class="fa fa-camera"></i></span>
                 Moments of our game
             </div>
             <div class="row">
