@@ -111,7 +111,6 @@
                         <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="fa fa-video-camera"></i></a></li>
                         <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="fa fa-cogs"></i></a></li>
                         <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="fa fa-share"></i></a></li>
-                        <li><a href="#chat" data-toggle="tab" data-tablet="#ts04" data-phone="#ps04"><i class="fa fa-weixin"></i></a></li>
                     </ul>
                     <!-- Tab panes -->
                     <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
@@ -126,10 +125,6 @@
                         </div>
                         <div class="tab-pane transition scale fade" id="file-sharing">
                             <h3>Feature #3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque itaque soluta quisquam at ex praesentium sed exercitationem.</p>
-                        </div>
-                        <div class="tab-pane transition scale fade" id="chat">
-                            <h3>Feature #4</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque itaque soluta quisquam at ex praesentium sed exercitationem.</p>
                         </div>
                     </div>

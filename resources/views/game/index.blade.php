@@ -13,7 +13,7 @@
                         <div class="timeline-row">
                             <a href="#general">
                                 <div class="date">General</div>
-                                <div class="event">What is One Secret Fantasy</div>
+                                <div class="event">What is One Secret Fantasy? What is it about?</div>
                             </a>
                         </div>
                         <div class="timeline-row">
@@ -61,13 +61,13 @@
                         <div class="timeline-row">
                             <a href="#economy">
                                 <div class="date">Economy</div>
-                                <div class="event">How does money in this game work?</div>
+                                <div class="event">How does money and the economy in this game work?</div>
                             </a>
                         </div>
                         <div class="timeline-row">
                             <a href="#jobs">
                                 <div class="date">Jobs</div>
-                                <div class="event">How do jobs work, how do you work?</div>
+                                <div class="event">How do jobs work, and how do you work?</div>
                             </a>
                         </div>
                         <div class="timeline-row">

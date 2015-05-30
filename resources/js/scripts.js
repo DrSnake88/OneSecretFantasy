@@ -300,9 +300,9 @@ jQuery(document).ready(function($) {
 			scrollbarPosition:"outside"
     });
   });
-  $(window).resize(function(){
-  	navBodyScroll.height($(window).height() - $('.nav-head').height());
-  });
+  //$(window).resize(function(){
+  //	navBodyScroll.height($(window).height() - $('.nav-head').height());
+  //});
 
 	/** App Gallery
 	*********************************************************/
