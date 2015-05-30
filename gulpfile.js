@@ -44,7 +44,7 @@ elixir(function(mix) {
         'velocity.min.js',
         'bootstrap.min.js',
 
-        'smoothscroll.js',
+        //'smoothscroll.js',
         'waves.min.js',
         'jquery.waypoints.min.js',
         'waypoints-sticky.min.js',
