@@ -5,7 +5,7 @@
 
         <!-- Nav Toggle -->
         <div class="nav-toggle waves-effect waves-light waves-circle" data-target="#sidemenu" data-offcanvas="open">
-            <i class="fa fa-bars fa-2x" style="font-size:2em; margin-top:5px;"></i>
+            <i class="fa fa-bars" style="margin-top:10px;"></i>
         </div>
 
 
