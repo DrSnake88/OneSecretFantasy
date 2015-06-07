@@ -5,7 +5,12 @@
     <!-- Page Heading -->
     <div class="page-heading text-right">
         <div class="container">
-            <h2>Thread Name</h2>
+            <hr class="with-shadow">
+            <!-- Badge -->
+            <div class="badge badge-primary">
+                <span class="icon"><i class="fa fa-comments-o"></i></span>
+                Thread Name
+            </div>
         </div>
     </div>
 

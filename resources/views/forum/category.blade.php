@@ -11,7 +11,12 @@
                 <input type="text" id="search-input">
                 <label for="search-input">Search</label>
             </form>
-            <h2>Category Name</h2>
+            <hr class="with-shadow">
+            <!-- Badge -->
+            <div class="badge badge-primary">
+                <span class="icon"><i class="fa fa-comments-o"></i></span>
+                Category Name
+            </div>
         </div>
     </div>
 

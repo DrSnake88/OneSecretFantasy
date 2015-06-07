@@ -7,6 +7,7 @@
     <!-- Team -->
     <section class="space-bottom-3x">
         <div class="container">
+            <hr class="with-shadow">
             <!-- Badge -->
             <div class="badge badge-primary badge-reverse">
                 Smart people in here

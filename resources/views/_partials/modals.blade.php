@@ -4,23 +4,25 @@
         <div class="modal-form">
             <div class="tab-content">
                 <!-- Sign in form -->
-                <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off" method="POST" action="{{ url('/auth/login') }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
                     <h3 class="modal-title">Sign In</h3>
                     <div class="form-control space-top-2x">
-                        <input type="email" name="si_email" id="si_email" readonly onfocus="$(this).removeAttr('readonly');" required>
-                        <label for="si_email">Email</label>
+                        <input type="email" name="email" id="si_email" value="{{ old('email') }}" readonly onfocus="$(this).removeAttr('readonly');" required>
+                        <label for="email">Email</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <div class="form-control">
-                        <input type="password" name="si-password" id="si-password" readonly onfocus="$(this).removeAttr('readonly');" required>
-                        <label for="si-password">Password</label>
+                        <input type="password" name="password" id="si-password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                        <label for="password">Password</label>
                         <a class="helper-link" href="#">Forgot password?</a>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <label class="checkbox space-top-2x">
-                        <input type="checkbox"> Remember me
+                        <input type="checkbox" name="remember"> Remember me
                     </label>
                     <div class="clearfix modal-buttons">
                         <div class="pull-right">
@@ -33,23 +35,25 @@
                 </form>
 
                 <!-- Sign up form -->
-                <form class="tab-pane transition scale fade" id="signup-form">
+                <form class="tab-pane transition scale fade" id="signup-form" method="POST" action="{{ url('/auth/register') }}">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
                     <h3 class="modal-title">Sign Up</h3>
                     <div class="form-control space-top-2x">
-                        <input type="email" name="su-email" id="su-email" required>
-                        <label for="su-email">Email</label>
+                        <input type="email" name="email" id="su-email" value="{{ old('email') }}" required>
+                        <label for="email">Email</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <div class="form-control">
-                        <input type="password" name="su-password" id="su-password" required>
-                        <label for="su-password">Password</label>
+                        <input type="password" name="password" id="su-password" required>
+                        <label for="password">Password</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <div class="form-control">
-                        <input type="password" name="su-password-repeat" id="su-password-repeat" required>
-                        <label for="su-password-repeat">Repeat password</label>
+                        <input type="password" name="password_confirmation" id="su-password-repeat" required>
+                        <label for="password_confirmation">Repeat password</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>

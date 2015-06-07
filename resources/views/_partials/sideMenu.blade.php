@@ -16,7 +16,7 @@
             {{--</div>--}}
         {{--</div>--}}
         <a href="index.html" class="offcanvas-logo">
-            <img width="32px" src="/img/logo-big-ns.png" alt="One Secret Fantasy">
+            <img width="32px" src="/img/logo/logo-square.png" alt="One Secret Fantasy">
             {{--<div class="title">--}}
                 {{--One Secret Fantasy--}}
                 {{--<span>Life your dream!</span>--}}
@@ -48,35 +48,35 @@
                     <ul class="pages" style="text-align: center">
                         <a href="/game">
                             <div class="nav-item">
-                                <li><div class="fa fa-gamepad fa-2x"></div></li>
+                                <li><i class="fa fa-gamepad fa-2x"></i></li>
                                 <li>Game</li>
                             </div>
                         </a>
                         <hr/><br/>
                         <a href="/forum">
                             <div class="nav-item">
-                                <li><div class="fa fa-comments-o fa-2x"></div></li>
+                                <li><i class="fa fa-comments-o fa-2x"></i></li>
                                 <li>Forum</li>
                             </div>
                         </a>
                         <hr/><br/>
                         <a href="/blogs">
                             <div class="nav-item">
-                                <li><div class="fa fa-rss fa-2x"></div></li>
+                                <li><i class="fa fa-rss fa-2x"></i></li>
                                 <li>Blog</li>
                             </div>
                         </a>
                         <hr/><br/>
                         <a href="/media">
                             <div class="nav-item">
-                                <li><div class="fa fa-camera fa-2x"></div></li>
+                                <li><i class="fa fa-camera fa-2x"></i></li>
                                 <li>Media</li>
                             </div>
                         </a>
                         <hr/><br/>
                         <a href="/contact">
                             <div class="nav-item">
-                                <li><div class="fa fa-phone fa-2x"></div></li>
+                                <li><i class="fa fa-phone fa-2x"></i></li>
                                 <li>Contact</li>
                             </div>
                         </a>

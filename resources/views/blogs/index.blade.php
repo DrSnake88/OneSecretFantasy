@@ -16,50 +16,61 @@
     <!-- Blog Grid -->
     <section class="space-top padding-bottom">
         <div class="container">
+            <hr class="with-shadow">
+            <!-- Badge -->
+            <div class="badge badge-primary">
+                <span class="icon"><i class="fa fa-rss"></i></span>
+                Every update related to the game or the development team.
+            </div>
             <div class="masonry-grid">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
+
                 <!-- Item -->
-                <div class="item w2">
-                    <div class="post-tile">
-                        <a href="/Blog/Post" class="post-thumb waves-effect">
-                            <img src="/img/blog/post01.png" alt="Post 1">
-                        </a>
-                        <div class="post-body">
-                            <div class="post-title">
-                                <a href="/Blog/Post"><h3>Change Is Coming. No Regrets.</h3></a>
-                                <span>Our powers is unlimitless, faith is strong.</span>
-                            </div>
-                            <div class="post-meta">
-                                <div class="column">
-                                    <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">Bedismo</a>
-                                </div>
-                                <div class="column text-right">
-                                    <span>January 14, 2015</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="item w2">--}}
+                    {{--<div class="post-tile">--}}
+                        {{--<a href="/Blog/Post" class="post-thumb waves-effect">--}}
+                            {{--<img src="/img/blog/post01.png" alt="Post 1">--}}
+                        {{--</a>--}}
+                        {{--<div class="post-body">--}}
+                            {{--<div class="post-title">--}}
+                                {{--<a href="/Blog/Post"><h3>Change Is Coming. No Regrets.</h3></a>--}}
+                                {{--<span>Our powers is unlimitless, faith is strong.</span>--}}
+                            {{--</div>--}}
+                            {{--<div class="post-meta">--}}
+                                {{--<div class="column">--}}
+                                    {{--<span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">Bedismo</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="column text-right">--}}
+                                    {{--<span>January 14, 2015</span>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
                 @foreach($blogs as $blog)
                 <!-- Item -->
-                <div class="item">
+                @if ($blog->highlight == 0)
+                    <div class="item">
+                @else
+                    <div class="item w2">
+                @endif
                     <div class="post-tile">
                         <a href="/Blog/Post" class="post-thumb waves-effect">
                             <img src="/img/blog/post02.png" alt="Post 2">
                         </a>
                         <div class="post-body">
                             <div class="post-title">
-                                <a href="/Blog/Post"><h3>Lifetime Happines</h3></a>
-                                <span>Summer mood</span>
+                                <a href="/Blog/Post"><h3>{{ $blog->title }}</h3></a>
+                                <span>{{ $blog->excerpt }}</span>
                             </div>
                             <div class="post-meta">
                                 <div class="column">
-                                    <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">Bedismo</a>
+                                    <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">{{ $blog->user->name }}</a>
                                 </div>
                                 <div class="column text-right">
-                                    <span>October 08, 2014</span>
+                                    <span>{{ $blog->created_at }}</span>
                                 </div>
                             </div>
                         </div>

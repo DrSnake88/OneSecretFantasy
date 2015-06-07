@@ -16,8 +16,8 @@ class CreateBlogsTable extends Migration {
             $table->increments('id');
             $table->string('title');
             $table->text('body');
-            $table->integer('user_id')->unsigned()->default(1);
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('excerpt');
+            $table->boolean('highlight');
             $table->timestamps();
         });
 	}

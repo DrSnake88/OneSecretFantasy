@@ -15,7 +15,7 @@
                     <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Sign in</a>
                 </div>
 
-                <a href="#features" data-offset-top="-5" class="scroll-more scroll">
+                <a href="#features" data-offset-top="690" class="scroll-more scroll">
                     <i class="icon"></i>
                     <span>Scroll for more</span>
                 </a>
@@ -24,7 +24,7 @@
             <!-- Middle Column -->
             <div class="column c-middle">
                 <h1 class="logo-main">
-                    <img src="/img/logo-big-ns.png" alt="OneSecretFantasy" />
+                    <img src="/img/logo/logo-rounded.png" alt="OneSecretFantasy" />
                     OneSecretFantasy
                     <span>Make your dreams come true.</span>
 
