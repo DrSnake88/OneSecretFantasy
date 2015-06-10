@@ -17,7 +17,7 @@ class BlogTableSeeder extends Seeder {
                 'body' => $faker->realText(200),
                 'excerpt' => $faker->realText(20),
                 'user_id' => 1,
-                'category_id' => rand(0, 9),
+                'category_id' => rand(1, 10),
                 'highlight' => rand(0, 1),
                 'created_at' => $faker->date()
             ]);

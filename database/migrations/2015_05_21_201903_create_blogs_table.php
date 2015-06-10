@@ -17,6 +17,10 @@ class CreateBlogsTable extends Migration {
             $table->string('title');
             $table->text('body');
             $table->string('excerpt');
+            $table->integer('user_id')->unsigned()->default(1);
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('category_id')->unsigned()->default(1);
+            $table->foreign('category_id')->references('id')->on('blog_categories');
             $table->boolean('highlight');
             $table->timestamps();
         });

@@ -12,7 +12,11 @@
                             <i class="fa fa-bars" style="margin-top:15px !important;"></i>
                         </span>
                     </div>
-                    <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Sign in</a>
+                    @if(Auth::user())
+                        <a href="#" data-toggle="modal" data-target="#profile-page" data-modal-form="profile">{{ Auth::user()->name }}</a>
+                    @else
+                        <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Sign in</a>
+                    @endif
                 </div>
 
                 <a href="#features" data-offset-top="690" class="scroll-more scroll">

@@ -25,7 +25,12 @@
                 <a href="/contact" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="fa fa-phone"></i> Contact</a>
             </span>
 
-            <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"><i class="fa fa-sign-in"></i> Sign in</a>
+            @if(Auth::user())
+                <a href="#" data-toggle="modal" data-target="#profile-page" data-modal-form="profile" class="action-btn"><i class="fa fa-user"></i> {{ Auth::user()->name }}</a>
+            @else
+                <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"><i class="fa fa-sign-in"></i> Sign in</a>
+            @endif
+
             <!-- Social Buttons -->
             <div class="social-buttons text-right">
                 <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
