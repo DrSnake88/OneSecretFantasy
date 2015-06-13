@@ -70,7 +70,7 @@
                                     <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">{{ $blog->user->name }}</a>
                                 </div>
                                 <div class="column text-right">
-                                    <span>{{ $blog->created_at }}</span>
+                                    <span>{{ \Carbon\Carbon::createFromTimestamp(strtotime($blog->created_at))->diffForHumans() }}</span>
                                 </div>
                             </div>
                         </div>
@@ -79,13 +79,14 @@
 
                 @endforeach
             </div>
-            <!-- Pagination -->
-            <div class="pagination space-top-3x space-bottom-3x">
-                <div class="controls">
-                    <a href="#">Older</a>
-                    <a href="#">Newer</a>
-                </div>
-            </div>
+
+            {{--<!-- Pagination -->--}}
+            {{--<div class="pagination space-top-3x space-bottom-3x">--}}
+                {{--<div class="controls">--}}
+                    {{--<a href="#">Older</a>--}}
+                    {{--<a href="#">Newer</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </section><!-- Blog Grid End -->
 

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Blog;
 use Illuminate\Http\Request;
+use Thujohn\Twitter\Facades\Twitter;
 
 class BlogController extends Controller {
 
@@ -61,8 +62,9 @@ class BlogController extends Controller {
         $blog->tags = explode(";", $blog->tags);
 
         $blog_comments = BlogComment::where('blog_id', '=', $id)->get();
+        $tweets = json_decode(Twitter::getUserTimeline(['screen_name' => 'OSFtheGame', 'count' => 6, 'format' => 'json']));
 
-		return view('blogs.show', compact('blog', 'blog_comments'));
+		return view('blogs.show', compact('blog', 'blog_comments', 'tweets'));
 	}
 
 	/**

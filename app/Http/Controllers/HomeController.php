@@ -3,6 +3,7 @@
 use App\Blog;
 use App\MediaPicture;
 use App\MediaVideo;
+use Thujohn\Twitter\Facades\Twitter;
 
 class HomeController extends Controller {
 
@@ -38,8 +39,9 @@ class HomeController extends Controller {
         $videos = MediaVideo::orderBy('created_at', 'DESC')->take(1)->get();
 
         $blogs = Blog::orderBy('created_at', 'DESC')->take(3)->get();
+        $tweets = json_decode(Twitter::getUserTimeline(['screen_name' => 'OSFtheGame', 'count' => 2, 'format' => 'json']));
 
-		return view('home/home', compact('pictures', 'videos', 'news'));
+		return view('home/home', compact('pictures', 'videos', 'blogs', 'tweets'));
 	}
 
     public function contact()

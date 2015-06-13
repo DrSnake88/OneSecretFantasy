@@ -17,16 +17,16 @@
                     </div>--}}
                             <!-- Twitter Feed -->
                     <div class="twitter-feed">
+                        @foreach($tweets as $tweet)
                         <div class="tweet tweet-float">
-                            <a href="#" class="author">@OneSecretFantasy</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod... <a href="#">#magna aliqua</a>.</p>
+                            <a href="{{ \Thujohn\Twitter\Facades\Twitter::linkUser('@OSFtheGame') }}" target="_blank" class="author">@OSFtheGame</a>
+                            <p>{{ $tweet->text }}</p>
                         </div>
-                        <div class="tweet tweet-float">
-                            <a href="#" class="author">@OneSecretFantasy</a>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
-                        </div>
+                        @endforeach
+
+
                         <div class="text-right">
-                            <a href="#" class="text-smaller light-color">Follow us on twitter</a>
+                            <a href="{{ \Thujohn\Twitter\Facades\Twitter::linkUser('@OSFtheGame') }}" target="_blank" class="text-smaller light-color">Follow us on twitter</a>
                         </div>
                     </div>
                     <div class="space-bottom-2x visible-xs"></div>
