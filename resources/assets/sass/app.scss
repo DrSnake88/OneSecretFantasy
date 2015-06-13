@@ -92,6 +92,10 @@ body.navbarOpen {
   content: "\f030";
 }
 
+.valid-label::before {
+  content: "✓";
+}
+
 @media screen and (max-width: 480px) {
   .offcanvas-nav .nav-link ul, .offcanvas-nav .nav-link ul:first-child {
     margin-right: 0;

@@ -20,5 +20,19 @@
   },
   "resolutions": {
     "modernizr": "~2.8.3"
-  }
+  },
+  "version": "0.0.0",
+  "homepage": "https://github.com/DrSnake88/OneSecretFantasy",
+  "authors": [
+    "rvanheyningen <raynoldvanheyningen@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/bower",
+    "test",
+    "tests"
+  ]
 }

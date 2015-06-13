@@ -20,6 +20,7 @@ Route::get('/info', function() {
 });
 
 Route::resource("blogs","BlogController");
+Route::resource("blog_comments","BlogCommentController");
 Route::resource("forum","ForumController");
 Route::resource("media","MediaController");
 Route::resource("game","GameController");

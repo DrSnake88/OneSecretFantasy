@@ -1,13 +1,12 @@
 <?php namespace App\Http\Controllers;
 
-use App\BlogComment;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\Blog;
+use App\MediaPicture;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller {
+class MediaPictureController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -16,9 +15,9 @@ class BlogController extends Controller {
 	 */
 	public function index()
 	{
-		$blogs = Blog::all();
+		$mediapictures = MediaPicture::all();
 
-		return view('blogs.index', compact('blogs'));
+		return view('mediapictures.index', compact('mediapictures'));
 	}
 
 	/**
@@ -28,7 +27,7 @@ class BlogController extends Controller {
 	 */
 	public function create()
 	{
-		return view('blogs.create');
+		return view('mediapictures.create');
 	}
 
 	/**
@@ -39,14 +38,13 @@ class BlogController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		$blog = new Blog();
+		$mediapicture = new MediaPicture();
 
-		$blog->title = $request->input("title");
-        $blog->body = $request->input("body");
+		
 
-		$blog->save();
+		$mediapicture->save();
 
-		return redirect()->route('blogs.index')->with('message', 'Item created successfully.');
+		return redirect()->route('mediapictures.index')->with('message', 'Item created successfully.');
 	}
 
 	/**
@@ -57,12 +55,9 @@ class BlogController extends Controller {
 	 */
 	public function show($id)
 	{
-		$blog = Blog::findOrFail($id);
-        $blog->tags = explode(";", $blog->tags);
+		$mediapicture = MediaPicture::findOrFail($id);
 
-        $blog_comments = BlogComment::where('blog_id', '=', $id)->get();
-
-		return view('blogs.show', compact('blog', 'blog_comments'));
+		return view('mediapictures.show', compact('mediapicture'));
 	}
 
 	/**
@@ -73,9 +68,9 @@ class BlogController extends Controller {
 	 */
 	public function edit($id)
 	{
-		$blog = Blog::findOrFail($id);
+		$mediapicture = MediaPicture::findOrFail($id);
 
-		return view('blogs.edit', compact('blog'));
+		return view('mediapictures.edit', compact('mediapicture'));
 	}
 
 	/**
@@ -87,14 +82,13 @@ class BlogController extends Controller {
 	 */
 	public function update(Request $request, $id)
 	{
-		$blog = Blog::findOrFail($id);
+		$mediapicture = MediaPicture::findOrFail($id);
 
-		$blog->title = $request->input("title");
-        $blog->body = $request->input("body");
+		
 
-		$blog->save();
+		$mediapicture->save();
 
-		return redirect()->route('blogs.index')->with('message', 'Item updated successfully.');
+		return redirect()->route('mediapictures.index')->with('message', 'Item updated successfully.');
 	}
 
 	/**
@@ -105,10 +99,10 @@ class BlogController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		$blog = Blog::findOrFail($id);
-		$blog->delete();
+		$mediapicture = MediaPicture::findOrFail($id);
+		$mediapicture->delete();
 
-		return redirect()->route('blogs.index')->with('message', 'Item deleted successfully.');
+		return redirect()->route('mediapictures.index')->with('message', 'Item deleted successfully.');
 	}
 
 }

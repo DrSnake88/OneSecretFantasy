@@ -3,6 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\MediaPicture;
+use App\MediaVideo;
 use Illuminate\Http\Request;
 
 class MediaController extends Controller {
@@ -12,9 +14,23 @@ class MediaController extends Controller {
 	 *
 	 * @return Response
 	 */
+
 	public function index()
 	{
-        return view('media.index');
+        $pictures = MediaPicture::all();
+        $videos = MediaVideo::all();
+
+        $media = [];
+
+        foreach ($pictures as $picture) {
+            $media[] = $picture;
+        }
+
+        foreach ($videos as $video) {
+            $media[] = $video;
+        }
+
+        return view('media.index', compact('pictures', 'videos'));
 	}
 
 	/**

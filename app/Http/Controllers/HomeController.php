@@ -1,5 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+use App\Blog;
+use App\MediaPicture;
+use App\MediaVideo;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,7 +34,12 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home/home');
+        $pictures = MediaPicture::orderBy('created_at', 'DESC')->take(2)->get();
+        $videos = MediaVideo::orderBy('created_at', 'DESC')->take(1)->get();
+
+        $blogs = Blog::orderBy('created_at', 'DESC')->take(3)->get();
+
+		return view('home/home', compact('pictures', 'videos', 'news'));
 	}
 
     public function contact()

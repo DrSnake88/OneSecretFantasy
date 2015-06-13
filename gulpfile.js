@@ -14,23 +14,23 @@ require('laravel-elixir-rename');
  */
 
 elixir(function(mix) {
-    mix.copy('resources/assets/bower/jquery/dist/jquery.min.js', 'resources/js/jquery.min.js');
-    mix.copy('resources/assets/bower/modernizr/modernizr.js', 'resources/js/modernizr.js');
-    mix.copy('resources/assets/bower/detectizr/dist/detectizr.min.js', 'resources/js/detectizr.min.js');
-    mix.copy('resources/assets/bower/jquery-easing-original/jquery.easing.min.js', 'resources/js/jquery.easing.min.js');
-    mix.copy('resources/assets/bower/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js', 'resources/js/bootstrap-slider.min.js');
-    mix.copy('resources/assets/bower/magnific-popup/dist/jquery.magnific-popup.min.js', 'resources/js/jquery.magnific-popup.min.js');
-    mix.copy('resources/assets/bower/isotope/dist/isotope.pkgd.min.js', 'resources/js/isotope.pkgd.min.js');
-    mix.copy('resources/assets/bower/jquery-waypoints/lib/jquery.waypoints.min.js', 'resources/js/jquery.waypoints.min.js');
-    mix.copy('resources/assets/bower/jquery-waypoints/lib/shortcuts/sticky.min.js', 'resources/js/waypoints-sticky.min.js');
-    mix.copy('resources/assets/bower/waves/dist/waves.min.js', 'resources/js/waves.min.js');
-    mix.copy('resources/assets/bower/velocity/velocity.min.js', 'resources/js/velocity.min.js');
-    //mix.copy('resources/assets/bower/pace/pace.min.js', 'resources/js/pace.min.js');
+    mix.copy('resources/assets/bower/jquery/dist/jquery.min.js', 'resources/assets/js/jquery.min.js');
+    mix.copy('resources/assets/bower/modernizr/modernizr.js', 'resources/assets/js/modernizr.js');
+    mix.copy('resources/assets/bower/detectizr/dist/detectizr.min.js', 'resources/assets/js/detectizr.min.js');
+    mix.copy('resources/assets/bower/jquery-easing-original/jquery.easing.min.js', 'resources/assets/js/jquery.easing.min.js');
+    mix.copy('resources/assets/bower/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js', 'resources/assets/js/bootstrap-slider.min.js');
+    mix.copy('resources/assets/bower/magnific-popup/dist/jquery.magnific-popup.min.js', 'resources/assets/js/jquery.magnific-popup.min.js');
+    mix.copy('resources/assets/bower/isotope/dist/isotope.pkgd.min.js', 'resources/assets/js/isotope.pkgd.min.js');
+    mix.copy('resources/assets/bower/jquery-waypoints/lib/jquery.waypoints.min.js', 'resources/assets/js/jquery.waypoints.min.js');
+    mix.copy('resources/assets/bower/jquery-waypoints/lib/shortcuts/sticky.min.js', 'resources/assets/js/waypoints-sticky.min.js');
+    mix.copy('resources/assets/bower/waves/dist/waves.min.js', 'resources/assets/js/waves.min.js');
+    mix.copy('resources/assets/bower/velocity/velocity.min.js', 'resources/assets/js/velocity.min.js');
+    //mix.copy('resources/assets/bower/pace/pace.min.js', 'resources/assets/js/pace.min.js');
     mix.copy('resources/assets/bower/pace/pace.min.js', 'public/js/pace.min.js');
-    mix.copy('resources/assets/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js', 'resources/js/jquery.mCustomScrollbar.js');
-    //mix.copy('resources/assets/bower/jquery-mousewheel/jquery.mousewheel.min.js', 'resources/js/jquery.mousewheel.min.js');
-    //mix.copy('resources/assets/bower/jquery.kinetic/jquery.kinetic.min.js', 'resources/js/jquery.kinetic.min.js');
-    mix.copy('resources/assets/bower/jasny-bootstrap/dist/js/jasny-bootstrap.min.js', 'resources/js/jasny-bootstrap.min.js');
+    mix.copy('resources/assets/bower/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js', 'resources/assets/js/jquery.mCustomScrollbar.js');
+    //mix.copy('resources/assets/bower/jquery-mousewheel/jquery.mousewheel.min.js', 'resources/assets/js/jquery.mousewheel.min.js');
+    //mix.copy('resources/assets/bower/jquery.kinetic/jquery.kinetic.min.js', 'resources/assets/js/jquery.kinetic.min.js');
+    mix.copy('resources/assets/bower/jasny-bootstrap/dist/js/jasny-bootstrap.min.js', 'resources/assets/js/jasny-bootstrap.min.js');
 
     mix.copy('resources/assets/bower/fontawesome/fonts', 'public/fonts');
     mix.copy('resources/assets/bower/fontawesome/scss', 'resources/assets/sass/');

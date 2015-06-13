@@ -42,42 +42,36 @@
             <div class="masonry-grid filter-grid space-top-2x">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
+
+                @foreach ($pictures as $picture)
                 <!-- Item -->
                 <div class="item picture">
-                    <a href="/img/gallery/03.png" class="gallery-item image-item popup-image waves-effect">
+                    <a href="{{ $picture->image }}" class="gallery-item image-item popup-image waves-effect">
                         <figure>
-                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <img src="{{ $picture->image }}" alt="{{ $picture->title }}">
                             <figcaption>
-                                <h3>Our Team</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                                <h3>{{ $picture->title }}</h3>
+                                <p>{{ $picture->caption }}</p>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
+                @endforeach
+                @foreach ($videos as $video)
                 <!-- Item -->
                 <div class="item video">
-                    <a href="http://vimeo.com/109648489" class="gallery-item video-item popup-video waves-effect">
+                    <a href="{{ $video->video }}" class="gallery-item video-item popup-video waves-effect">
                         <figure>
-                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <img src="{{ $video->cover }}" alt="{{ $video->title }}">
                             <figcaption>
-                                <h3>Our Office</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                                <h3>{{ $video->title }}</h3>
+                                <p>{{ $video->caption }}</p>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
-                <!-- Item -->
-                <div class="item picture">
-                    <a href="/img/gallery/03.png" class="gallery-item image-item popup-image waves-effect">
-                        <figure>
-                            <img src="/img/gallery/03.png" alt="Thumbnail">
-                            <figcaption>
-                                <h3>Process</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </section><!-- Gallery End -->

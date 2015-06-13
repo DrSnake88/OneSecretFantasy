@@ -36,21 +36,21 @@
                 <!-- Blog Posts -->
                 <div class="col-lg-8 col-lg-offset-1 col-md-9 col-sm-8">
                     <div class="light-color posts">
-                        @for($i = 0; $i < 3; $i++)
+                        @foreach ($blogs as $blog)
                         <div class="item col-md-4 col-sm-6">
                             <div class="post-tile">
-                                <a href="/blog" class="post-thumb waves-effect">
-                                    <img src="/img/people/post1.jpg" alt="Title">
+                                <a href="/blog/{{ $blog->id }}" class="post-thumb waves-effect">
+                                    <img src="{{ $blog->image }}" alt="{{ $blog->title }}">
                                 </a>
                                 <div class="post-body">
                                     <div class="post-title">
-                                        <a href="#"><h3>Title</h3></a>
-                                        <span>Description</span>
+                                        <a href="/blog/{{ $blog->id }}"><h3>{{ $blog->title }}</h3></a>
+                                        <span>{{ $blog->excerpt }}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @endfor
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -230,42 +230,36 @@
             <div class="masonry-grid filter-grid space-top-2x">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
+
+                @foreach ($pictures as $picture)
                 <!-- Item -->
                 <div class="item picture">
-                    <a href="/img/gallery/03.png" class="gallery-item image-item popup-image waves-effect">
+                    <a href="{{ $picture->image }}" class="gallery-item image-item popup-image waves-effect">
                         <figure>
-                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <img src="{{ $picture->image }}" alt="{{ $picture->title }}">
                             <figcaption>
-                                <h3>Our Team</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                                <h3>{{ $picture->title }}</h3>
+                                <p>{{ $picture->caption }}</p>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
+                @endforeach
+
+                @foreach ($videos as $video)
                 <!-- Item -->
                 <div class="item video">
-                    <a href="http://vimeo.com/109648489" class="gallery-item video-item popup-video waves-effect">
+                    <a href="{{ $video->video }}" class="gallery-item video-item popup-video waves-effect">
                         <figure>
-                            <img src="/img/gallery/03.png" alt="Thumbnail">
+                            <img src="{{ $video->cover }}" alt="{{ $video->title }}">
                             <figcaption>
-                                <h3>Our Office</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
+                                <h3>{{ $video->title }}</h3>
+                                <p>{{ $video->caption }}</p>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
-                <!-- Item -->
-                <div class="item picture">
-                    <a href="/img/gallery/03.png" class="gallery-item image-item popup-image waves-effect">
-                        <figure>
-                            <img src="/img/gallery/03.png" alt="Thumbnail">
-                            <figcaption>
-                                <h3>Process</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias.</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+                @endforeach
             </div>
         </div>
     </section><!-- Gallery End -->

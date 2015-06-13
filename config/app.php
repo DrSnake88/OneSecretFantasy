@@ -146,6 +146,12 @@ return [
 		'App\Providers\RouteServiceProvider',
 
         "Laralib\L5scaffold\GeneratorsServiceProvider",
+
+        // Form Builder
+        'Illuminate\Html\HtmlServiceProvider',
+
+        // Twitter API
+        'Thujohn\Twitter\TwitterServiceProvider',
 	],
 
 	/*
@@ -194,6 +200,12 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
+        // Form Builder Facades
+        'Form'=> 'Illuminate\Html\FormFacade',
+        'HTML'=> 'Illuminate\Html\HtmlFacade',
+
+        // Twitter API
+        'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
 	],
 
 ];

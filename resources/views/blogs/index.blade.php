@@ -57,12 +57,12 @@
                     <div class="item w2">
                 @endif
                     <div class="post-tile">
-                        <a href="/Blog/Post" class="post-thumb waves-effect">
-                            <img src="/img/blog/post02.png" alt="Post 2">
+                        <a href="{{ route('blogs.show', ['id' => $blog->id]) }}" class="post-thumb waves-effect">
+                            <img src="{{ $blog->image }}" alt="{{ $blog->title }}">
                         </a>
                         <div class="post-body">
                             <div class="post-title">
-                                <a href="/Blog/Post"><h3>{{ $blog->title }}</h3></a>
+                                <a href="{{ route('blogs.show', ['id' => $blog->id]) }}"><h3>{{ $blog->title }}</h3></a>
                                 <span>{{ $blog->excerpt }}</span>
                             </div>
                             <div class="post-meta">
