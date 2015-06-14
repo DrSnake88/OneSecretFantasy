@@ -18,6 +18,7 @@ class CreateMediaVideosTable extends Migration {
             $table->string('cover');
             $table->string('title');
             $table->text('caption');
+            $table->text('tags')->nullable();
             $table->timestamps();
         });
 	}

@@ -59,12 +59,14 @@ class BlogController extends Controller {
 	public function show($id)
 	{
 		$blog = Blog::findOrFail($id);
-        $blog->tags = explode(";", $blog->tags);
+        $blog->tags = $blog->getTags();
+
+        $related = $blog->getRelated();
 
         $blog_comments = BlogComment::where('blog_id', '=', $id)->get();
         $tweets = json_decode(Twitter::getUserTimeline(['screen_name' => 'OSFtheGame', 'count' => 6, 'format' => 'json']));
 
-		return view('blogs.show', compact('blog', 'blog_comments', 'tweets'));
+		return view('blogs.show', compact('blog', 'blog_comments', 'tweets', 'related'));
 	}
 
 	/**

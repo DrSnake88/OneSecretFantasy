@@ -19,6 +19,8 @@ Route::get('/info', function() {
     return print_r(get_loaded_extensions());
 });
 
+Route::post('contact', ['as' => 'contact.store', 'uses' => 'HomeController@store']);
+
 Route::resource("blogs","BlogController");
 Route::resource("blog_comments","BlogCommentController");
 Route::resource("forum","ForumController");

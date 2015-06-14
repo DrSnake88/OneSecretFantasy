@@ -4,12 +4,8 @@
     <!-- Page Heading -->
     <div class="page-heading text-right">
         <div class="container">
-            <form class="search-field form-control">
-                <button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>
-                <input type="text" id="search-input">
-                <label for="search-input">Search</label>
-            </form>
-            <h2>Blog</h2>
+            @include('_partials.searchForm')
+            <h2>{{ $blog->title }}</h2>
         </div>
     </div>
     <!-- Single Post -->
@@ -30,10 +26,10 @@
                             </div>
                         </div>
                         <div class="post-meta space-top-2x">
-                            <div class="column">January 17, 2015</div>
+                            <div class="column">{{ $blog->created_at->formatLocalized("%d %B %Y") }}</div>
                             <div class="column">
                                 <div class="social-buttons text-right">
-                                    <a href="#comments" class="comment-count scroll" data-offset-top="160"><i class="flaticon-chat75"></i>2</a>
+                                    <a href="#comments" class="comment-count scroll" data-offset-top="160"><i class="fa fa-comment"></i>{{ count($blog_comments) }}</a>
                                     <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
                                     <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
                                     <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
@@ -42,7 +38,7 @@
                         </div>
                         <div class="post-meta last-child space-bottom">
                             <div class="column">
-                                <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">Bedismo</a>
+                                By <a href="#">{{$blog->user->name}}</a>
                             </div>
                             <div class="column text-right">
                                 @foreach ($blog->tags as $tag)
@@ -73,15 +69,16 @@
                                                     @if (isset($comment->email))
                                                         <a href="#">
                                                         {{ $comment->name }}
+                                                        </a>
                                                     @else
                                                         <a href="#">
                                                         {{ $comment->user->name }}
+                                                        </a>
                                                     @endif
-                                                </a>
                                             </div>
                                         </div>
                                         <div class="column text-right">
-                                            <span>{{ \Carbon\Carbon::createFromTimestamp(strtotime($comment->created_at))->diffForHumans() }}</span>
+                                            <span>{{ $comment->created_at->diffForHumans() }}</span>
                                         </div>
                                     </div>
                                     <p>{{ $comment->comment }}</p>

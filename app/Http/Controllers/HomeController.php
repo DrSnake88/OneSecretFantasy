@@ -1,8 +1,10 @@
 <?php namespace App\Http\Controllers;
 
 use App\Blog;
+use App\ContactRequest;
 use App\MediaPicture;
 use App\MediaVideo;
+use Illuminate\Http\Request;
 use Thujohn\Twitter\Facades\Twitter;
 
 class HomeController extends Controller {
@@ -47,5 +49,16 @@ class HomeController extends Controller {
     public function contact()
     {
         return view('home/contact');
+    }
+
+    public function store (Request $request){
+        $contactRequest = new ContactRequest();
+        $contactRequest->name = $request->name;
+        $contactRequest->email = $request->email;
+        $contactRequest->message = $request->message;
+
+        $contactRequest->save();
+
+        return redirect()->back()->with('message', 'Message sent.');
     }
 }

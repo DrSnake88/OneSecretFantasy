@@ -10,40 +10,27 @@
             <hr class="with-shadow">
             <!-- Badge -->
             <div class="badge badge-primary badge-reverse">
-                Smart people in here
+                {{--Smart people in here--}}
                 <span class="icon"><i class="fa fa-users"></i></span>
             </div>
             <!-- Grid -->
             <div class="team-grid space-top-2x">
                 <!-- Item -->
-                <div class="item">
-                    <img src="/img/team/davis.jpg" alt="Susanna Davis">
-                    <div class="overlay">
-                        <h3>Susanna Davis</h3>
-                        <span>Marketing Director</span>
-                        <div class="social-buttons">
-                            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-                            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-                            <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="item">
-                    <img src="/img/team/taylor.jpg" alt="James Taylor">
-                    <div class="overlay">
-                        <h3>James Taylor</h3>
-                        <span>CEO, Finance</span>
-                        <div class="social-buttons">
-                            <a href="#" class="sb-skype"><i class="bi-skype"></i></a>
-                            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-                            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
+                {{--<div class="item">--}}
+                    {{--<img src="/img/team/davis.jpg" alt="Susanna Davis">--}}
+                    {{--<div class="overlay">--}}
+                        {{--<h3>Susanna Davis</h3>--}}
+                        {{--<span>Marketing Director</span>--}}
+                        {{--<div class="social-buttons">--}}
+                            {{--<a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>--}}
+                            {{--<a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>--}}
+                            {{--<a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <!-- Facebook -->
                 <div class="item">
-                    <a href="#" class="facebook-tile">
+                    <a href="https://www.facebook.com/onesecretfantasy" class="facebook-tile">
                         <img src="/img/team/blank.png" alt="Facebook">
                         <div class="inner">
                             <i class="bi-facebook"></i>
@@ -52,22 +39,9 @@
                         </div>
                     </a>
                 </div>
-                <!-- Item -->
-                <div class="item">
-                    <img src="/img/team/doe.jpg" alt="John Doe">
-                    <div class="overlay">
-                        <h3>John Doe</h3>
-                        <span>Technical Director</span>
-                        <div class="social-buttons">
-                            <a href="#" class="sb-github"><i class="bi-github"></i></a>
-                            <a href="#" class="sb-stackoverflow"><i class="bi-stackoverflow"></i></a>
-                            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-                        </div>
-                    </div>
-                </div>
                 <!-- Twitter -->
                 <div class="item">
-                    <a href="#" class="twitter-tile">
+                    <a href="{{ \Thujohn\Twitter\Facades\Twitter::linkUser("@OSFtheGame") }}" class="twitter-tile">
                         <img src="/img/team/blank.png" alt="Facebook">
                         <div class="inner">
                             <div class="icon"><img src="/img/twitter-icon.png" alt="Twitter">
@@ -76,18 +50,16 @@
                         </div>
                     </a>
                 </div>
-                <!-- Item -->
+                <!-- YouTube -->
                 <div class="item">
-                    <img src="/img/team/richard.jpg" alt="Emma Richard">
-                    <div class="overlay">
-                        <h3>Emma Richard</h3>
-                        <span>Senior Web Designer</span>
-                        <div class="social-buttons">
-                            <a href="#" class="sb-behance"><i class="bi-behance"></i></a>
-                            <a href="#" class="sb-dribbble"><i class="bi-dribbble"></i></a>
-                            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+                    <a href="{{ \Thujohn\Twitter\Facades\Twitter::linkUser("@OSFtheGame") }}" class="twitter-tile">
+                        <img src="/img/team/blank.png" alt="Facebook">
+                        <div class="inner">
+                            <div class="icon"><img src="/img/twitter-icon.png" alt="Twitter">
+                            </div>
+                            <h3>follow us on twitter</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -119,19 +91,15 @@
                     <div class="tab-content">
                         <div class="tab-pane text-smaller transition scale fade in active" id="write">
                             <a href="mailto:info@onesecretfantasy.com">info@onesecretfantasy.com</a>
-                            <p class="text-smaller">support team</p>
-                            <a href="mailto:info@onesecretfantasy.com">info@onesecretfantasy.com</a>
-                            <p class="text-smaller">Job opportunities</p>
-                            <p class="text-smaller text-gray">
-                                Kyivskiy District<br>
-                                Odessa Region, Odessa<br>
-                                68000
-                            </p>
+                            <p class="text-smaller">Email</p>
+                            {{--TODO: Skype Integration--}}
+                            <a href="mailto:onesecretfantasy">onesecretfantasy</a>
+                            <p class="text-smaller">Skype</p>
                         </div>
                         <div class="tab-pane transition scale fade text-right" id="read">
                             <p class="text-smaller">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam temporibus dolor maiores fugit voluptas, quas voluptatibus culpa nulla eligendi optio eaque cupiditate minima voluptate accusamus minus architecto beatae.</p>
                             <p class="text-smaller">Sed ut perspiciatis unde omnis iste natus.</p>
-                            <a href="#" class="link text-smaller">Visit website</a>
+                            <a href="{{ \Illuminate\Support\Facades\URL::to('/') }}" class="link text-smaller">Visit website</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +116,11 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    <form method="post" class="ajax-form space-top space-bottom">
+
+                    @if(Session::get('message') != null)
+                        <h3 class="text-gray text-light">{{ Session::get('message') }}</h3>
+                    @endif
+                    {!! Form::open(['url' => '#', 'class' => 'ajax-form space-top space-bottom']) !!}
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-control">
@@ -187,6 +159,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Validation Response -->
                         <div class="response-holder"></div>
                     </form>

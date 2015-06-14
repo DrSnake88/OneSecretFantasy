@@ -15,4 +15,24 @@ class Blog extends Model {
         return $this->belongsTo('App\BlogCategory');
     }
 
+    public function getTags() {
+        return explode(";", $this->tags);
+    }
+
+    public function getRelated() {
+        $blogs = Blog::all();
+        $matchedBlogs = [];
+
+        foreach ($blogs as $blog) {
+            if ($blog->id != $this->id) {
+                $tags = $blog->getTags();
+
+                if (array_intersect($this->tags, $tags) != null) {
+                    $matchedBlogs[] = $blog;
+                }
+            }
+        }
+
+        return $matchedBlogs;
+    }
 }

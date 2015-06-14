@@ -17,6 +17,7 @@ class CreateMediaPicturesTable extends Migration {
             $table->string('image');
             $table->string('title');
             $table->text('caption');
+            $table->text('tags')->nullable();
 
             $table->timestamps();
         });
