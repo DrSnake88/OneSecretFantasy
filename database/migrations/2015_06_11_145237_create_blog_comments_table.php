@@ -31,6 +31,8 @@ class CreateBlogCommentsTable extends Migration {
 
             $table->timestamps();
         });
+
+        DB::statement('ALTER TABLE blog_comments ADD FULLTEXT search(comment)');
 	}
 
 	/**

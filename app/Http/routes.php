@@ -20,12 +20,16 @@ Route::get('/info', function() {
 });
 
 Route::post('contact', ['as' => 'contact.store', 'uses' => 'HomeController@store']);
+Route::post('search', 'SearchController@post');
+
+Route::get('search', 'SearchController@index');
 
 Route::resource("blogs","BlogController");
 Route::resource("blog_comments","BlogCommentController");
 Route::resource("forum","ForumController");
 Route::resource("media","MediaController");
 Route::resource("game","GameController");
+//Route::resource("search","SearchController");
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

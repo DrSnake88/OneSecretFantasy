@@ -18,7 +18,9 @@ class CreateBlogCategoriesTable extends Migration {
             $table->string('name');
 			$table->timestamps();
 		});
-	}
+
+        DB::statement('ALTER TABLE blog_categories ADD FULLTEXT search(name)');
+    }
 
 	/**
 	 * Reverse the migrations.
@@ -27,7 +29,11 @@ class CreateBlogCategoriesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('blog_categories');
+        Schema::table('blog_categories', function($table) {
+            $table->dropIndex('search');
+        });
+
+        Schema::drop('blog_categories');
 	}
 
 }

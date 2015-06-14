@@ -21,7 +21,9 @@ class CreateMediaVideosTable extends Migration {
             $table->text('tags')->nullable();
             $table->timestamps();
         });
-	}
+
+        DB::statement('ALTER TABLE media_videos ADD FULLTEXT search(title, caption, tags)');
+    }
 
 	/**
 	 * Reverse the migrations.
@@ -30,7 +32,11 @@ class CreateMediaVideosTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('media_videos');
+        Schema::table('media_videos', function($table) {
+            $table->dropIndex('search');
+        });
+
+        Schema::drop('media_videos');
 	}
 
 }

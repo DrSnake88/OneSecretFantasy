@@ -6,11 +6,7 @@
     <!-- Page Heading -->
     <div class="page-heading text-right">
         <div class="container">
-            <form class="search-field form-control">
-                <button type="submit" class="search-btn"><i class="flaticon-search100"></i></button>
-                <input type="text" id="search-input">
-                <label for="search-input">Search</label>
-            </form>
+            @include('_partials.searchForm')
             <hr class="with-shadow">
             <!-- Badge -->
             <div class="badge badge-primary">

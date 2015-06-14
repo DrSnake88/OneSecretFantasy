@@ -21,7 +21,9 @@ class CreateMediaPicturesTable extends Migration {
 
             $table->timestamps();
         });
-	}
+
+        DB::statement('ALTER TABLE media_pictures ADD FULLTEXT search(title, caption, tags)');
+    }
 
 	/**
 	 * Reverse the migrations.
@@ -30,6 +32,10 @@ class CreateMediaPicturesTable extends Migration {
 	 */
 	public function down()
 	{
+        Schema::table('media_pictures', function($table) {
+            $table->dropIndex('search');
+        });
+
 		Schema::drop('media_pictures');
 	}
 

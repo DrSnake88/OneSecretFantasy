@@ -7,6 +7,8 @@
     <section class="fw-bg top-inner-shadow padding-top-3x padding-bottom-3x" id="posts" style="background-color: #181818;">
         <div class="container">
             <div class="row">
+                @include('_partials.searchForm')
+                <br>
                 <div class="col-md-3 col-sm-4">
                     <div class="block-heading text-right light-color">
                         <h2>News</h2>

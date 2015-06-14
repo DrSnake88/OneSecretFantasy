@@ -26,6 +26,8 @@ class CreateBlogsTable extends Migration {
             $table->foreign('category_id')->references('id')->on('blog_categories');
             $table->timestamps();
         });
+
+        DB::statement('ALTER TABLE blogs ADD FULLTEXT search(title, body, tags)');
 	}
 
 	/**
@@ -35,6 +37,9 @@ class CreateBlogsTable extends Migration {
 	 */
 	public function down()
 	{
+        Schema::table('blogs', function($table) {
+            $table->dropIndex('search');
+        });
 		Schema::drop('blogs');
 	}
 
