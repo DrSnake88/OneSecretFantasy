@@ -22,6 +22,10 @@ class DatabaseSeeder extends Seeder {
         $this->call('MediaVideoTableSeeder');
         $this->call('GameInformationCategoriesTableSeeder');
         $this->call('GameInformationTableSeeder');
+        $this->call('ForumSectionsTableSeeder');
+        $this->call('ForumCategoryTableSeeder');
+        $this->call('ForumTopicTableSeeder');
+        $this->call('ForumReplyTableSeeder');
 	}
 
 }

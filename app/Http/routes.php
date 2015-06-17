@@ -26,7 +26,18 @@ Route::get('search', 'SearchController@index');
 
 Route::resource("blogs","BlogController");
 Route::resource("blog_comments","BlogCommentController");
+
+//Route::resource("forum/{category}/{topic}","ForumTopicController");
+//Route::resource("forum/","ForumCategoryController");
+// FORUM
+Route::post('forum/category', ['as' => 'topic.store', 'uses' => 'ForumController@storeTopic']);
+Route::post('forum/topic', ['as' => 'reply.store', 'uses' => 'ForumController@storeReply']);
+
+Route::get('forum/{category}/create', ['as' => 'topic.create', 'uses' => 'ForumController@create']);
+Route::get('forum/{category}/{topic_id}', 'ForumController@topic');
+
 Route::resource("forum","ForumController");
+
 Route::resource("media","MediaController");
 Route::resource("game","GameController");
 //Route::resource("search","SearchController");

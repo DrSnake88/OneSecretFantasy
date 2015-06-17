@@ -66,7 +66,7 @@
                                     <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">{{ $blog->user->name }}</a>
                                 </div>
                                 <div class="column text-right">
-                                    <span>{{ \Carbon\Carbon::createFromTimestamp(strtotime($blog->created_at))->diffForHumans() }}</span>
+                                    <span>{{ $blog->created_at->diffForHumans() }}</span>
                                 </div>
                             </div>
                         </div>
@@ -85,6 +85,4 @@
             {{--</div>--}}
         </div>
     </section><!-- Blog Grid End -->
-
-
 @endsection

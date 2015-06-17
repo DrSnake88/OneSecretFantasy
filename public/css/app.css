@@ -13806,6 +13806,12 @@ body.navbarOpen {
 .valid-label::before {
   content: "✓"; }
 
+div.topic {
+  height: 100%; }
+
+div.topic textarea {
+  height: 100%; }
+
 @media screen and (max-width: 480px) {
   .offcanvas-nav .nav-link ul, .offcanvas-nav .nav-link ul:first-child {
     margin-right: 0; } }

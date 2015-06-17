@@ -11,7 +11,7 @@
             <!-- Badge -->
             <div class="badge badge-primary">
                 <span class="icon"><i class="fa fa-comments-o"></i></span>
-                Category Name
+                {{ $category->name }}
             </div>
         </div>
     </div>
@@ -19,11 +19,14 @@
     <section class="space-top padding-bottom">
         <div class="container">
             <!-- Buttons -->
+            @if(Auth::user())
             <div class="row">
                 <div class="col-md-1 col-md-offset-10">
-                    <a href="#" class="btn btn-flat btn-success waves-effect waves-primary btn-sm">NEW THREAD</a>
+{{--                    <a href="{{ url('/forum/' . $category->name . '/create') }}" class="btn btn-flat btn-success waves-effect waves-primary btn-sm">NEW TOPIC</a>--}}
+                    <a href="{{ route('topic.create', $category->name) }}" class="btn btn-flat btn-success waves-effect waves-primary btn-sm">NEW TOPIC</a>
                 </div>
             </div>
+            @endif
 
             <table class="table table-hover table-responsive forum">
                 <thead>
@@ -37,31 +40,21 @@
                 </tr>
                 </thead>
                 <tbody>
-                @for ($i = 0; $i < 7; $i++)
-                    {
+                @foreach ($topics as $topic)
                     <tr>
                         <td></td>
-                        <td>Welcome</td>
-                        <td><a href="#">OneSecretFantasy</a></td>
-                        <td>12</td>
-                        <td>156</td>
-                        <td>12-4-2015</td>
+                        <td><a href="/forum/{{ $category->name }}/{{ $topic->slug }}">{{ $topic->name }}</a></td>
+                        <td><a href="#">{{ $topic->user->name }}</a></td>
+                        <td>{{ $topic->replies }}</td>
+                        <td>{{ $topic->views }}</td>
+                        <td>{{ $topic->created_at->formatLocalized("%d %B %Y") }}</td>
                     </tr>
-                    }
+                @endforeach
                 </tbody>
             </table>
 
             <!-- Pagination -->
-
-            <ul class="pagination pagination-centered">
-                <li class="disabled"><a href="#">Prev</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">Next</a></li>
-            </ul>
+            {!! $topics->render() !!}
         </div>
     </section>
 @stop
