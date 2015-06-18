@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('breadcrumb')
+    {!! Breadcrumbs::render('forum') !!}
+@stop
+
 @section('content')
 
     <div class="page-heading text-right">

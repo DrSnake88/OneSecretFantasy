@@ -13,7 +13,7 @@
 
 //Route::get('/', 'WelcomeController@index');
 
-Route::get('/', 'HomeController@index');
+Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('/contact', 'HomeController@contact');
 Route::get('/info', function() {
     return print_r(get_loaded_extensions());
@@ -34,7 +34,7 @@ Route::post('forum/category', ['as' => 'topic.store', 'uses' => 'ForumController
 Route::post('forum/topic', ['as' => 'reply.store', 'uses' => 'ForumController@storeReply']);
 
 Route::get('forum/{category}/create', ['as' => 'topic.create', 'uses' => 'ForumController@create']);
-Route::get('forum/{category}/{topic_id}', 'ForumController@topic');
+Route::get('forum/{category}/{topic}', ['as' => 'forum.topic', 'uses' => 'ForumController@topic']);
 
 Route::resource("forum","ForumController");
 

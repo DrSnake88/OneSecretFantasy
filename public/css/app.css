@@ -13806,6 +13806,9 @@ body.navbarOpen {
 .valid-label::before {
   content: "✓"; }
 
+.breadcrumb > li + li::before {
+  content: "/"; }
+
 div.topic {
   height: 100%; }
 

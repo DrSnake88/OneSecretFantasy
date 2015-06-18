@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('breadcrumbs')
+    {!! Breadcrumbs::render('forum_topic', $topic) !!}
+@stop
+
 @section('content')
     @include('_partials.breadcrumbs')
     <!-- Page Heading -->
@@ -77,7 +81,7 @@
                                         </div>
                                     </form><!-- Comment Form End -->
                                 @else
-                                    <h3 class="text-gray text-light">Please <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn">sign in</a> or register to leave a reply.</h3>
+                                    <h3 class="text-gray text-light">Please <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn">sign in</a> or <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-up" class="action-btn">register</a> to leave a reply.</h3>
                                 @endif
                             </div>
                                 <br>

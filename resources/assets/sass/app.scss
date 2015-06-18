@@ -96,6 +96,11 @@ body.navbarOpen {
   content: "✓";
 }
 
+// BREADCRUMBS
+.breadcrumb > li + li::before {
+  content: "/";
+}
+
 // FORUM
 div.topic {
   height: 100%;

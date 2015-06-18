@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('breadcrumbs')
+    {!! Breadcrumbs::render('forum_category', $category) !!}
+@stop
+
 @section('content')
     @include('_partials.breadcrumbs')
 

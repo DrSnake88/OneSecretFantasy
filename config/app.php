@@ -152,6 +152,9 @@ return [
 
         // Twitter API
         'Thujohn\Twitter\TwitterServiceProvider',
+
+        // Beadcrumbs
+        'DaveJamesMiller\Breadcrumbs\ServiceProvider',
 	],
 
 	/*
@@ -206,6 +209,9 @@ return [
 
         // Twitter API
         'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
+
+        // Breadcrumbs
+        'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
 	],
 
 ];
