@@ -32,21 +32,25 @@
                     OneSecretFantasy
                     <span>Make your dreams come true.</span>
 
+                    @if(Session::get('subscribed') == null)
                     <!-- Sign up form -->
-                    <form id="subscribe-form">
+                    {!! Form::open(['route' => 'subscriber.store', 'id' => 'subscribe-form']) !!}
                         <div class="form-control">
-                            <input type="email" name="si_email" id="si_email" required aria-required="true">
-                            <label for="si_email">Email</label>
+                            <input type="email" name="email" id="si_email" required aria-required="true">
+                            <label for="email">Email</label>
                             <span class="error-label"></span>
                             <span class="valid-label"></span>
                         </div>
 
                         <div class="clearfix">
                             <div class="form-switch">
-                                <button type="submit" class="btn btn-flat btn-primary waves-effect waves-primary">Subscribe</button>
+                                    <button type="submit" class="btn btn-flat btn-primary waves-effect waves-primary">Subscribe</button>
                             </div>
                         </div>
                     </form>
+                    @else
+                        <span>{{ Session::get('subscribed') }}</span>
+                    @endif
                 </h1>
 
 

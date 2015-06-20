@@ -132,7 +132,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-control">
-                                    <input type="email" name="email" id="cont_form_email">
+                                    <input type="email" name="email" id="cont_form_email" required="">
                                     <label for="cont_form_email">Email</label>
                                     <span class="error-label"></span>
                                     <span class="valid-label"></span>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                         <div class="form-control">
-                            <textarea name="message" id="cont_form_message"></textarea>
+                            <textarea name="message" id="cont_form_message" required=""></textarea>
                             <label for="cont_form_message">Message</label>
                             <span class="error-label"></span>
                             <span class="valid-label"></span>
@@ -148,7 +148,7 @@
                         <div class="row space-top">
                             <div class="col-sm-6">
                                 <label class="checkbox space-top">
-                                    <input type="checkbox" checked="checked"> Subscribe to our news
+                                    <input type="checkbox" name="subscribe"> Subscribe to our news
                                 </label>
                             </div>
                             <div class="col-sm-6">

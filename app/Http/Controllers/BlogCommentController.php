@@ -51,6 +51,8 @@ class BlogCommentController extends Controller {
             $blogcomment->email = $request->email;
         }
 
+        $blogcomment->notify = $request->notify == 'on' ? true : false;
+
 		$blogcomment->save();
 
 		return redirect()->back()->with('message', 'Comment posted.');

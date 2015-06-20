@@ -4,6 +4,7 @@ use App\Blog;
 use App\ContactRequest;
 use App\MediaPicture;
 use App\MediaVideo;
+use App\Subscriber;
 use Illuminate\Http\Request;
 use Thujohn\Twitter\Facades\Twitter;
 
@@ -58,6 +59,13 @@ class HomeController extends Controller {
         $contactRequest->message = $request->message;
 
         $contactRequest->save();
+
+        if ($request->subscribe == "on") {
+            $subscribe = Subscriber::create([
+                'email' => $request->email
+            ]);
+            $subscribe->save();
+        }
 
         return redirect()->back()->with('message', 'Message sent.');
     }

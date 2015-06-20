@@ -63,7 +63,7 @@
                             </div>
                             <div class="post-meta">
                                 <div class="column">
-                                    <span>In </span><a href="#">Design</a>&nbsp;&nbsp;&nbsp;&nbsp;by <a href="#">{{ $blog->user->name }}</a>
+                                    By {{ $blog->user->name }}
                                 </div>
                                 <div class="column text-right">
                                     <span>{{ $blog->created_at->diffForHumans() }}</span>

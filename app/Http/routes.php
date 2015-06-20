@@ -21,6 +21,7 @@ Route::get('/info', function() {
 
 Route::post('contact', ['as' => 'contact.store', 'uses' => 'HomeController@store']);
 Route::post('search', 'SearchController@post');
+Route::post('subscriber', ['as' => 'subscriber.store', 'uses' => 'SubscriberController@store']);
 
 Route::get('search', 'SearchController@index');
 
@@ -40,6 +41,7 @@ Route::resource("forum","ForumController");
 
 Route::resource("media","MediaController");
 Route::resource("game","GameController");
+
 //Route::resource("search","SearchController");
 
 Route::controllers([

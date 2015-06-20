@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class BlogComment extends Model {
 
 	//
-    protected $fillable = ['comment', 'blog_id', 'email', 'name', 'user_id', 'reply_to_id'];
+    protected $fillable = ['comment', 'blog_id', 'email', 'name', 'user_id', 'reply_to_id', 'notify'];
 
     protected function user() {
         return $this->belongsTo('App\User');

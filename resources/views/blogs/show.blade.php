@@ -98,7 +98,7 @@
                     <div class="box-float comments space-top">
                         @if(Session::get('message') != null)
                             <h3 class="text-gray text-light">{{ Session::get('message') }}</h3>
-                        @else
+                        @endif
                         <h3 class="text-gray text-right text-light">Leave a comment</h3>
                         {!! Form::open(['route' => 'blog_comments.store', 'id' => 'comment-form', 'class' => 'space-top space-bottom']) !!}
                         {{--<form id="comment-form" class="space-top space-bottom">--}}
@@ -132,7 +132,7 @@
                         <div class="row space-top">
                             <div class="col-sm-6">
                                 <label class="checkbox space-top">
-                                    <input type="checkbox" checked="checked"> Get notified on comments
+                                    <input type="checkbox" name="notify"> Get notified on comments
                                 </label>
                             </div>
                             <div class="col-sm-6">
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         </form><!-- Comment Form End -->
-                        @endif
+
                     </div>
                 </div>
 

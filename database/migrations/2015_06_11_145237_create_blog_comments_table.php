@@ -28,6 +28,7 @@ class CreateBlogCommentsTable extends Migration {
 
             $table->string('name')->nullable();
             $table->string('email')->nullable();
+            $table->boolean('notify')->default(false);
 
             $table->timestamps();
         });
