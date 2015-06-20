@@ -110,8 +110,28 @@ div.topic textarea {
   height: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 680px) {
+
+}
+@media screen and (max-width: 580px) {
+
+}
+@media screen and (max-width: 530px) {
+
+}
 @media screen and (max-width: 480px) {
   .offcanvas-nav .nav-link ul, .offcanvas-nav .nav-link ul:first-child {
     margin-right: 0;
   }
+}
+@media screen and (max-width: 380px) {
 }

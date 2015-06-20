@@ -32,10 +32,6 @@ class CreateMediaVideosTable extends Migration {
 	 */
 	public function down()
 	{
-        Schema::table('media_videos', function($table) {
-            $table->dropIndex('search');
-        });
-
         Schema::drop('media_videos');
 	}
 

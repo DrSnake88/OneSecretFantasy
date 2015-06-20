@@ -24,7 +24,9 @@ class CreateForumTopicsTable extends Migration {
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
-	}
+
+        DB::statement('ALTER TABLE forum_topics ADD FULLTEXT search(name)');
+    }
 
 	/**
 	 * Reverse the migrations.

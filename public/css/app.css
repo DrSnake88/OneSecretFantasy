@@ -8564,7 +8564,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -8576,7 +8576,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
   display: block; }
 
 body {
@@ -8823,7 +8823,6 @@ dl dd {
 
 dl dt {
   font-size: 24px;
-  font-weight: solid;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 24px; }
@@ -10089,7 +10088,7 @@ div.downloadable p {
   position: relative;
   width: 370px;
   height: 683px;
-  background-image: url("/Content/Images/intro/nexus.png");
+  background-image: url("/img/intro/nexus.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 52px 20px 0 21px;
@@ -11350,8 +11349,8 @@ div.downloadable p {
 .modal.fade {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
-  transition: -webkit-transform 0.5s, visibility 0.5, opacity 0.5s;
-  transition: transform 0.5s, visibility 0.5, opacity 0.5s;
+  transition: -webkit-transform 0.5s, visibility 0.5s, opacity 0.5s;
+  transition: transform 0.5s, visibility 0.5s, opacity 0.5s;
   -webkit-backface-visibility: hidden; }
 
 .modal.fade .modal-dialog {
@@ -12166,14 +12165,16 @@ a.icon-block {
   margin-right: 0; }
 
 .facebook-tile,
-.twitter-tile {
+.twitter-tile,
+.youtube-tile {
   position: relative;
   display: block;
   width: 100%;
   text-align: center; }
 
 .facebook-tile:hover,
-.twitter-tile:hover {
+.twitter-tile:hover,
+.youtube-tile:hover {
   opacity: 1; }
 
 .facebook-tile {
@@ -12182,8 +12183,16 @@ a.icon-block {
 .twitter-tile {
   background-color: #5ac8fb; }
 
+.youtube-tile {
+  background-color: #e52d27; }
+
+.youtube-tile-title {
+  font-size: 16px !important;
+  font-weight: bold; }
+
 .facebook-tile .inner,
-.twitter-tile .inner {
+.twitter-tile .inner,
+.youtube-tile .inner {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -12224,6 +12233,24 @@ a.icon-block {
   font-size: 12px;
   margin-bottom: 0; }
 
+.youtube-tile .inner {
+  padding-top: 26%; }
+
+.youtube-tile i {
+  font-size: 50px; }
+
+.youtube-tile h3 {
+  color: #fff !important;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 26px; }
+
+.youtube-tile h3 span {
+  color: #fff !important;
+  font-size: 16px !important; }
+
 @media screen and (max-width: 1200px) {
   .twitter-tile .inner {
     padding-top: 14%; }
@@ -12233,6 +12260,8 @@ a.icon-block {
 
 @media screen and (max-width: 991px) {
   .facebook-tile .inner {
+    padding-top: 15%; }
+  .youtube-tile .inner {
     padding-top: 15%; }
   .twitter-tile .inner {
     padding-top: 12%; }
@@ -12245,6 +12274,8 @@ a.icon-block {
     width: 50%; }
   .facebook-tile .inner {
     padding-top: 26%; }
+  .youtube-tile .inner {
+    padding-top: 26%; }
   .twitter-tile .inner {
     padding-top: 17%; }
   .twitter-tile .icon {
@@ -12254,6 +12285,8 @@ a.icon-block {
 @media screen and (max-width: 680px) {
   .facebook-tile .inner {
     padding-top: 20%; }
+  .youtube-tile .inner {
+    padding-top: 20%; }
   .twitter-tile .inner {
     padding-top: 14%; }
   .twitter-tile .icon {
@@ -12262,6 +12295,8 @@ a.icon-block {
 
 @media screen and (max-width: 580px) {
   .facebook-tile .inner {
+    padding-top: 15%; }
+  .youtube-tile .inner {
     padding-top: 15%; }
   .twitter-tile .inner {
     padding-top: 12%; }
@@ -12277,6 +12312,8 @@ a.icon-block {
     margin: auto; }
   .facebook-tile .inner {
     padding-top: 26%; }
+  .youtube-tile .inner {
+    padding-top: 26%; }
   .twitter-tile .inner {
     padding-top: 17%; }
   .twitter-tile .icon {
@@ -12285,6 +12322,8 @@ a.icon-block {
 
 @media screen and (max-width: 380px) {
   .facebook-tile .inner {
+    padding-top: 19%; }
+  .youtube-tile .inner {
     padding-top: 19%; }
   .twitter-tile .inner {
     padding-top: 14%; }
@@ -13243,7 +13282,7 @@ a.icon-block {
   clear: both;
   height: 0; }
 
-.contact-info .nav-tabs li:fisrt-child {
+.contact-info .nav-tabs li:first-child {
   float: left; }
 
 .contact-info .nav-tabs li:last-child {
@@ -13402,7 +13441,7 @@ a.icon-block {
   position: relative;
   width: 370px;
   height: 192px;
-  background-image: url("/Content/Images/footer/tablet.png");
+  background-image: url("/img/footer/tablet.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -13416,7 +13455,7 @@ a.icon-block {
   content: "";
   width: 370px;
   height: 192px;
-  background-image: url("/Content/Images/footer/tablet-reflection.png");
+  background-image: url("/img/footer/tablet-reflection.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;

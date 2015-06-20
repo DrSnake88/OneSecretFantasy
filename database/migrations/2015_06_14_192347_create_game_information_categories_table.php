@@ -31,10 +31,6 @@ class CreateGameInformationCategoriesTable extends Migration {
 	 */
 	public function down()
 	{
-        Schema::table('game_information_categories', function($table) {
-            $table->dropIndex('search');
-        });
-
         Schema::drop('game_information_categories');
 	}
 

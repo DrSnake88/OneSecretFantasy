@@ -29,10 +29,6 @@ class CreateBlogCategoriesTable extends Migration {
 	 */
 	public function down()
 	{
-        Schema::table('blog_categories', function($table) {
-            $table->dropIndex('search');
-        });
-
         Schema::drop('blog_categories');
 	}
 

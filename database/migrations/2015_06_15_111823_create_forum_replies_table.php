@@ -22,7 +22,9 @@ class CreateForumRepliesTable extends Migration {
 
             $table->timestamps();
         });
-	}
+
+        DB::statement('ALTER TABLE forum_replies ADD FULLTEXT search(body)');
+    }
 
 	/**
 	 * Reverse the migrations.

@@ -3,6 +3,9 @@
 use App\Blog;
 use App\BlogCategory;
 use App\BlogComment;
+use App\ForumCategory;
+use App\ForumReply;
+use App\ForumTopic;
 use App\GameInformation;
 use App\GameInformationCategories;
 use App\Http\Controllers\Controller;
@@ -62,7 +65,33 @@ class SearchController extends Controller {
             array($q)
         )->get();
 
-        return view('search.index', compact('blogs', 'blog_categories', 'blog_comments', 'pictures', 'videos', 'game_information_categories', 'game_information'));
+
+        $forum_categories = ForumCategory::whereRaw(
+            "MATCH(name,description) AGAINST(? IN BOOLEAN MODE)",
+            array($q)
+        )->get();
+
+        $forum_topics = ForumTopic::whereRaw(
+            "MATCH(name) AGAINST(? IN BOOLEAN MODE)",
+            array($q)
+        )->get();
+
+        $forum_replies = ForumReply::whereRaw(
+            "MATCH(body) AGAINST(? IN BOOLEAN MODE)",
+            array($q)
+        )->get();
+
+        return view('search.index', compact(
+            'blogs',
+            'blog_categories',
+            'blog_comments',
+            'pictures',
+            'videos',
+            'game_information_categories',
+            'game_information',
+            'forum_categories',
+            'forum_topics',
+            'forum_replies'));
         //return redirect()->route('search.index', compact('blogs'));
     }
 

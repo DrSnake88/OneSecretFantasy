@@ -21,6 +21,9 @@ class CreateForumCategoriesTable extends Migration {
             $table->foreign('section_id')->references('id')->on('forum_sections');
             $table->timestamps();
         });
+
+
+        DB::statement('ALTER TABLE forum_categories ADD FULLTEXT search(name, description)');
 	}
 
 	/**

@@ -50,14 +50,14 @@
                         </div>
                     </a>
                 </div>
-                <!-- YouTube -->
+                <!-- Facebook -->
                 <div class="item">
-                    <a href="{{ \Thujohn\Twitter\Facades\Twitter::linkUser("@OSFtheGame") }}" class="twitter-tile">
+                    <a href="https://www.youtube.com/onesecretfantasy" class="youtube-tile">
                         <img src="/img/team/blank.png" alt="Facebook">
                         <div class="inner">
-                            <div class="icon"><img src="/img/twitter-icon.png" alt="Twitter">
-                            </div>
-                            <h3>follow us on twitter</h3>
+                            <i class="bi-facebook"></i>
+                            <h3><span>Watch us on</span> <i class="youtube-tile-title">youtube</i>
+                            </h3>
                         </div>
                     </a>
                 </div>
