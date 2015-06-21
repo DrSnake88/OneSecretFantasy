@@ -34,6 +34,7 @@
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
+
     <!-- Preloader (Pace.js) -->
     <script src="/js/pace.min.js"></script>
 

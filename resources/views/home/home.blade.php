@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <!-- NEWS -->
     <!-- Blog Posts -->
     <section class="fw-bg top-inner-shadow padding-top-3x padding-bottom-3x" id="posts" style="background-color: #181818;">

@@ -12,9 +12,12 @@
 
         @include('_partials.sideMenu')
         @include('_partials.modals')
+
+
         @if(Request::is('/'))
             @include('_partials.splash')
         @endif
+
 
         <!-- Content Wrap -->
         <div class="content-wrap" style="background-color: #181818">
@@ -24,6 +27,15 @@
 
             <hr class="with-shadow">
         </div><!-- Content Wrap End -->
+
     @include('_partials.footer')
+
+    @if(Session::get('error_code') != null && Session::get('error_code') == 5)
+        <script>
+            $(function() {
+                $('#signin-page').modal('show');
+            });
+        </script>
+    @endif
     </body>
 </html>

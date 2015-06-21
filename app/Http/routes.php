@@ -48,3 +48,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::resource('profile', 'ProfileController');
+
+});
