@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\BlogComment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class BlogCommentController extends Controller {
 
@@ -39,7 +40,16 @@ class BlogCommentController extends Controller {
 	 */
 	public function store(Request $request)
 	{
+        $this->validate($request, [
+            'comment'   => 'required|string',
+            'blog_id'   => 'required|integer',
+            'name'      => 'string',
+            'email'     => 'string',
+            'notify'    => 'required'
+        ]);
+
 		$blogcomment = new BlogComment();
+
 
         $blogcomment->comment = $request->comment;
         $blogcomment->blog_id = $request->blog_id;

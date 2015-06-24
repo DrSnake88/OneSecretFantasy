@@ -15,7 +15,6 @@ class ForumCategoryController extends Controller {
 	 */
 	public function index()
 	{
-        dd('test');
 		$forumcategories = ForumCategory::all();
 
 		return view('forumcategories.index', compact('forumcategories'));

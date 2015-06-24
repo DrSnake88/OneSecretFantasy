@@ -51,6 +51,12 @@ class ForumController extends Controller {
 
     public function storeTopic(Request $request)
     {
+        $this->validate($request, [
+            'category_id'   => 'required|integer',
+            'title'   => 'required|string',
+            'message'      => 'required|string'
+        ]);
+
         if (Auth::check()) {
             $category = ForumCategory::findOrFail($request->category_id);
             $last_topic = ForumTopic::orderBy('created_at', 'DESC')->first();
@@ -74,6 +80,11 @@ class ForumController extends Controller {
 
     public function storeReply(Request $request)
     {
+        $this->validate($request, [
+            'message'   => 'required|string',
+            'topic_id'   => 'required|integer'
+        ]);
+
         $reply = ForumReply::create(['body' => $request->message, 'user_id' => Auth::user()->id, 'topic_id' => $request->topic_id]);
         $reply->save();
 

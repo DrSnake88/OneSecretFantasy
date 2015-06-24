@@ -155,6 +155,10 @@ return [
 
         // Beadcrumbs
         'DaveJamesMiller\Breadcrumbs\ServiceProvider',
+
+        // Socialite
+        'Laravel\Socialite\SocialiteServiceProvider',
+        'Bernardino\EasyAuthenticator\EasyAuthenticatorServiceProvider',
 	],
 
 	/*
@@ -212,6 +216,9 @@ return [
 
         // Breadcrumbs
         'Breadcrumbs' => 'DaveJamesMiller\Breadcrumbs\Facade',
+
+        // Socialite
+        'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 	],
 
 ];

@@ -51,5 +51,5 @@ Route::controllers([
 
 Route::group(['middleware' => 'auth'], function() {
     Route::resource('profile', 'ProfileController');
-
+    Route::get('/sign-out', ['as' => 'account.sign-out', 'uses' => 'Auth\AuthController@getLogout']);
 });

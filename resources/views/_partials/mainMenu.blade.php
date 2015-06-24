@@ -25,17 +25,20 @@
                 <a href="/contact" class="btn btn-flat btn-light icon-left waves-effect waves-light"><i class="fa fa-phone"></i> Contact</a>
             </span>
 
-            @if(Auth::user())
-                <a href="#" data-toggle="modal" data-target="#profile-page" data-modal-form="profile" class="action-btn"><i class="fa fa-user"></i> {{ Auth::user()->name }}</a>
-            @else
-                <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"><i class="fa fa-sign-in"></i> Sign in</a>
-            @endif
+            <span class="profile-buttons">
+                @if(Auth::user())
+                    <a href="{{ \Illuminate\Support\Facades\URL::route('profile.index') }}" class="action-btn"><i class="fa fa-user"></i> {{ substr(Auth::user()->name, 0, strpos(Auth::user()->name, " ")) }}</a>
+                    <a href="{{ \Illuminate\Support\Facades\URL::route('account.sign-out') }}" class="action-btn"><i class="fa fa-sign-out"></i></a>
+                @else
+                    <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"><i class="fa fa-sign-in"></i> Sign in</a>
+                @endif
+            </span>
 
             <!-- Social Buttons -->
             <div class="social-buttons text-right">
-                <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-                <a href="#" class="sb-youtube"><i class="bi-youtube"></i></a>
-                <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+                <a href="#" class="sb-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="sb-youtube"><i class="fa fa-youtube"></i></a>
+                <a href="#" class="sb-facebook"><i class="fa fa-facebook"></i></a>
             </div>
         </div>
     </div>

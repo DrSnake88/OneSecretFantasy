@@ -17,6 +17,7 @@ class BlogController extends Controller {
 	 */
 	public function index()
 	{
+//        return redirect('/')->with('error_code', 5);
 		$blogs = Blog::all();
 
 		return view('blogs.index', compact('blogs'));
@@ -40,6 +41,12 @@ class BlogController extends Controller {
 	 */
 	public function store(Request $request)
 	{
+
+        $this->validate($request, [
+            'title'   => 'required|string',
+            'body'   => 'required|string'
+        ]);
+
 		$blog = new Blog();
 
 		$blog->title = $request->input("title");

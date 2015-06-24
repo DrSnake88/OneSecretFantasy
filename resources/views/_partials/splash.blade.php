@@ -65,9 +65,9 @@
             <div class="column c-right">
                 <!-- Social Buttons -->
                 <div class="social-buttons text-right">
-                    <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-                    <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-                    <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+                    <a href="#" class="sb-twitter"><i class="fa fa-twitter"></i></a>
+                    {{--<a href="#" class="sb-google-plus"><i class="fa fa-google"></i></a>--}}
+                    <a href="#" class="sb-facebook"><i class="fa fa-facebook"></i></a>
                     <!-- <a href="#" class="sb-behance"><i class="bi-behance"></i></a> -->
                     <!-- <a href="#" class="sb-bitbucket"><i class="bi-bitbucket"></i></a> -->
                     <!-- <a href="#" class="sb-codepen"><i class="bi-codepen"></i></a> -->
@@ -101,7 +101,7 @@
                     <!-- <a href="#" class="sb-xing"><i class="bi-xing"></i></a> -->
                     <!-- <a href="#" class="sb-yahoo"><i class="bi-yahoo"></i></a> -->
                     <!-- <a href="#" class="sb-yelp"><i class="bi-yelp"></i></a> -->
-                    <!-- <a href="#" class="sb-youtube"><i class="bi-youtube"></i></a> -->
+                    <a href="#" class="sb-youtube"><i class="fa fa-youtube"></i></a>
                 </div>
 
                 {{--<!-- Features -->--}}

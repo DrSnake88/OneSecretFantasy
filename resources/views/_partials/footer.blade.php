@@ -20,6 +20,8 @@
 </footer><!-- Footer End -->
 
 <!-- Scripts -->
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script async src="{{ asset('/js/vendor.js') }}"></script>
+{{--<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>--}}
+{{--<script src="//oss.maxcdn.com/modernizr/2.8.3/modernizr.min.js"></script>--}}
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>--}}
+{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>--}}
+<script src="{{ asset('/js/vendor.js') }}"></script>

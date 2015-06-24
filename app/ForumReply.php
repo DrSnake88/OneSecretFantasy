@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ForumReply extends Model {
 
-    protected $fillable = ['body', 'user_id', 'topic_id'];
+    protected $fillable = ['body'];
 
     protected function user(){
         return $this->belongsTo('App\User');

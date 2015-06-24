@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ForumTopic extends Model {
 
-    protected $fillable = ['name', 'user_id', 'views', 'replies', 'category_id', 'slug'];
+    protected $fillable = ['name', 'views', 'replies', 'slug'];
 
     protected function user(){
         return $this->belongsTo('App\User');

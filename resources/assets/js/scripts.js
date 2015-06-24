@@ -227,6 +227,9 @@ jQuery(document).ready(function($) {
 
 	/** Switch to Sign In/Sign Up Form when Modal open (For separate Sign In/Sign Up button)
 	*****************************************************************************************/
+    $('[data-modal-form="password-forget"]').click(function(){
+        $('#form-3 a').click();
+    });
 	$('[data-modal-form="sign-in"]').click(function(){
 		$('#form-2 a').click();
 	});

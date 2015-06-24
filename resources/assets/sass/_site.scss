@@ -240,6 +240,17 @@ hr.with-shadow:before {
   padding-bottom: 20px;
 }
 
+// Login Modal
+.btn-social > :first-child, .btn-social-icon > :first-child {
+  width: 50px;
+  line-height: 50px;
+}
+
+.btn-social, .btn-social-icon {
+  padding-left: 65px;
+  line-height: 50px;
+}
+
 // Mobile
 @media screen and (max-width: 991px) {
   .navbar .main-menu {

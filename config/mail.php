@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => null, 'name' => null],
+	'from' => ['address' => 'raynoldvanheyningen@gmail.com', 'name' => 'Raynold van Heyningen'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
 	|
 	*/
 
-	'encryption' => 'tls',
+	'encryption' => env('MAIL_ENC', 'tls'),
 
 	/*
 	|--------------------------------------------------------------------------

@@ -5,6 +5,10 @@ use App\Http\Controllers\Controller;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
 
 class ProfileController extends Controller {
 
@@ -68,9 +72,35 @@ class ProfileController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
-		//
+
+        $user = Auth::user();
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+
+        if ($request->password != "") {
+            if ($request->password == $request->password_again) {
+                $user->password = Hash::make($request->password);
+            } else {
+                return Redirect::back()->with('error', 'Passwords do not match');
+            }
+        }
+
+
+        if ($request->hasFile('avatar')) {
+
+            $file = $request->file('avatar');
+            $name = Auth::user()->id . '.' . $file->getClientOriginalExtension();
+            $path = '/img/avatars/' . $name;
+            $file->move(public_path() . '/img/avatars', $name);
+            $user->avatar = $path;
+        }
+
+        $user->save();
+
+        return Redirect::back()->with('message', 'Profile successfully updated.');
 	}
 
 	/**

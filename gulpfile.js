@@ -14,7 +14,7 @@ require('laravel-elixir-rename');
  */
 
 elixir(function(mix) {
-    //mix.copy('resources/assets/bower/jquery/dist/jquery.min.js', 'resources/assets/js/jquery.min.js');
+    mix.copy('resources/assets/bower/jquery/dist/jquery.min.js', 'resources/assets/js/jquery.min.js');
     mix.copy('resources/assets/bower/modernizr/modernizr.js', 'resources/assets/js/modernizr.js');
     mix.copy('resources/assets/bower/detectizr/dist/detectizr.min.js', 'resources/assets/js/detectizr.min.js');
     mix.copy('resources/assets/bower/jquery-easing-original/jquery.easing.min.js', 'resources/assets/js/jquery.easing.min.js');
@@ -36,13 +36,14 @@ elixir(function(mix) {
     mix.copy('resources/assets/bower/fontawesome/scss', 'resources/assets/sass/');
     mix.copy('resources/assets/bower/jasny-bootstrap/scss', 'resources/assets/sass/jasny-bootstrap');
     mix.copy('resources/assets/bower/bootstrap-sass-official/assets/stylesheets/', 'resources/assets/sass/');
+    mix.copy('resources/assets/bower/bootstrap-social/bootstrap-social.scss', 'resources/assets/sass/_bootstrap-social.scss');
     mix.scripts([
-        //'jquery.min.js',
+        'jquery.min.js',
         'modernizr.js',
         'detectizr.min.js',
         'jquery.easing.min.js',
         'velocity.min.js',
-        //'bootstrap.min.js',
+        'bootstrap.min.js',
 
         'smoothscroll.js',
         'waves.min.js',

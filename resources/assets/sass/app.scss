@@ -2,6 +2,7 @@
 @import 'font-awesome';
 //@import 'jasny-bootstrap/jasny-bootstrap';
 @import 'theme';
+@import 'bootstrap-social';
 @import 'site';
 
 /*!
@@ -96,6 +97,27 @@ body.navbarOpen {
   content: "✓";
 }
 
+.error-label::before, .valid-label::before {
+  font-family: "FontAwesome";
+}
+
+// MAIN MENU
+.social-buttons.text-right a {
+  margin-left: 5px;
+}
+
+.navbar .toolbar a {
+  font-size: 12px;
+}
+
+.social-buttons, .profile-buttons {
+  margin-top: -5px;
+}
+
+.main-menu .btn {
+  height: 45px;
+}
+
 // BREADCRUMBS
 .breadcrumb > li + li::before {
   content: "/";
@@ -133,5 +155,6 @@ div.topic textarea {
     margin-right: 0;
   }
 }
+
 @media screen and (max-width: 380px) {
 }

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model {
 
 	//
-    protected $fillable = ['title', 'body', 'excerpt', 'user_id'];
+    protected $fillable = ['title', 'body', 'excerpt'];
 
     protected function user() {
         return $this->belongsTo('App\User');
