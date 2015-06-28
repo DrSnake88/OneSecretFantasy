@@ -59,6 +59,7 @@
                         <li><a href="{{ route('admin.media.videos.index') }}">Videos</a></li>
                     </ul>
                 </li>
+                <li><a href="{{ route('admin.users.index') }}">Users</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

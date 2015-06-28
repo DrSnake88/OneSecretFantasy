@@ -62,7 +62,7 @@ Route::group(['middleware' => 'auth'], function() {
         Route::resource("admin/game/categories",'Admin\GameCategoryController');
         Route::resource("admin/game/information",'Admin\GameController');
 
-        Route::resource("admin/users","Admin/UserController");
+        Route::resource("admin/users",'Admin\UserController');
     });
 });
 
