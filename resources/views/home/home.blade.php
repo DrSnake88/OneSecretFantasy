@@ -47,7 +47,7 @@
                                 </a>
                                 <div class="post-body">
                                     <div class="post-title">
-                                        <a href="/blogs/{{ $blog->id }}"><h3>{{ $blog->title }}</h3></a>
+                                        <a href="/blog/{{ $blog->id }}"><h3>{{ $blog->title }}</h3></a>
                                         <span>{{ $blog->excerpt }}</span>
                                     </div>
                                 </div>
