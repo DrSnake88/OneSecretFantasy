@@ -53,6 +53,9 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('admin/blogs/{blog}/comments', ['as' => 'admin.blog.comments.index', 'uses' => 'Admin\BlogCommentController@index']);
     Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
     Route::resource("admin/blogs",'Admin\BlogController');
+
+    Route::resource("admin/media/pictures",'Admin\PictureController');
+    Route::resource("admin/media/videos",'Admin\VideoController');
 });
 
 Route::get('login/{provider}', 'Auth\AuthController@loginWithProvider');

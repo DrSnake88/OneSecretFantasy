@@ -45,7 +45,13 @@
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="{{ route('admin.blogs.index') }}">Blog</a></li>
                 {{--<li><a href="{{ route('admin.forum.index') }}">Forum</a></li>--}}
-                {{--<li><a href="{{ route('admin.media.index') }}">Media</a></li>--}}
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Media <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('admin.media.pictures.index') }}">Pictures</a></li>
+                        <li><a href="{{ route('admin.media.videos.index') }}">Videos</a></li>
+                    </ul>
+                </li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
