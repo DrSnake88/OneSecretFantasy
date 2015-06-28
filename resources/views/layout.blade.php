@@ -46,6 +46,13 @@
                 <li><a href="{{ route('admin.blogs.index') }}">Blog</a></li>
                 {{--<li><a href="{{ route('admin.forum.index') }}">Forum</a></li>--}}
                 <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Game <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('admin.game.categories.index') }}">Categories</a></li>
+                        <li><a href="{{ route('admin.game.information.index') }}">Information</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle">Media <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('admin.media.pictures.index') }}">Pictures</a></li>

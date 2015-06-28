@@ -56,6 +56,9 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource("admin/media/pictures",'Admin\PictureController');
     Route::resource("admin/media/videos",'Admin\VideoController');
+
+    Route::resource("admin/game/categories",'Admin\GameCategoryController');
+    Route::resource("admin/game/information",'Admin\GameController');
 });
 
 Route::get('login/{provider}', 'Auth\AuthController@loginWithProvider');
