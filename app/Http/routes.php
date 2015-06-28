@@ -49,21 +49,34 @@ Route::controllers([
 Route::group(['middleware' => 'auth'], function() {
     Route::resource('profile', 'ProfileController');
     Route::get('/sign-out', ['as' => 'account.sign-out', 'uses' => 'Auth\AuthController@getLogout']);
+});
 
-    Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function ()
-    {
-        Route::get('admin/blogs/{blog}/comments', ['as' => 'admin.blog.comments.index', 'uses' => 'Admin\BlogCommentController@index']);
-        Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
-        Route::resource("admin/blogs",'Admin\BlogController');
 
-        Route::resource("admin/media/pictures",'Admin\PictureController');
-        Route::resource("admin/media/videos",'Admin\VideoController');
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function ()
+{
+    Route::get('admin/blogs/{blog}/comments', ['as' => 'admin.blog.comments.index', 'uses' => 'Admin\BlogCommentController@index']);
+    Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
+    Route::resource("admin/blogs",'Admin\BlogController');
 
-        Route::resource("admin/game/categories",'Admin\GameCategoryController');
-        Route::resource("admin/game/information",'Admin\GameController');
+    Route::resource("admin/media/pictures",'Admin\PictureController');
+    Route::resource("admin/media/videos",'Admin\VideoController');
 
-        Route::resource("admin/users",'Admin\UserController');
-    });
+    Route::resource("admin/game/categories",'Admin\GameCategoryController');
+    Route::resource("admin/game/information",'Admin\GameController');
+
+    Route::resource("admin/users",'Admin\UserController');
+
+    Route::resource("admin/forum/sections",'Admin\ForumSectionController');
+    Route::resource("admin/forum/categories",'Admin\ForumCategoryController');
+
+    Route::get("admin/forum/{category}/topics",['as' => 'admin.forum.topic.index', 'uses' => 'Admin\ForumTopicController@index']);
+    Route::resource("admin/forum/topics", 'Admin\ForumTopicController');
+
+    Route::get("admin/forum/{topic}/replies",['as' => 'admin.forum.reply.index', 'uses' => 'Admin\ForumReplyController@index']);
+    Route::resource("admin/forum/replies", 'Admin\ForumReplyController');
+
+
+    Route::get('admin', ['as' => 'admin.index', 'uses' => 'Admin\HomeController@index']);
 });
 
 Route::get('login/{provider}', 'Auth\AuthController@loginWithProvider');

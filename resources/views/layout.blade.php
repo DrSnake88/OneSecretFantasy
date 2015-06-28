@@ -59,6 +59,15 @@
                         <li><a href="{{ route('admin.media.videos.index') }}">Videos</a></li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Forum <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('admin.forum.sections.index') }}">Sections</a></li>
+                        <li><a href="{{ route('admin.forum.categories.index') }}">Categories</a></li>
+{{--                        <li><a href="{{ route('admin.forum.category.index') }}">Videos</a></li>--}}
+{{--                        <li><a href="{{ route('admin.forum.thread.index') }}">Videos</a></li>--}}
+                    </ul>
+                </li>
                 <li><a href="{{ route('admin.users.index') }}">Users</a></li>
             </ul>
         </div><!--/.nav-collapse -->

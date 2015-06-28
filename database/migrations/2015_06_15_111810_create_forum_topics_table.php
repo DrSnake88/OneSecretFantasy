@@ -16,8 +16,8 @@ class CreateForumTopicsTable extends Migration {
             $table->increments('id');
             $table->string('name');
             $table->string('slug');
-            $table->integer('views')->default(0);
-            $table->integer('replies')->default(0);
+            $table->integer('views')->default(1);
+            $table->integer('replies')->default(1);
             $table->integer('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('forum_categories');
             $table->integer('user_id')->unsigned();
