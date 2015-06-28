@@ -1,16 +1,19 @@
 <?php namespace App\Http\Controllers\Auth;
 
 use App\AuthenticateUser;
+use App\AuthenticateUserListener;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Request;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Laravel\Socialite;
 
-class AuthController extends Controller {
+class AuthController extends Controller implements AuthenticateUserListener
+{
 
-    protected $redirectTo = '/';
-    protected $redirectPath = '/';
+    protected $redirectTo = 'profile';
+    protected $redirectPath = 'profile';
 
 	/*
 	|--------------------------------------------------------------------------
@@ -38,4 +41,16 @@ class AuthController extends Controller {
 
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
+
+    public function loginWithProvider(AuthenticateUser $authenticateUser, \Illuminate\Http\Request $request, $provider)
+    {
+        return $authenticateUser->execute($request->all(), $this, $provider);
+    }
+
+    public function userHasLoggedIn($user)
+    {
+        return redirect('profile');
+    }
+
+
 }

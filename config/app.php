@@ -145,7 +145,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
-        "Laralib\L5scaffold\GeneratorsServiceProvider",
+        'Laralib\L5scaffold\GeneratorsServiceProvider',
 
         // Form Builder
         'Illuminate\Html\HtmlServiceProvider',
@@ -158,7 +158,6 @@ return [
 
         // Socialite
         'Laravel\Socialite\SocialiteServiceProvider',
-        'Bernardino\EasyAuthenticator\EasyAuthenticatorServiceProvider',
 	],
 
 	/*

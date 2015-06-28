@@ -27,7 +27,13 @@
 
             <span class="profile-buttons">
                 @if(Auth::user())
-                    <a href="{{ \Illuminate\Support\Facades\URL::route('profile.index') }}" class="action-btn"><i class="fa fa-user"></i> {{ substr(Auth::user()->name, 0, strpos(Auth::user()->name, " ")) }}</a>
+                    <a href="{{ \Illuminate\Support\Facades\URL::route('profile.index') }}" class="action-btn"><i class="fa fa-user"></i>
+                        @if(strpos(Auth::user()->name, " ") == 0)
+                            {{ Auth::user()->name }}
+                        @else
+                            {{ substr(Auth::user()->name, 0, strpos(Auth::user()->name, " ")) }}
+                        @endif
+                    </a>
                     <a href="{{ \Illuminate\Support\Facades\URL::route('account.sign-out') }}" class="action-btn"><i class="fa fa-sign-out"></i></a>
                 @else
                     <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"><i class="fa fa-sign-in"></i> Sign in</a>

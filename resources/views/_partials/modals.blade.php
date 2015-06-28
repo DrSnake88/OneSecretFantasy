@@ -44,9 +44,9 @@
                     
                     <div class="social-login">
                         <ul>
-                            <li><a href="/easyAuth/twitter" class="btn btn-block btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a></li>
-                            <li><a href="/easyAuth/facebook" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in with Facebook</a></li>
-                            <li><a href="/easyAuth/google" class="btn btn-block btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a></li>
+                            <li><a href="/login/facebook" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Sign in with Facebook</a></li>
+                            {{--<li><a href="/login/twitter" class="btn btn-block btn-social btn-twitter"><i class="fa fa-twitter"></i> Sign in with Twitter</a></li>--}}
+                            <li><a href="/login/google" class="btn btn-block btn-social btn-google"><i class="fa fa-google"></i> Sign in with Google</a></li>
                         </ul>
                     </div>
                 </form>

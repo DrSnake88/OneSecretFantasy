@@ -40,10 +40,8 @@ class Authenticate {
 			}
 			else
 			{
-
                 return redirect()->back()->with('error_code', 5);
-                return Redirect::back()->with('error_code', 5);
-				return redirect()->guest('auth/login');
+//				return redirect()->guest('auth/login');
 			}
 		}
 

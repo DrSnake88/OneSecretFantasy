@@ -13,7 +13,7 @@
                         </span>
                     </div>
                     @if(Auth::user())
-                        <a href="#" data-toggle="modal" data-target="#profile-page" data-modal-form="profile">{{ Auth::user()->name }}</a>
+                        <a href="{{ \Illuminate\Support\Facades\URL::route('profile.index') }}">{{ Auth::user()->name }}</a>
                     @else
                         <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Sign in</a>
                     @endif

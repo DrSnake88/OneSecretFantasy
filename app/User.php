@@ -34,4 +34,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     protected function blogs() {
         return $this->hasMany('Blog');
     }
+
+    public function isAdmin()
+    {
+        return $this->level == 0 ? true : false;
+    }
 }

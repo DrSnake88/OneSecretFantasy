@@ -15,9 +15,6 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('/contact', 'HomeController@contact');
-Route::get('/info', function() {
-    return print_r(get_loaded_extensions());
-});
 
 Route::post('contact', ['as' => 'contact.store', 'uses' => 'HomeController@store']);
 Route::post('search', 'SearchController@post');
@@ -52,4 +49,8 @@ Route::controllers([
 Route::group(['middleware' => 'auth'], function() {
     Route::resource('profile', 'ProfileController');
     Route::get('/sign-out', ['as' => 'account.sign-out', 'uses' => 'Auth\AuthController@getLogout']);
+
+    Route::resource("admin/blogs",'Admin\BlogController');
 });
+
+Route::get('login/{provider}', 'Auth\AuthController@loginWithProvider');
