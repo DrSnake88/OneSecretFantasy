@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Starter Template</title>
+    <title>OneSecretFantasy CMS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -38,13 +38,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">OneSecretFantasy CMS</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="{{ route('admin.blogs.index') }}">Blog</a></li>
+                {{--<li><a href="{{ route('admin.forum.index') }}">Forum</a></li>--}}
+                {{--<li><a href="{{ route('admin.media.index') }}">Media</a></li>--}}
             </ul>
         </div><!--/.nav-collapse -->
     </div>

@@ -29,6 +29,7 @@
             <a class="btn btn-default" href="{{ route('admin.blogs.index') }}">Back</a>
             <a class="btn btn-warning" href="{{ route('admin.blogs.edit', $blog->id) }}">Edit</a>
             <form action="#/$blog->id" method="DELETE" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };"><button class="btn btn-danger" type="submit">Delete</button></form>
+            <a class="btn btn-info" href="{{ route('admin.blog.comments.index', [$blog->id]) }}">Comments</a>
         </div>
     </div>
 

@@ -50,6 +50,8 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('profile', 'ProfileController');
     Route::get('/sign-out', ['as' => 'account.sign-out', 'uses' => 'Auth\AuthController@getLogout']);
 
+    Route::get('admin/blogs/{blog}/comments', ['as' => 'admin.blog.comments.index', 'uses' => 'Admin\BlogCommentController@index']);
+    Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
     Route::resource("admin/blogs",'Admin\BlogController');
 });
 
