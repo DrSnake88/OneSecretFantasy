@@ -50,15 +50,20 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('profile', 'ProfileController');
     Route::get('/sign-out', ['as' => 'account.sign-out', 'uses' => 'Auth\AuthController@getLogout']);
 
-    Route::get('admin/blogs/{blog}/comments', ['as' => 'admin.blog.comments.index', 'uses' => 'Admin\BlogCommentController@index']);
-    Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
-    Route::resource("admin/blogs",'Admin\BlogController');
+    Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function ()
+    {
+        Route::get('admin/blogs/{blog}/comments', ['as' => 'admin.blog.comments.index', 'uses' => 'Admin\BlogCommentController@index']);
+        Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
+        Route::resource("admin/blogs",'Admin\BlogController');
 
-    Route::resource("admin/media/pictures",'Admin\PictureController');
-    Route::resource("admin/media/videos",'Admin\VideoController');
+        Route::resource("admin/media/pictures",'Admin\PictureController');
+        Route::resource("admin/media/videos",'Admin\VideoController');
 
-    Route::resource("admin/game/categories",'Admin\GameCategoryController');
-    Route::resource("admin/game/information",'Admin\GameController');
+        Route::resource("admin/game/categories",'Admin\GameCategoryController');
+        Route::resource("admin/game/information",'Admin\GameController');
+
+        Route::resource("admin/users","Admin/UserController");
+    });
 });
 
 Route::get('login/{provider}', 'Auth\AuthController@loginWithProvider');
