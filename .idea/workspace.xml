@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_06_15_100600_create_forum_sections_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_06_15_100600_create_forum_sections_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -28,18 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2015_06_13_135156_create_media_pictures_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_13_135156_create_media_pictures_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="645">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1434978400000" expanded="true" signature="558:626" placeholder="ALTER TABLE media_pictures..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2015_06_11_145237_create_blog_comments_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_11_145237_create_blog_comments_table.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,12 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015_06_15_100600_create_forum_sections_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015_06_15_100600_create_forum_sections_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_100600_create_forum_sections_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3902439" vertical-offset="0" max-vertical-offset="615">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="585">
+              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015_06_15_111537_create_forum_categories_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="660">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <marker date="1435598496000" expanded="true" signature="690:757" placeholder="ALTER TABLE forum_categories..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/admin/pictures/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/VideoController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/videos/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/videos/edit.blade.php" />
@@ -204,6 +203,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_06_15_100600_create_forum_sections_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" />
       </list>
     </option>
   </component>
@@ -519,7 +519,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435533643636</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Forum Section Name - now not unique required">
+      <created>1435598352343</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1435598352343</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -678,7 +684,8 @@
     <MESSAGE value="AdminMiddleware" />
     <MESSAGE value="CMS - Users" />
     <MESSAGE value="CMS - Forum Manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="CMS - Forum Manager" />
+    <MESSAGE value="Forum Section Name - now not unique required" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forum Section Name - now not unique required" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -987,16 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1434978400000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE forum_categories..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_14_192408_create_game_informations_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676">
@@ -1040,7 +1037,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434978400000" expanded="true" signature="558:626" placeholder="ALTER TABLE media_pictures..." />
+            <marker date="1434978400000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE media_pictures..." />
           </folding>
         </state>
       </provider>
@@ -1128,9 +1125,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_100600_create_forum_sections_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3902439" vertical-offset="0" max-vertical-offset="615">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="585">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="660">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <marker date="1435598496000" expanded="true" signature="690:757" placeholder="ALTER TABLE forum_categories..." />
+          </folding>
         </state>
       </provider>
     </entry>
