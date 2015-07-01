@@ -18,7 +18,7 @@ class BlogController extends Controller {
 	public function index()
 	{
 //        return redirect('/')->with('error_code', 5);
-		$blogs = Blog::orderBy('updated_at', 'DESC')->get();
+		$blogs = Blog::orderBy('created_at', 'DESC')->get();
 
 		return view('blogs.index', compact('blogs'));
 	}
