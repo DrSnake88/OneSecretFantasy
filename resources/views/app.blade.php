@@ -2,6 +2,7 @@
 <html lang="en">
     @include('_partials.header')
     <body class="fixed-footer">
+        @include('_partials.analytics')
         <!-- Preloader -->
         <div id="preloader">
             <div class="logo">
