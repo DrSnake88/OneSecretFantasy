@@ -56,7 +56,7 @@ class ForumCategoryController extends Controller {
 	public function show($name)
 	{
         $category = ForumCategory::where('name', '=', $name)->first();
-        $topics = ForumTopic::where('category_id', '=', $category->id)->paginate(25);
+        $topics = ForumTopic::where('category_id', '=', $category->id)->orderBy('created_at', 'DESC')->paginate(25);
 
         return view('forum.category', compact('topics', 'category'));
 	}
