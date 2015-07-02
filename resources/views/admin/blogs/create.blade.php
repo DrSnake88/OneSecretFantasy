@@ -16,10 +16,10 @@
                      <label for="title">TITLE</label>
                      <input type="text" name="title" class="form-control" value=""/>
                 </div>
-                <div class="form-group">
-                    <label for="title">EXCERPT</label>
-                    <input type="text" name="excerpt" class="form-control" value=""/>
-                </div>
+                {{--<div class="form-group">--}}
+                    {{--<label for="title">EXCERPT</label>--}}
+                    {{--<input type="text" name="excerpt" class="form-control" value=""/>--}}
+                {{--</div>--}}
                 <div class="form-group">
                      <label for="body">BODY</label>
                      <textarea rows="10" name="body" class="form-control" value=""></textarea>

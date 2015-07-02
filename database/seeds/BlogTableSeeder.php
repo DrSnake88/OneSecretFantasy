@@ -36,7 +36,7 @@ class BlogTableSeeder extends Seeder {
                     </div>
                 </div>
                 ',
-                'excerpt' => $faker->realText(20),
+//                'excerpt' => $faker->realText(20),
                 'image' => '/img/blog/post02.png',
                 'highlight' => rand(0, 1),
                 'tags' => implode(";", $faker->words),

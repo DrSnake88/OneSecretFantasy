@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-9 padding-top">
-                                    <p>{{ $reply->body }}</p>
+                                    <p>{!! nl2br(e($reply->body)) !!}</p>
                                 </div>
                             </div>
                             @endforeach

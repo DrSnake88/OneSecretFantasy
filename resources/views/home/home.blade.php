@@ -48,7 +48,7 @@
                                 <div class="post-body">
                                     <div class="post-title">
                                         <a href="/blog/{{ $blog->id }}"><h3>{{ $blog->title }}</h3></a>
-                                        <span>{{ $blog->excerpt }}</span>
+                                        <span>{{ \Illuminate\Support\Str::words(strip_tags($blog->body), 20) }}</span>
                                     </div>
                                 </div>
                             </div>

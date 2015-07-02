@@ -16,7 +16,7 @@ class CreateBlogsTable extends Migration {
             $table->increments('id');
             $table->string('title');
             $table->text('body');
-            $table->string('excerpt');
+//            $table->string('excerpt');
             $table->string('image')->nullable();
             $table->boolean('highlight');
             $table->text('tags')->nullable();
