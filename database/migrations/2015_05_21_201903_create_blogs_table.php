@@ -22,7 +22,7 @@ class CreateBlogsTable extends Migration {
             $table->text('tags')->nullable();
             $table->integer('user_id')->unsigned()->default(1);
             $table->foreign('user_id')->references('id')->on('users');
-            $table->integer('category_id')->unsigned()->default(1);
+            $table->integer('category_id')->unsigned()->nullable();
             $table->foreign('category_id')->references('id')->on('blog_categories');
             $table->timestamps();
         });
