@@ -48,10 +48,10 @@ class BlogController extends Controller {
         $blog->slug = $slugify->slugify($request->input('title'));
 
         if ($request->hasFile('image')) {
-            $last_blog = Blog::orderBy('id', 'DESC')->first();
+            $last_blog = Blog::orderBy('created_at', 'DESC')->first();
             $file = $request->file('image');
-            $id = $last_blog->id + 1;
             if ($last_blog) {
+                $id = $last_blog->id + 1;
                 $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
             } else {
                 $name = str_replace('/', '', bcrypt('1')) . '.' . $file->getClientOriginalExtension();

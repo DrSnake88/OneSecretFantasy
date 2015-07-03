@@ -49,9 +49,9 @@ class ForumCategoryController extends Controller {
             $last_forum_category = ForumCategory::orderBy('created_at', 'DESC')->first();
 
             $file = $request->file('image');
-            $id = $last_forum_category->id + 1;
 
             if ($last_forum_category) {
+                $id = $last_forum_category->id + 1;
                 $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
             } else {
                 $name = str_replace('/', '', bcrypt('1')) . '.' . $file->getClientOriginalExtension();
