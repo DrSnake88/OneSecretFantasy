@@ -13,6 +13,9 @@
 
 //Route::get('/', 'WelcomeController@index');
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
+
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('/contact', 'HomeController@contact');
 
@@ -80,3 +83,8 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function (
 });
 
 Route::get('login/{provider}', 'Auth\AuthController@loginWithProvider');
+
+///// SITEMAP
+Route::get('sitemap', 'SitemapController@index');
+Route::get('sitemap/blogs', 'SitemapController@blog');
+Route::get('sitemap/forum', 'SitemapController@forum');
