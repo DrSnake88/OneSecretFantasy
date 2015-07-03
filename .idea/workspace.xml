@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -29,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="540" max-vertical-offset="4140">
-              <caret line="50" column="103" selection-start-line="50" selection-start-column="103" selection-end-line="50" selection-end-column="103" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,11 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modals.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modals.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/_partials/modals.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70552146" vertical-offset="680" max-vertical-offset="1860">
+            <state vertical-scroll-proportion="-19.166666" vertical-offset="680" max-vertical-offset="1860">
               <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainMenu.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7131902" vertical-offset="30" max-vertical-offset="840">
+              <caret line="33" column="109" selection-start-line="33" selection-start-column="109" selection-end-line="33" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -143,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/forum/sections/index.blade.php" />
@@ -194,6 +192,7 @@
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" />
       </list>
     </option>
   </component>
@@ -948,7 +947,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435911147596</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Removed subscription box in sign up form">
+      <created>1435911340015</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1435911340015</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1085,7 +1090,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Game Information is now dynamic and backed by a database.&#10;&#10;Added search capabilities." />
     <MESSAGE value="Forum V1" />
     <MESSAGE value="Breadcrumbs inntegration" />
     <MESSAGE value="Added Forum Search" />
@@ -1110,7 +1114,8 @@
     <MESSAGE value="Made blogs categories nullable (Because its currently not used)" />
     <MESSAGE value="Removed excerpt from blogs.&#10;Added nl2br to forum posts" />
     <MESSAGE value="Updated Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Login" />
+    <MESSAGE value="Removed subscription box in sign up form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed subscription box in sign up form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1119,13 +1124,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/forum/replies/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.625" vertical-offset="0" max-vertical-offset="630">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ForumReplyController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25" vertical-offset="450" max-vertical-offset="1770">
@@ -1503,8 +1501,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/_partials/modals.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70552146" vertical-offset="680" max-vertical-offset="1860">
+        <state vertical-scroll-proportion="-19.166666" vertical-offset="680" max-vertical-offset="1860">
           <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7131902" vertical-offset="30" max-vertical-offset="840">
+          <caret line="33" column="109" selection-start-line="33" selection-start-column="109" selection-end-line="33" selection-end-column="109" />
           <folding />
         </state>
       </provider>

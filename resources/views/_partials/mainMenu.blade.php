@@ -29,9 +29,9 @@
                 @if(Auth::user())
                     <a href="{{ \Illuminate\Support\Facades\URL::route('profile.index') }}" class="action-btn"><i class="fa fa-user"></i>
                         @if(strpos(Auth::user()->name, " ") == 0)
-                            {{ Auth::user()->name }}
+                            {{ Str::limit(Auth::user()->name, 14) }}
                         @else
-                            {{ substr(Auth::user()->name, 0, strpos(Auth::user()->name, " ")) }}
+                            {{ Str::limit(substr(Auth::user()->name, 0, strpos(Auth::user()->name, " ")), 14) }}
                         @endif
                     </a>
                     <a href="{{ \Illuminate\Support\Facades\URL::route('account.sign-out') }}" class="action-btn"><i class="fa fa-sign-out"></i></a>
