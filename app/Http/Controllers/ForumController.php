@@ -104,9 +104,9 @@ class ForumController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($name)
+	public function show($slug)
 	{
-        $category = ForumCategory::where('name', '=', $name)->first();
+        $category = ForumCategory::where('slug', '=', $slug)->first();
         $topics = ForumTopic::where('category_id', '=', $category->id)->orderBy('created_at', 'DESC')->paginate(25);
 
 		return view('forum.category', compact('topics', 'category'));
@@ -119,9 +119,9 @@ class ForumController extends Controller {
      * @param  int  $id
      * @return Response
      */
-    public function topic($category, $topic)
+    public function topic($category, $slug)
     {
-        $topic = ForumTopic::where('slug', '=', $topic)->first();
+        $topic = ForumTopic::where('slug', '=', $slug)->first();
         $replies = ForumReply::where('topic_id', '=', $topic->id)->paginate(20);
 
         $topic->views++;

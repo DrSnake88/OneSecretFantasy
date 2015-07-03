@@ -53,7 +53,7 @@
                     <div class="item w2">
                 @endif
                     <div class="post-tile">
-                        <a href="{{ route('blogs.show', ['id' => $blog->id]) }}" class="post-thumb waves-effect">
+                        <a href="{{ route('blogs.show', $blog->slug) }}" class="post-thumb waves-effect">
                             <img src="{{ $blog->image }}" alt="{{ $blog->title }}">
                         </a>
                         <div class="post-body">

@@ -15,6 +15,7 @@ class CreateForumCategoriesTable extends Migration {
 		Schema::create('forum_categories', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('slug');
             $table->text('description');
             $table->string('image')->default('/img/blog/post01.png');
             $table->integer('section_id')->unsigned();

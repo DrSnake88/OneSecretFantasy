@@ -10,6 +10,7 @@ class BlogTableSeeder extends Seeder {
     public function run()
     {
         $faker = Faker\Factory::create();
+        $slugify = new \Cocur\Slugify\Slugify();
 
         for ($i = 0; $i < 10; $i++) {
             \App\Blog::create(array(
@@ -37,6 +38,7 @@ class BlogTableSeeder extends Seeder {
                 </div>
                 ',
 //                'excerpt' => $faker->realText(20),
+                'slug' => $slugify->slugify($faker->realText(20)),
                 'image' => '/img/blog/post02.png',
                 'highlight' => rand(0, 1),
                 'tags' => implode(";", $faker->words),

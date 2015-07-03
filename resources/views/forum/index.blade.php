@@ -34,12 +34,12 @@
 
                             <div class="item col-md-1">
                                 <div class="post-tile">
-                                    <a href="/forum/{{ $category->name }}" class="post-thumb waves-effect">
+                                    <a href="/forum/{{ $category->slug }}" class="post-thumb waves-effect">
                                         <img src="{{ $category->image }}" alt="{{ $category->name }}">
                                     </a>
                                     <div class="post-body">
                                         <div class="post-title">
-                                            <a href="/forum/{{ $category->name }}"><h3>{{ $category->name }}</h3></a>
+                                            <a href="/forum/{{ $category->slug }}"><h3>{{ $category->name }}</h3></a>
                                             <span>{{ $category->description }}</span>
                                         </div>
                                     </div>

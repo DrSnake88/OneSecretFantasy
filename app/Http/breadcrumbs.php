@@ -17,7 +17,7 @@ Breadcrumbs::register('forum', function($breadcrumbs)
 Breadcrumbs::register('forum_category', function($breadcrumbs, $category)
 {
     $breadcrumbs->parent('forum');
-    $breadcrumbs->push($category->name, route('forum.show', $category->name));
+    $breadcrumbs->push($category->name, route('forum.show', $category->slug));
 });
 
 // Home > Blog > [Category] > [Page]

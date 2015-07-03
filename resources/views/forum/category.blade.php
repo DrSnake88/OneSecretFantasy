@@ -47,7 +47,7 @@
                 @foreach ($topics as $topic)
                     <tr>
                         <td></td>
-                        <td><a href="/forum/{{ $category->name }}/{{ $topic->slug }}">{{ $topic->name }}</a></td>
+                        <td><a href="/forum/{{ $category->slug }}/{{ $topic->slug }}">{{ $topic->name }}</a></td>
                         <td><a href="#">{{ $topic->user->name }}</a></td>
                         <td>{{ $topic->replies }}</td>
                         <td>{{ $topic->views }}</td>

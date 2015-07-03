@@ -42,12 +42,12 @@
                         @foreach ($blogs as $blog)
                         <div class="item col-md-4 col-sm-6">
                             <div class="post-tile">
-                                <a href="{{ route('blogs.show', $blog->id) }}" class="post-thumb waves-effect">
+                                <a href="{{ route('blogs.show', $blog->slug) }}" class="post-thumb waves-effect">
                                     <img src="{{ $blog->image }}" alt="{{ $blog->title }}">
                                 </a>
                                 <div class="post-body">
                                     <div class="post-title">
-                                        <a href="{{ route('blogs.show', $blog->id) }}"><h3>{{ $blog->title }}</h3></a>
+                                        <a href="{{ route('blogs.show', $blog->slug) }}"><h3>{{ $blog->title }}</h3></a>
                                         <span>{{ \Illuminate\Support\Str::words(strip_tags($blog->body), 20) }}</span>
                                     </div>
                                 </div>
