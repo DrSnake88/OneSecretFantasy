@@ -74,9 +74,9 @@
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
-                    <label class="checkbox space-top-2x">
-                        <input type="checkbox"> Subscribe for our news
-                    </label>
+                    {{--<label class="checkbox space-top-2x">--}}
+                        {{--<input type="checkbox"> Subscribe for our news--}}
+                    {{--</label>--}}
                     <div class="clearfix modal-buttons">
                         <div class="pull-right">
                             <button type="button" class="btn btn-flat btn-default waves-effect" data-dismiss="modal">Cancel</button>
