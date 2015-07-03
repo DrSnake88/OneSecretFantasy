@@ -4,6 +4,7 @@ use App\AuthenticateUser;
 use App\AuthenticateUserListener;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Request;
+use App\User;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -27,6 +28,45 @@ class AuthController extends Controller implements AuthenticateUserListener
 	*/
 
 	use AuthenticatesAndRegistersUsers;
+
+    /**
+     * Handle a login request to the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postLogin(\Illuminate\Http\Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required|email', 'password' => 'required',
+        ]);
+
+        $credentials = $request->only('email', 'password');
+
+        $user = User::where('email', '=', $request->email)->first();
+
+        if ($user) {
+            if ($user->password == null) {
+                if ($user->facebook != null) {
+                    return redirect('/login/facebook');
+                } else if ($user->google != null) {
+                    return redirect('/login/google');
+                }
+            }
+        }
+
+        if ($this->auth->attempt($credentials, $request->has('remember')))
+        {
+            return redirect()->intended($this->redirectPath());
+        }
+
+        return redirect('/')
+            ->with('error_code', 5)
+            ->withInput($request->only('email', 'remember'))
+            ->withErrors([
+                'email' => $this->getFailedLoginMessage(),
+            ]);
+    }
 
     /**
      * Create a new authentication controller instance.
