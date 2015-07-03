@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <form action="{{ route('admin.forum.categories.store') }}" method="POST">
+            {!! Form::open(array('route'=>'admin.forum.categories.store','method'=>'POST', 'files'=>true)) !!}
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <div class="form-group">
@@ -24,9 +24,9 @@
                      <label for="image">IMAGE</label>
                      <input type="text" name="image" class="form-control" value=""/>
                 </div>
-                    <div class="form-group">
-                     <label for="section_id">SECTION_ID</label>
-                     <input type="text" name="section_id" class="form-control" value=""/>
+                <div class="form-group">
+                    <label for="body">IMAGE</label>
+                    <input type="file" name="image" id="image" />
                 </div>
 
 

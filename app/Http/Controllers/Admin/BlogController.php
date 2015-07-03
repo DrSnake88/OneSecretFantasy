@@ -49,9 +49,9 @@ class BlogController extends Controller {
             $file = $request->file('image');
             $id = $last_blog->id + 1;
             if ($last_blog) {
-                $name = bcrypt($id) . '.' . $file->getClientOriginalExtension();
+                $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
             } else {
-                $name = bcrypt('1') . '.' . $file->getClientOriginalExtension();
+                $name = str_replace('/', '', bcrypt('1')) . '.' . $file->getClientOriginalExtension();
             }
             $path = '/img/blog/' . $name;
             $file->move(public_path() . '/img/blog', $name);
@@ -105,7 +105,7 @@ class BlogController extends Controller {
 
         if ($request->hasFile('image')) {
             $file = $request->file('image');
-            $name = bcrypt($blog->id) . '.' . $file->getClientOriginalExtension();
+            $name = str_replace('/', '', bcrypt($blog->id)) . '.' . $file->getClientOriginalExtension();
             $path = '/img/blog/' . $name;
             $file->move(public_path() . '/img/blog', $name);
             $blog->image = $path;

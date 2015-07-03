@@ -42,7 +42,24 @@ class ForumCategoryController extends Controller {
 
 		$category->name = $request->input("name");
         $category->description = $request->input("description");
-        $category->image = $request->input("image");
+
+        if ($request->hasFile('image')) {
+            $last_forum_category = ForumCategory::orderBy('created_at', 'DESC')->first();
+
+            $file = $request->file('image');
+            $id = $last_forum_category->id + 1;
+
+            if ($last_forum_category) {
+                $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
+            } else {
+                $name = str_replace('/', '', bcrypt('1')) . '.' . $file->getClientOriginalExtension();
+            }
+
+            $path = '/img/forum/categories/' . $name;
+            $file->move(public_path() . '/img/forum/categories', $name);
+            $category->image = $path;
+        }
+
         $category->section_id = $request->input("section_id");
 
 		$category->save();
@@ -89,7 +106,18 @@ class ForumCategoryController extends Controller {
 
 		$category->name = $request->input("name");
         $category->description = $request->input("description");
-        $category->image = $request->input("image");
+
+
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+
+            $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
+
+            $path = '/img/forum/categories/' . $name;
+            $file->move(public_path() . '/img/forum/categories', $name);
+            $category->image = $path;
+        }
+
         $category->section_id = $request->input("section_id");
 
 		$category->save();

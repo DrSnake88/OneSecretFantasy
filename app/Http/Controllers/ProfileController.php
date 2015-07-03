@@ -92,7 +92,7 @@ class ProfileController extends Controller {
         if ($request->hasFile('avatar')) {
 
             $file = $request->file('avatar');
-            $name = Auth::user()->id . '.' . $file->getClientOriginalExtension();
+            $name = str_replace('/', '', bcrypt(Auth::user()->id)) . '.' . $file->getClientOriginalExtension();
             $path = '/img/avatars/' . $name;
             $file->move(public_path() . '/img/avatars', $name);
             $user->avatar = $path;
