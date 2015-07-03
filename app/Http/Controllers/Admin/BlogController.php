@@ -42,7 +42,6 @@ class BlogController extends Controller {
 		$blog = new Blog();
 
 		$blog->title = $request->input("title");
-		$blog->excerpt = $request->input("excerpt");
         $blog->body = $request->input("body");
 
         if ($request->hasFile('image')) {
