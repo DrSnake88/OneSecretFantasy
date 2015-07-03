@@ -38,9 +38,11 @@ class ForumCategoryController extends Controller {
 	 */
 	public function store(Request $request)
 	{
+        $slugify = new Slugify();
 		$category = new ForumCategory();
 
 		$category->name = $request->input("name");
+        $category->slug = $slugify->slugify($request->input('name'));
         $category->description = $request->input("description");
 
         if ($request->hasFile('image')) {
@@ -102,9 +104,11 @@ class ForumCategoryController extends Controller {
 	 */
 	public function update(Request $request, $id)
 	{
+        $slugify = new Slugify();
 		$category = ForumCategory::findOrFail($id);
 
 		$category->name = $request->input("name");
+        $category->slug = $slugify->slugify($request->input('name'));
         $category->description = $request->input("description");
 
 

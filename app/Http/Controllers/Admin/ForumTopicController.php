@@ -38,9 +38,11 @@ class ForumTopicController extends Controller {
 	 */
 	public function store(Request $request)
 	{
+        $slugify = new Slugify();
 		$topic = new Topic();
 
 		$topic->name = $request->input("name");
+        $topic->slug = $slugify->slugify($request->input('name'));
         $topic->category_id = $request->input("category_id");
         $topic->user_id = $request->input("user_id");
 
@@ -84,9 +86,11 @@ class ForumTopicController extends Controller {
 	 */
 	public function update(Request $request, $id)
 	{
+        $slugify = new Slugify();
 		$topic = Topic::findOrFail($id);
 
 		$topic->name = $request->input("name");
+        $topic->slug = $slugify->slugify($request->input('name'));
         $topic->category_id = $request->input("category_id");
         $topic->user_id = $request->input("user_id");
 

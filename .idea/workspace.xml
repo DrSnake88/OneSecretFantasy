@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_05_21_201903_create_blogs_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_05_21_201903_create_blogs_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/BlogTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/BlogTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ForumCategoryTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ForumCategoryTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ForumTopicTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ForumTopicTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/breadcrumbs.php" afterPath="$PROJECT_DIR$/app/Http/breadcrumbs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/forum/category.blade.php" afterPath="$PROJECT_DIR$/resources/views/forum/category.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blogs/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/blogs/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/forum/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/forum/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -91,21 +80,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="breadcrumbs.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="breadcrumbs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/breadcrumbs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62116563" vertical-offset="0" max-vertical-offset="652">
+            <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="510">
               <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
+      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="555" max-vertical-offset="1395">
-              <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+            <state vertical-scroll-proportion="-18.125" vertical-offset="1080" max-vertical-offset="2160">
+              <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="108" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumCategoryController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.541666" vertical-offset="1073" max-vertical-offset="2220">
+              <caret line="110" column="65" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForumTopicController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36809817" vertical-offset="360" max-vertical-offset="1770">
+              <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -116,26 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-14.375" vertical-offset="435" max-vertical-offset="1665">
               <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.333333" vertical-offset="1163" max-vertical-offset="1875">
-              <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Blog.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Blog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="660">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -171,7 +160,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/forum/replies/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/forum/replies/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumReplyController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_06_15_100600_create_forum_sections_table.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -189,9 +177,7 @@
         <option value="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/blogs/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/forum/categories/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/forum/categories/edit.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_05_21_201903_create_blogs_table.php" />
@@ -206,6 +192,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" />
         <option value="$PROJECT_DIR$/app/Http/breadcrumbs.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php" />
       </list>
     </option>
   </component>
@@ -371,6 +360,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OneSecretFantasy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OneSecretFantasy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -690,7 +705,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435922703596</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added sidewide slug support for SEO friendly URL's">
+      <created>1435925037623</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1435925037623</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -827,7 +848,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Social Login" />
     <MESSAGE value="CMS - Blog" />
     <MESSAGE value="CMS - Blog Comments" />
     <MESSAGE value="CMS - Basic Media" />
@@ -852,7 +872,8 @@
     <MESSAGE value="Removed excerpt support in blogcontroller Admin" />
     <MESSAGE value="Added image upload to forum categories.&#10;Added image upload to blogs" />
     <MESSAGE value="Made blog links routed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made blog links routed" />
+    <MESSAGE value="Added sidewide slug support for SEO friendly URL's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sidewide slug support for SEO friendly URL's" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -861,13 +882,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="540">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="675">
@@ -1058,22 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.291666" vertical-offset="758" max-vertical-offset="1725">
           <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="98" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="495" max-vertical-offset="2100">
-          <caret line="47" column="62" selection-start-line="47" selection-start-column="62" selection-end-line="49" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.916667" vertical-offset="1253" max-vertical-offset="2160">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1269,8 +1267,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/breadcrumbs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62116563" vertical-offset="0" max-vertical-offset="652">
+        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="510">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125" vertical-offset="1080" max-vertical-offset="2160">
+          <caret line="107" column="46" selection-start-line="107" selection-start-column="46" selection-end-line="108" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.541666" vertical-offset="1073" max-vertical-offset="2220">
+          <caret line="110" column="65" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36809817" vertical-offset="360" max-vertical-offset="1770">
+          <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
           <folding />
         </state>
       </provider>

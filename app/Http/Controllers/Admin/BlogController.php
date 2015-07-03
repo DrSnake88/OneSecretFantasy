@@ -5,6 +5,7 @@ use App\BlogComment;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Cocur\Slugify\Slugify;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller {
@@ -39,10 +40,12 @@ class BlogController extends Controller {
 	 */
 	public function store(Request $request)
 	{
+        $slugify = new Slugify();
 		$blog = new Blog();
 
 		$blog->title = $request->input("title");
         $blog->body = $request->input("body");
+        $blog->slug = $slugify->slugify($request->input('title'));
 
         if ($request->hasFile('image')) {
             $last_blog = Blog::orderBy('id', 'DESC')->first();
@@ -98,10 +101,12 @@ class BlogController extends Controller {
 	 */
 	public function update(Request $request, $id)
 	{
+        $slugify = new Slugify();
 		$blog = Blog::findOrFail($id);
 
 		$blog->title = $request->input("title");
         $blog->body = $request->input("body");
+        $blog->slug = $slugify->slugify($request->input('title'));
 
         if ($request->hasFile('image')) {
             $file = $request->file('image');
