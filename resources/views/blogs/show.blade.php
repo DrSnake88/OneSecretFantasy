@@ -31,17 +31,18 @@
 
                 <!-- Post Content -->
                 <div class="col-lg-9 col-lg-push-3 col-sm-8 col-sm-push-4 padding-bottom">
-                    <div class="single-post box-float">
+                    <div itemscope itemtype="http://schema.org/Article" class="single-post box-float">
                         <div class="inner">
-                            <h1>{{ $blog->title }}</h1>
-                            <img src="{{ $blog->image }}" class="space-top space-bottom-2x" alt="One Secret Fantasy">
+                            <h1 itemprop="name">{{ $blog->title }}</h1>
+                            <img itemprop="image" src="{{ $blog->image }}" class="space-top space-bottom-2x" alt="One Secret Fantasy">
                             <div class="row">
-                                {!! $blog->body !!}
-
+                                <span itemprop="articleBody">
+                                    {!! $blog->body !!}
+                                </span>
                             </div>
                         </div>
                         <div class="post-meta space-top-2x">
-                            <div class="column">{{ $blog->created_at->formatLocalized("%d %B %Y") }}</div>
+                            <div itemprop="datePublished" content="{{ $blog->created_at->formatLocalized("%Y-%m-%d") }}" class="column">{{ $blog->created_at->formatLocalized("%d %B %Y") }}</div>
                             <div class="column">
                                 <div class="social-buttons text-right">
                                     <a href="#comments" class="comment-count scroll" data-offset-top="160"><i class="fa fa-comment"></i>{{ count($blog_comments) }}</a>
@@ -53,7 +54,12 @@
                         </div>
                         <div class="post-meta last-child space-bottom">
                             <div class="column">
-                                By <a href="#">{{$blog->user->name}}</a>
+                                By
+                                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    <span itemprop="name">
+                                        <a href="#">{{$blog->user->name}}</a>
+                                    </span>
+                                </span>
                             </div>
                             <div class="column text-right">
                                 @foreach ($blog->tags as $tag)
@@ -65,7 +71,7 @@
 
                             <!-- Comments -->
                             <div class="space-top space-bottom-2x" id="comments">
-                                <h3 class="text-gray text-right text-light">Comments {{ count($blog_comments) }}</h3>
+                                <p class="text-gray text-right text-light" style="font-size: 24px;">Comments {{ count($blog_comments) }}</p>
                             </div>
                             <div class="space-bottom-2x">
 
@@ -114,7 +120,7 @@
                         @if(Session::get('message') != null)
                             <h3 class="text-gray text-light">{{ Session::get('message') }}</h3>
                         @endif
-                        <h3 class="text-gray text-right text-light">Leave a comment</h3>
+                        <p class="text-gray text-right text-light" style="font-size: 24px">Leave a comment</p>
                         {!! Form::open(['route' => 'blog_comments.store', 'id' => 'comment-form', 'class' => 'space-top space-bottom']) !!}
                         {{--<form id="comment-form" class="space-top space-bottom">--}}
                         {!! Form::hidden('blog_id', $blog->id) !!}
@@ -168,5 +174,5 @@
         </div>
     </section><!-- Single Post End -->
 
-
+    <meta itemprop="url" content="{{ \Illuminate\Support\Facades\Request::url() }}"></div>
 @endsection

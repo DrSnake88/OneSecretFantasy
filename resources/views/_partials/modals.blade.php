@@ -7,7 +7,7 @@
                 <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off" method="POST" action="{{ url('/auth/login') }}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                    <h3 class="modal-title">Sign In</h3>
+                    <p style="font-size: 24px" class="modal-title">Sign In</p>
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <ul>
@@ -55,7 +55,7 @@
                 <form class="tab-pane transition scale fade" id="signup-form" method="POST" action="{{ url('/auth/register') }}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                    <h3 class="modal-title">Sign Up</h3>
+                    <p style="font-size: 24px" class="modal-title">Sign Up</p>
                     <div class="form-control space-top-2x">
                         <input type="email" name="email" id="su-email" value="{{ old('email') }}" required>
                         <label for="su-email">Email</label>
@@ -91,7 +91,7 @@
                 <form class="tab-pane transition scale fade" id="password-forget-form" method="POST" action="{{ url('/password/email') }}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                    <h3 class="modal-title">Reset Password</h3>
+                    <p style="font-size: 24px" class="modal-title">Reset Password</p>
                     <div class="form-control space-top-2x">
                         <input type="email" name="email" id="pf-email" value="{{ old('email') }}" required>
                         <label for="pf-email">Email</label>

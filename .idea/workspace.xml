@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,9 +32,26 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16104294" vertical-offset="0" max-vertical-offset="2655">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.8389571" vertical-offset="2093" max-vertical-offset="2745">
+              <caret line="176" column="72" selection-start-line="176" selection-start-column="72" selection-end-line="176" selection-end-column="72" />
+              <folding>
+                <element signature="e#3449#3473#0#HTML" expanded="true" />
+                <element signature="e#6164#6187#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modals.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/_partials/modals.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-58.125" vertical-offset="0" max-vertical-offset="1860">
+              <caret line="93" column="84" selection-start-line="93" selection-start-column="84" selection-end-line="93" selection-end-column="84" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#form#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#form#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,18 +63,6 @@
               <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <marker date="1436043784000" expanded="true" signature="835:885" placeholder="ALTER TABLE forum_topics..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2015_05_21_201903_create_blogs_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_05_21_201903_create_blogs_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="735">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1435923850000" expanded="true" signature="956:1012" placeholder="ALTER TABLE blogs..." />
               </folding>
             </state>
           </provider>
@@ -176,7 +182,6 @@
         <option value="$PROJECT_DIR$/storage/framework/views/c1037f9762a7e0528f0fcef6f78325ab" />
         <option value="$PROJECT_DIR$/resources/views/_partials/sideMenu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/splash.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/forum/create_topic.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blogs/create.blade.php" />
@@ -196,6 +201,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/blogs/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Blog.php" />
+        <option value="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
       </list>
     </option>
@@ -767,12 +773,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00010" summary="Forum V1">
-      <created>1434559789529</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1434559789529</updated>
-    </task>
     <task id="LOCAL-00011" summary="Breadcrumbs inntegration">
       <created>1434644625887</created>
       <option name="number" value="00011" />
@@ -1061,7 +1061,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436045297355</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Set blog title as page description">
+      <created>1436045395803</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1436045395804</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1198,7 +1204,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added GA support" />
     <MESSAGE value="Made blogs categories nullable (Because its currently not used)" />
     <MESSAGE value="Removed excerpt from blogs.&#10;Added nl2br to forum posts" />
     <MESSAGE value="Updated Login" />
@@ -1223,7 +1228,8 @@
     <MESSAGE value="Removed double image field, blog edit" />
     <MESSAGE value="Added tags default value, blogs edit" />
     <MESSAGE value="updated gettags function, added failsafe method when no splitter has been entered" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated gettags function, added failsafe method when no splitter has been entered" />
+    <MESSAGE value="Set blog title as page description" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set blog title as page description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1425,14 +1431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/_partials/modals.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625" vertical-offset="705" max-vertical-offset="1860">
-          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="495">
@@ -1574,7 +1572,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1435923850000" expanded="true" signature="956:1012" placeholder="ALTER TABLE blogs..." />
+            <marker date="1435923850000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE blogs..." />
           </folding>
         </state>
       </provider>
@@ -1645,11 +1643,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/_partials/modals.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-58.125" vertical-offset="0" max-vertical-offset="1860">
+          <caret line="93" column="84" selection-start-line="93" selection-start-column="84" selection-end-line="93" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#form#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#form#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16104294" vertical-offset="0" max-vertical-offset="2655">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.8389571" vertical-offset="2093" max-vertical-offset="2745">
+          <caret line="176" column="72" selection-start-line="176" selection-start-column="72" selection-end-line="176" selection-end-column="72" />
+          <folding>
+            <element signature="e#3449#3473#0#HTML" expanded="true" />
+            <element signature="e#6164#6187#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
