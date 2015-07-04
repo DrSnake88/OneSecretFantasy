@@ -5,8 +5,8 @@
 
     <!-- TODO: Fix Description and Keywords -->
     <!-- SEO Meta tags -->
-    <meta name="description" content="Make your fantasies come true" />
-    <meta name="keywords" content="one secret fantasy" />
+    <meta name="description" content="@yield('page-description')" />
+    <meta name="keywords" content="@yield('page-keywords')" />
     <meta name="author" content="OneSecretFantasy" />
 
     <!-- Mobile specific meta tag -->

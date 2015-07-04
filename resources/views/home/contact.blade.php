@@ -4,6 +4,14 @@
     Contact - OneSecretFantasy
 @stop
 
+@section('page-description')
+    Contact us about everything you need to know, find our social media profiles etc.
+@stop
+
+@section('page-keywords')
+    contact, social media, facebook, youtube, twitter, email
+@stop
+
 @section('page-scripts')
     <!--Google Maps API-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>

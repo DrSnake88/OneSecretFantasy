@@ -4,6 +4,14 @@
     {{ $user->name }}'s Profile - OneSecretFantasy
 @stop
 
+@section('page-description')
+    {{ $user->name }}'s persona profile, edit your settings here.
+@stop
+
+@section('page-keywords')
+    profile, {{ $user->name }}
+@stop
+
 @section('content')
     <!-- Page Heading -->
     <div class="page-heading text-right">

@@ -4,6 +4,14 @@
     Blog - OneSecretFantasy
 @stop
 
+@section('page-description')
+    All messages related to our game and its development
+@stop
+
+@section('page-keywords')
+    blog
+@stop
+
 @section('content')
     <!-- Page Heading -->
     <div class="page-heading text-right">

@@ -4,6 +4,14 @@
     Game Information - OneSecretFantasy
 @stop
 
+@section('page-description')
+    All the information that we can currently disclose are available on this page.
+@stop
+
+@section('page-keywords')
+    game, information
+@stop
+
 @section('content')
     <!-- Company Timeline -->
     <!-- Class ".partial-overlay" makes overlay takes up only part of the block width. Position it to the right by addin ".right-aligned" class -->

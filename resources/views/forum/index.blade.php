@@ -4,6 +4,14 @@
     Forum - OneSecretFantasy
 @stop
 
+@section('page-description')
+    Talk with fellow fans about this wonderful game.
+@stop
+
+@section('page-keywords')
+    forum
+@stop
+
 @section('breadcrumb')
     {!! Breadcrumbs::render('forum') !!}
 @stop

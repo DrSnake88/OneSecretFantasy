@@ -1,7 +1,15 @@
 @extends('app')
 
 @section('page-title')
-    OneSecretFantasy - Make your fantasies come true
+    OneSecretFantasy - Make your fantasies come to life
+@stop
+
+@section('page-description')
+    Make your fantasies come to life
+@stop
+
+@section('page-keywords')
+    onesecretfantasy, dreams, fantasies
 @stop
 
 @section('content')

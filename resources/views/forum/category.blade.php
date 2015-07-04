@@ -4,6 +4,14 @@
     {{ $category->name }} - OneSecretFantasy
 @stop
 
+@section('page-description')
+    {{ $category->description }}
+@stop
+
+@section('page-keywords')
+    {{ $category->keywords }}
+@stop
+
 @section('breadcrumbs')
     {!! Breadcrumbs::render('forum_category', $category) !!}
 @stop

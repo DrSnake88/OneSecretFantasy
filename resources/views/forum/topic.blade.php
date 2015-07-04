@@ -4,6 +4,14 @@
     {{ $topic->name }} - OneSecretFantasy
 @stop
 
+@section('page-description')
+    {{ \Illuminate\Support\Str::words($replies[0]->body, 20) }}
+@stop
+
+@section('page-keywords')
+    topic, message, reply, post
+@stop
+
 @section('breadcrumbs')
     {!! Breadcrumbs::render('forum_topic', $topic) !!}
 @stop

@@ -4,6 +4,14 @@
     Search Results - OneSecretFantasy
 @stop
 
+@section('page-description')
+    Find everything about OneSecretFantasy
+@stop
+
+@section('page-keywords')
+    search
+@stop
+
 @section('content')
     <!-- Page Heading -->
     <div class="page-heading text-right">

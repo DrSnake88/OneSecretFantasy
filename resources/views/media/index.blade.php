@@ -4,6 +4,14 @@
     Media - OneSecretFantasy
 @stop
 
+@section('page-description')
+    All our pictures and videos.
+@stop
+
+@section('page-keywords')
+    pictures, videos, media
+@stop
+
 @section('content')
     <!-- Page Heading -->
     <div class="page-heading text-right">
