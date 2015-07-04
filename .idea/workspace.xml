@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -29,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8389571" vertical-offset="2093" max-vertical-offset="2745">
+            <state vertical-scroll-proportion="-22.791666" vertical-offset="2093" max-vertical-offset="2745">
               <caret line="176" column="72" selection-start-line="176" selection-start-column="72" selection-end-line="176" selection-end-column="72" />
               <folding>
                 <element signature="e#3449#3473#0#HTML" expanded="true" />
@@ -56,23 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015_06_15_111810_create_forum_topics_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_111810_create_forum_topics_table.php">
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="690">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-              <folding>
-                <marker date="1436043784000" expanded="true" signature="835:885" placeholder="ALTER TABLE forum_topics..." />
-              </folding>
+            <state vertical-scroll-proportion="0.81595093" vertical-offset="53" max-vertical-offset="705">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/forum/topic.blade.php">
+      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="2355">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="555">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,7 +173,6 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/sitemap/sitemap.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SitemapController.php" />
-        <option value="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blogs/edit.blade.php" />
         <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/storage/framework/views/c1037f9762a7e0528f0fcef6f78325ab" />
@@ -185,7 +181,6 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/forum/create_topic.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blogs/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/search/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/media/index.blade.php" />
@@ -203,6 +198,8 @@
         <option value="$PROJECT_DIR$/app/Blog.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
       </list>
     </option>
   </component>
@@ -773,12 +770,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00011" summary="Breadcrumbs inntegration">
-      <created>1434644625887</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1434644625887</updated>
-    </task>
     <task active="true" id="LOCAL-00012">
       <created>1434662893088</created>
       <option name="number" value="00012" />
@@ -1067,7 +1058,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436045395804</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Added structured markup to blog pages">
+      <created>1436047674898</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1436047674898</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1204,7 +1201,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Made blogs categories nullable (Because its currently not used)" />
     <MESSAGE value="Removed excerpt from blogs.&#10;Added nl2br to forum posts" />
     <MESSAGE value="Updated Login" />
     <MESSAGE value="Removed subscription box in sign up form" />
@@ -1229,7 +1225,8 @@
     <MESSAGE value="Added tags default value, blogs edit" />
     <MESSAGE value="updated gettags function, added failsafe method when no splitter has been entered" />
     <MESSAGE value="Set blog title as page description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set blog title as page description" />
+    <MESSAGE value="Added structured markup to blog pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added structured markup to blog pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1431,14 +1428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="495">
-          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1065">
@@ -1483,14 +1472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="705">
           <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1582,7 +1563,7 @@
         <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="690">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
-            <marker date="1436043784000" expanded="true" signature="835:885" placeholder="ALTER TABLE forum_topics..." />
+            <marker date="1436043784000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE forum_topics..." />
           </folding>
         </state>
       </provider>
@@ -1657,12 +1638,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8389571" vertical-offset="2093" max-vertical-offset="2745">
+        <state vertical-scroll-proportion="-22.791666" vertical-offset="2093" max-vertical-offset="2745">
           <caret line="176" column="72" selection-start-line="176" selection-start-column="72" selection-end-line="176" selection-end-column="72" />
           <folding>
             <element signature="e#3449#3473#0#HTML" expanded="true" />
             <element signature="e#6164#6187#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="555">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81595093" vertical-offset="53" max-vertical-offset="705">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
