@@ -70,7 +70,7 @@
                     </div>
                     <div class="form-control">
                         <input type="password" name="password_confirmation" id="su-password-repeat" required>
-                        <label for="su-password_confirmation">Repeat password</label>
+                        <label for="su-password-repeat">Repeat password</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
