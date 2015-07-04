@@ -15,7 +15,7 @@
                 {{--<a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>--}}
             {{--</div>--}}
         {{--</div>--}}
-        <a href="index.html" class="offcanvas-logo">
+        <a href="/" class="offcanvas-logo">
             <img width="32px" src="/img/logo/logo-square.png" alt="One Secret Fantasy">
             {{--<div class="title">--}}
                 {{--One Secret Fantasy--}}
