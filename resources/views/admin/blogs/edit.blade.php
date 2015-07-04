@@ -32,6 +32,14 @@
                     <label for="body">IMAGE</label>
                     <input type="file" name="image" id="image" />
                 </div>
+                <div class="form-group">
+                    <label for="body">IMAGE</label>
+                    <input type="file" name="image" id="image" />
+                </div>
+                <div class="form-group">
+                    <label for="tags">TAGS</label>
+                    <input type="text" name="tags" class="form-control" value=""/>
+                </div>
 
 
 

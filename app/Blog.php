@@ -16,7 +16,8 @@ class Blog extends Model {
     }
 
     public function getTags() {
-        return explode(";", $this->tags);
+        if (str_contains(';', $this->tags)) return explode(";", $this->tags);
+        if (str_contains(',', $this->tags)) return explode(",", $this->tags);
     }
 
     public function getRelated() {
