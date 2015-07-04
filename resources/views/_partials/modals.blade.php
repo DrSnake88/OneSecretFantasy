@@ -19,13 +19,13 @@
                     @endif
                     <div class="form-control space-top-2x">
                         <input type="email" name="email" id="si_email" value="{{ old('email') }}" readonly onfocus="$(this).removeAttr('readonly');" required>
-                        <label for="email">Email</label>
+                        <label for="si_email">Email</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <div class="form-control">
                         <input type="password" name="password" id="si-password" readonly onfocus="$(this).removeAttr('readonly');" required>
-                        <label for="password">Password</label>
+                        <label for="si-password">Password</label>
                         <div class="form-switch"><a class="helper-link" href="#form-3">Forgot password?</a></div>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
@@ -58,19 +58,19 @@
                     <h3 class="modal-title">Sign Up</h3>
                     <div class="form-control space-top-2x">
                         <input type="email" name="email" id="su-email" value="{{ old('email') }}" required>
-                        <label for="email">Email</label>
+                        <label for="su-email">Email</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <div class="form-control">
                         <input type="password" name="password" id="su-password" required>
-                        <label for="password">Password</label>
+                        <label for="su-password">Password</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
                     <div class="form-control">
                         <input type="password" name="password_confirmation" id="su-password-repeat" required>
-                        <label for="password_confirmation">Repeat password</label>
+                        <label for="su-password_confirmation">Repeat password</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>
@@ -93,8 +93,8 @@
 
                     <h3 class="modal-title">Reset Password</h3>
                     <div class="form-control space-top-2x">
-                        <input type="email" name="email" id="su-email" value="{{ old('email') }}" required>
-                        <label for="email">Email</label>
+                        <input type="email" name="email" id="pf-email" value="{{ old('email') }}" required>
+                        <label for="pf-email">Email</label>
                         <span class="error-label"></span>
                         <span class="valid-label"></span>
                     </div>

@@ -16,7 +16,7 @@
             {{--</div>--}}
         {{--</div>--}}
         <a href="/" class="offcanvas-logo">
-            <img width="32px" src="/img/logo/logo-square.png" alt="One Secret Fantasy">
+            <img width="32" src="/img/logo/logo-square.png" alt="One Secret Fantasy">
             {{--<div class="title">--}}
                 {{--One Secret Fantasy--}}
                 {{--<span>Life your dream!</span>--}}
@@ -46,40 +46,53 @@
                 <nav class="nav-link">
 
                     <ul class="pages" style="text-align: center">
-                        <a href="/game">
+                        <li>
                             <div class="nav-item">
-                                <li><i class="fa fa-gamepad fa-2x"></i></li>
-                                <li>Game</li>
+                                <a href="/game"><i class="fa fa-gamepad fa-2x"></i></a>
+                                <br/><br/>
+                                <a href="/game">Game</a>
                             </div>
-                        </a>
-                        <hr/><br/>
-                        <a href="/forum">
+                        </li>
+                        <li>
+                            <hr/>
+                        </li>
+                        <li>
                             <div class="nav-item">
-                                <li><i class="fa fa-comments-o fa-2x"></i></li>
-                                <li>Forum</li>
+                                <a href="/forum"><i class="fa fa-comments-o fa-2x"></i></a>
+                                <br/><br/>
+                                <a href="/forum">Forum</a>
                             </div>
-                        </a>
-                        <hr/><br/>
-                        <a href="/blogs">
+                        </li>
+                        <li>
+                            <hr/>
+                        </li>
+                        <li>
                             <div class="nav-item">
-                                <li><i class="fa fa-rss fa-2x"></i></li>
-                                <li>Blog</li>
+                                <a href="/blogs"><i class="fa fa-rss fa-2x"></i></a>
+                                <br/><br/>
+                                <a href="/blogs">Blog</a>
                             </div>
-                        </a>
-                        <hr/><br/>
-                        <a href="/media">
+                        </li>
+                        <li>
+                            <hr/>
+                        </li>
+                        <li>
                             <div class="nav-item">
-                                <li><i class="fa fa-camera fa-2x"></i></li>
-                                <li>Media</li>
+                                <a href="/media"><i class="fa fa-camera fa-2x"></i></a>
+                                <br/><br/>
+                                <a href="/media">Media</a>
                             </div>
-                        </a>
-                        <hr/><br/>
-                        <a href="/contact">
+                        </li>
+                        <li>
+                            <hr/>
+                        </li>
+                        <li>
                             <div class="nav-item">
-                                <li><i class="fa fa-phone fa-2x"></i></li>
-                                <li>Contact</li>
+                                <a href="/contact"><i class="fa fa-phone fa-2x"></i></a>
+                                <br/><br/>
+                                <a href="/contact">Contact</a>
                             </div>
-                        </a>
+                        </li>
                     </ul>
                 </nav>
 

@@ -27,17 +27,17 @@
 
             <!-- Middle Column -->
             <div class="column c-middle">
-                <h1 class="logo-main">
+                <div class="logo-main">
                     <img src="/img/logo/logo-rounded.png" alt="OneSecretFantasy" />
-                    OneSecretFantasy
+                    <h1>OneSecretFantasy</h1>
                     <span>Make your dreams come true.</span>
 
                     @if(Session::get('subscribed') == null)
                     <!-- Sign up form -->
                     {!! Form::open(['route' => 'subscriber.store', 'id' => 'subscribe-form']) !!}
                         <div class="form-control">
-                            <input type="email" name="email" id="si_email" required aria-required="true">
-                            <label for="email">Email</label>
+                            <input type="email" name="email" id="subscribe_email" required aria-required="true">
+                            <label for="subscribe_email">Email</label>
                             <span class="error-label"></span>
                             <span class="valid-label"></span>
                         </div>
@@ -51,7 +51,7 @@
                     @else
                         <span>{{ Session::get('subscribed') }}</span>
                     @endif
-                </h1>
+                </div>
 
 
 
