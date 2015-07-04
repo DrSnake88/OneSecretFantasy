@@ -9,7 +9,9 @@
 @stop
 
 @section('page-keywords')
-    {{ str_replace(";", ", ", $blog->tags) }}
+    @foreach ($blog->tags as $tag)
+        {{ $tag }}, 
+    @endforeach
 @stop
 
 @section('content')
