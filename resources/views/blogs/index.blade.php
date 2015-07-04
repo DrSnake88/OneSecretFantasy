@@ -58,7 +58,7 @@
                         </a>
                         <div class="post-body">
                             <div class="post-title">
-                                <a href="{{ route('blogs.show', ['id' => $blog->id]) }}"><h3>{{ $blog->title }}</h3></a>
+                                <a href="{{ route('blogs.show', $blog->slug) }}"><h3>{{ $blog->title }}</h3></a>
                                 <span>{{ \Illuminate\Support\Str::words(strip_tags($blog->body), 20) }}</span>
                             </div>
                             <div class="post-meta">

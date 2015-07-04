@@ -26,10 +26,8 @@
                      <input type="text" name="body" class="form-control" value="{{$blog->body}}"/>
                 </div>
 
-
-
-            <a class="btn btn-default" href="{{ route('blogs.index') }}">Back</a>
-            <button class="btn btn-primary" type="submit" >Save</a>
+                <a class="btn btn-default" href="{{ route('blogs.index') }}">Back</a>
+                <button class="btn btn-primary" type="submit" >Save</button>
             </form>
         </div>
     </div>

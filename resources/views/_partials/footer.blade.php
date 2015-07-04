@@ -4,7 +4,7 @@
         <div class="body padding-top-2x">
             <!-- Copyright -->
             <div class="column copyright">
-                <p>&copy; 2015 <a href="http://www.onesecretfantasy.com/" target="_blank">OneSecretFantasy</a>. One of the best Virtual Dating games</p>
+                <p>&copy; 2015 <a href="{{ \Illuminate\Support\Facades\URL::to('/') }}" target="_blank">OneSecretFantasy</a>. One of the best Virtual Dating games</p>
             </div>
             {{--<nav class="column footer-nav">--}}
                 {{--<ul>--}}
