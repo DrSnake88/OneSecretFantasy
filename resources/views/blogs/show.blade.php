@@ -10,7 +10,7 @@
 
 @section('page-keywords')
     @foreach ($blog->tags as $tag)
-        {{ $tag }}, 
+        {{ $tag }},
     @endforeach
 @stop
 
@@ -122,7 +122,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-control">
                                             <input type="text" name="name" id="cf_name" required>
-                                            <label for="name">Name</label>
+                                            <label for="cf_name">Name</label>
                                             <span class="error-label"></span>
                                             <span class="valid-label"></span>
                                         </div>
@@ -130,7 +130,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-control">
                                             <input type="email" name="email" id="cf_email" required>
-                                            <label for="email">Email</label>
+                                            <label for="cf_email">Email</label>
                                             <span class="error-label"></span>
                                             <span class="valid-label"></span>
                                         </div>
@@ -139,7 +139,7 @@
                             @endif
                         <div class="form-control">
                             <textarea name="comment" id="cf_comment" required></textarea>
-                            <label for="comment">Comment</label>
+                            <label for="cf_comment">Comment</label>
                             <span class="error-label"></span>
                             <span class="valid-label"></span>
                         </div>
