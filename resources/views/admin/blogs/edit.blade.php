@@ -28,10 +28,7 @@
                     <label for="body">BODY</label>
                     <textarea rows="10" name="body" class="form-control" value="">{{$blog->body}}</textarea>
                 </div>
-                <div class="form-group">
-                    <label for="body">IMAGE</label>
-                    <input type="file" name="image" id="image" />
-                </div>
+
                 <div class="form-group">
                     <label for="body">IMAGE</label>
                     <input type="file" name="image" id="image" />
