@@ -5,7 +5,8 @@
 @stop
 
 @section('page-description')
-    {{ \Illuminate\Support\Str::words($blog->body, 20) }}
+    {{ $blog->title }}
+{{--    {{ \Illuminate\Support\Str::words($blog->body, 20) }}--}}
 @stop
 
 @section('page-keywords')
