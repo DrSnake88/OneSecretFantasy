@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    Game Information - OneSecretFantasy
+@stop
+
 @section('content')
     <!-- Company Timeline -->
     <!-- Class ".partial-overlay" makes overlay takes up only part of the block width. Position it to the right by addin ".right-aligned" class -->

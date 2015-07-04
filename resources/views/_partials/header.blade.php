@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OneSecretFantasy</title>
+    <title>@yield('page-title')</title>
 
     <!-- TODO: Fix Description and Keywords -->
     <!-- SEO Meta tags -->

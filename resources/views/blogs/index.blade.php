@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    Blog - OneSecretFantasy
+@stop
+
 @section('content')
     <!-- Page Heading -->
     <div class="page-heading text-right">

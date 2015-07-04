@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    {{ $category->name }} - OneSecretFantasy
+@stop
+
 @section('breadcrumbs')
     {!! Breadcrumbs::render('forum_category', $category) !!}
 @stop

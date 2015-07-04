@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    Search Results - OneSecretFantasy
+@stop
+
 @section('content')
     <!-- Page Heading -->
     <div class="page-heading text-right">

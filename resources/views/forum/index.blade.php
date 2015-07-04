@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    Forum - OneSecretFantasy
+@stop
+
 @section('breadcrumb')
     {!! Breadcrumbs::render('forum') !!}
 @stop

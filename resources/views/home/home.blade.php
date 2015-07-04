@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('page-title')
+    OneSecretFantasy - Make your fantasies come true
+@stop
+
 @section('content')
 
 
