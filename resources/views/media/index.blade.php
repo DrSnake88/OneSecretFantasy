@@ -35,7 +35,7 @@
                 <div class="col-lg-4 col-lg-push-8 col-md-5 col-md-push-7 col-sm-6 col-sm-push-6">
                     <div class="block-heading">
                         <h2>Our Gallery</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                        <p>Special moments related to OneSecretFantasy.</p>
                     </div>
                 </div>
                 <!-- Filters -->
