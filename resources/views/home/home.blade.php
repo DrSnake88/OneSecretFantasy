@@ -123,24 +123,24 @@
                     <!-- Nav Tabs -->
                     <!-- Remove data-autoswitch="true" to disable automatic tabs change. -->
                     <ul class="nav-tabs" data-autoswitch="true" data-interval="3000">
-                        <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="fa fa-video-camera"></i></a></li>
-                        <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="fa fa-cogs"></i></a></li>
-                        <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="fa fa-share"></i></a></li>
+                        <li class="active"><a href="#virtual-reality" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="fa fa-eye"></i></a></li>
+                        <li><a href="#dynamic-game-world" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="fa fa-globe"></i></a></li>
+                        <li><a href="#unparalleled-ai" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="fa fa-android"></i></a></li>
                     </ul>
                     <!-- Tab panes -->
                     <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
                     <div class="tab-content">
-                        <div class="tab-pane transition scale fade in active" id="video-player">
-                            <h3>Feature #1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+                        <div class="tab-pane transition scale fade in active" id="virtual-reality">
+                            <h3>Full Virtual Reality support</h3>
+                            <p>Enter the game world, be your character and live his life. Make your fantasies come true in a vast digital world, where you can do whatever you want to do and be whoever you want to be.</p>
                         </div>
-                        <div class="tab-pane transition scale fade" id="settings">
-                            <h3>Feature #2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+                        <div class="tab-pane transition scale fade" id="dynamic-game-world">
+                            <h3>Dynamic game world</h3>
+                            <p>The game world changes every minute, no day will be the same. Every decision you make affects the world you life in and the people you live with.</p>
                         </div>
-                        <div class="tab-pane transition scale fade" id="file-sharing">
-                            <h3>Feature #3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+                        <div class="tab-pane transition scale fade" id="unparalleled-ai">
+                            <h3>Unparalleled AI</h3>
+                            <p>Every NPC has a very advanced AI system, where he / she learns and responds accordingly. They make there own decisions and experience their own fantasies.</p>
                         </div>
                     </div>
                 </div>
@@ -163,22 +163,22 @@
                             <!-- Icon block are very flexible. If you remove '.icon-block-horizontal' you'll get stacked version. There is als modofier classes for icon like '.icon-bigger', '.va-middle' for vertical alignment. -->
                             <div class="icon-block icon-block-horizontal">
                                 <div class="text text-right">
-                                    <h3>USP #1</h3>
+                                    <h3>Date your fantasy partner</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas harum a aperiam pariatur totam impedit, sint quibusdam minus deserunt labore ipsum commodo.</p>
                                     <a href="#" class="link">See more</a>
                                 </div>
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="fa fa-desktop"></i>
+                                    <i class="fa fa-heart"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-block icon-block-horizontal">
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="fa fa-magic"></i>
+                                    <i class="fa fa-star" style="width: 78px;"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>USP #2</h3>
+                                    <h3>Become a superstar</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas harum a aperiam pariatur totam impedit, sint quibusdam minus deserunt labore ipsum commodo.</p>
                                     <a href="#" class="link">See more</a>
                                 </div>
@@ -189,22 +189,22 @@
                         <div class="col-sm-6">
                             <div class="icon-block icon-block-horizontal">
                                 <div class="text text-right">
-                                    <h3>USP #3</h3>
+                                    <h3>Visit locations you have never visited before</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas harum a aperiam pariatur totam impedit, sint quibusdam minus deserunt labore ipsum commodo.</p>
                                     <a href="#" class="link">See more</a>
                                 </div>
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="fa fa-cloud"></i>
+                                    <i class="fa fa-plane" style="width: 73px;"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="icon-block icon-block-horizontal">
                                 <div class="icon icon-bigger va-middle">
-                                    <i class="fa fa-camera"></i>
+                                    <i class="fa fa-retweet"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>USP #4</h3>
+                                    <h3>Every action has a reaction</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas harum a aperiam pariatur totam impedit, sint quibusdam minus deserunt labore ipsum commodo.</p>
                                     <a href="#" class="link">See more</a>
                                 </div>
