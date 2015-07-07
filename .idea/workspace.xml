@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/media/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/media/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -59,23 +58,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625" vertical-offset="3105" max-vertical-offset="4320">
-              <caret line="232" column="27" selection-start-line="232" selection-start-column="27" selection-end-line="232" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.2760736" vertical-offset="2790" max-vertical-offset="4410">
+              <caret line="198" column="104" selection-start-line="198" selection-start-column="104" selection-end-line="198" selection-end-column="104" />
               <folding>
-                <element signature="e#9474#9494#0#HTML" expanded="true" />
-                <element signature="e#10814#10834#0#HTML" expanded="true" />
+                <element signature="e#9561#9581#0#HTML" expanded="true" />
+                <element signature="e#11061#11081#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/media/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8052147" vertical-offset="30" max-vertical-offset="1365">
+            <state vertical-scroll-proportion="6.5833335" vertical-offset="713" max-vertical-offset="1365">
               <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
               <folding />
             </state>
@@ -195,8 +194,8 @@
         <option value="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/media/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
       </list>
     </option>
   </component>
@@ -749,12 +748,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00014" summary="Subsription Functionality">
-      <created>1434830583640</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1434830583640</updated>
-    </task>
     <task id="LOCAL-00015" summary="Login / Register with FaceBook&#10;Validate Forms&#10;Add email integration (so emails are sent out through the site (notifications etc.))&#10;Create password forgot system&#10;Add User Profile page&#10;Display login modal instead of page&#10;Create subscribtion functionality">
       <created>1435170251610</created>
       <option name="number" value="00015" />
@@ -1043,7 +1036,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436188517931</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Changed media subtitle">
+      <created>1436188658046</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1436188658046</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1180,7 +1179,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Removed subscription box in sign up form" />
     <MESSAGE value="Limited username in menu bar" />
     <MESSAGE value="Added class support to Str class" />
     <MESSAGE value="Removed excerpt support in blogcontroller Admin" />
@@ -1205,7 +1203,8 @@
     <MESSAGE value="Added structured markup to blog pages" />
     <MESSAGE value="Added social sharing through AddThis" />
     <MESSAGE value="Updated homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated homepage" />
+    <MESSAGE value="Changed media subtitle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed media subtitle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1569,22 +1568,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/media/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625" vertical-offset="3105" max-vertical-offset="4320">
-          <caret line="232" column="27" selection-start-line="232" selection-start-column="27" selection-end-line="232" selection-end-column="70" />
-          <folding>
-            <element signature="e#9474#9494#0#HTML" expanded="true" />
-            <element signature="e#10814#10834#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="6.5833335" vertical-offset="713" max-vertical-offset="1365">
+          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/media/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8052147" vertical-offset="30" max-vertical-offset="1365">
-          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
-          <folding />
+        <state vertical-scroll-proportion="0.2760736" vertical-offset="2790" max-vertical-offset="4410">
+          <caret line="198" column="104" selection-start-line="198" selection-start-column="104" selection-end-line="198" selection-end-column="104" />
+          <folding>
+            <element signature="e#9561#9581#0#HTML" expanded="true" />
+            <element signature="e#11061#11081#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
