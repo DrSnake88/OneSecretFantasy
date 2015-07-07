@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1380368" vertical-offset="450" max-vertical-offset="2745">
-              <caret line="36" column="130" selection-start-line="36" selection-start-column="130" selection-end-line="36" selection-end-column="130" />
+            <state vertical-scroll-proportion="-6.25" vertical-offset="405" max-vertical-offset="2775">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -111,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2190">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.16104294" vertical-offset="525" max-vertical-offset="2190">
+              <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -187,7 +188,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_06_15_111810_create_forum_topics_table.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/topic.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/blogs/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/blogs/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Blog.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/modals.blade.php" />
@@ -196,6 +196,7 @@
         <option value="$PROJECT_DIR$/resources/views/media/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
       </list>
     </option>
   </component>
@@ -748,12 +749,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00016" summary="Social Login">
-      <created>1435491590535</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1435491590535</updated>
-    </task>
     <task id="LOCAL-00017" summary="CMS - Blog">
       <created>1435505179907</created>
       <option name="number" value="00017" />
@@ -1042,7 +1037,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436279053689</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Changed alt tag on blog main image">
+      <created>1436279146457</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1436279146457</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1179,7 +1180,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added class support to Str class" />
     <MESSAGE value="Removed excerpt support in blogcontroller Admin" />
     <MESSAGE value="Added image upload to forum categories.&#10;Added image upload to blogs" />
     <MESSAGE value="Made blog links routed" />
@@ -1204,7 +1204,8 @@
     <MESSAGE value="Updated homepage" />
     <MESSAGE value="Changed media subtitle" />
     <MESSAGE value="Completed homepage content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed homepage content" />
+    <MESSAGE value="Changed alt tag on blog main image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed alt tag on blog main image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1504,14 +1505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2190">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/blogs/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="735">
@@ -1581,8 +1574,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1380368" vertical-offset="450" max-vertical-offset="2745">
-          <caret line="36" column="130" selection-start-line="36" selection-start-column="130" selection-end-line="36" selection-end-column="130" />
+        <state vertical-scroll-proportion="-6.25" vertical-offset="405" max-vertical-offset="2775">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16104294" vertical-offset="525" max-vertical-offset="2190">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
           <folding />
         </state>
       </provider>

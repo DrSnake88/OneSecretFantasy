@@ -46,7 +46,7 @@ class BlogController extends Controller {
 		$blog->title = $request->input("title");
         $blog->body = $request->input("body");
         $blog->slug = $slugify->slugify($request->input('title'));
-        $blog->tags = $slugify->slugify($request->input('tags'));
+        $blog->tags = $request->input('tags');
 
         if ($request->hasFile('image')) {
             $last_blog = Blog::orderBy('created_at', 'DESC')->first();
@@ -108,7 +108,7 @@ class BlogController extends Controller {
 		$blog->title = $request->input("title");
         $blog->body = $request->input("body");
         $blog->slug = $slugify->slugify($request->input('title'));
-        $blog->tags = $slugify->slugify($request->input('tags'));
+        $blog->tags = $request->input('tags');
 
         if ($request->hasFile('image')) {
             $file = $request->file('image');

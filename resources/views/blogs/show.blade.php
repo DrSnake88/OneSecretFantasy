@@ -34,7 +34,9 @@
                     <div itemscope itemtype="http://schema.org/Article" class="single-post box-float">
                         <div class="inner">
                             <h1 itemprop="name">{{ $blog->title }}</h1>
-                            <img itemprop="image" src="{{ $blog->image }}" class="space-top space-bottom-2x" alt="{{ $blog->title }}">
+                            @if (isset($blog->image))
+                                <img itemprop="image" src="{{ $blog->image }}" class="space-top space-bottom-2x" alt="{{ $blog->title }}">
+                            @endif
                             <div class="row">
                                 <span itemprop="articleBody">
                                     {!! $blog->body !!}
