@@ -46,9 +46,11 @@
 
                             <div class="item col-md-1">
                                 <div class="post-tile">
+                                    @if(isset($category->image))
                                     <a href="/forum/{{ $category->slug }}" class="post-thumb waves-effect">
                                         <img src="{{ $category->image }}" alt="{{ $category->name }}">
                                     </a>
+                                    @endif
                                     <div class="post-body">
                                         <div class="post-title">
                                             <a href="/forum/{{ $category->slug }}"><h3>{{ $category->name }}</h3></a>

@@ -17,7 +17,7 @@ class CreateForumCategoriesTable extends Migration {
             $table->string('name');
             $table->string('slug');
             $table->text('description');
-            $table->string('image')->default('/img/blog/post01.png');
+            $table->string('image')->nullable();
             $table->integer('section_id')->unsigned();
             $table->foreign('section_id')->references('id')->on('forum_sections');
             $table->timestamps();
