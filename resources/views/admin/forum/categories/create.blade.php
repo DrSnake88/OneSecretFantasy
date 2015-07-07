@@ -21,8 +21,8 @@
                      <input type="text" name="description" class="form-control" value=""/>
                 </div>
                     <div class="form-group">
-                     <label for="image">IMAGE</label>
-                     <input type="text" name="image" class="form-control" value=""/>
+                     <label for="image">SECTION ID</label>
+                     <input type="text" name="section_id" class="form-control" value=""/>
                 </div>
                 <div class="form-group">
                     <label for="body">IMAGE</label>
