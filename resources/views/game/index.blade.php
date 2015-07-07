@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    Game Information - OneSecretFantasy
+    Game Information - One Secret Fantasy
 @stop
 
 @section('page-description')

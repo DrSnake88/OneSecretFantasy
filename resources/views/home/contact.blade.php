@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    Contact - OneSecretFantasy
+    Contact - One Secret Fantasy
 @stop
 
 @section('page-description')

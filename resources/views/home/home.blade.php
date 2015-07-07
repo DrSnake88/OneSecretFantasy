@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    OneSecretFantasy - Make your fantasies come to life
+    One Secret Fantasy - Make your fantasies come to life
 @stop
 
 @section('page-description')
@@ -238,7 +238,7 @@
                 <div class="col-lg-4 col-lg-push-8 col-md-5 col-md-push-7 col-sm-6 col-sm-push-6">
                     <div class="block-heading">
                         <h2>Our Gallery</h2>
-                        <p>Special moments related to OneSecretFantasy.</p>
+                        <p>Special moments related to One Secret Fantasy.</p>
                     </div>
                 </div>
                 <!-- Filters -->

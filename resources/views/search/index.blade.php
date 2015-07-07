@@ -1,11 +1,11 @@
 @extends('app')
 
 @section('page-title')
-    Search Results - OneSecretFantasy
+    Search Results - One Secret Fantasy
 @stop
 
 @section('page-description')
-    Find everything about OneSecretFantasy
+    Find everything about One Secret Fantasy
 @stop
 
 @section('page-keywords')

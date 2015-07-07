@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    Create Topic - OneSecretFantasy
+    Create Topic - One Secret Fantasy
 @stop
 
 @section('content')

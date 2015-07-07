@@ -6,8 +6,8 @@
         <!-- Preloader -->
         <div id="preloader">
             <div class="logo">
-                <img src="/img/logo/logo-rounded.png" alt="OneSecretFantasy"/>
-                <span>OneSecretFantasy</span>
+                <img src="/img/logo/logo-rounded.png" alt="One Secret Fantasy"/>
+                <span>One Secret Fantasy</span>
             </div>
         </div>
 

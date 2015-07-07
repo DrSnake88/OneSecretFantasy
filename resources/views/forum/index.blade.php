@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    Forum - OneSecretFantasy
+    Forum - One Secret Fantasy
 @stop
 
 @section('page-description')

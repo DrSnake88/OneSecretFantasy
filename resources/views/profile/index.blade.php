@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    {{ $user->name }}'s Profile - OneSecretFantasy
+    {{ $user->name }}'s Profile - One Secret Fantasy
 @stop
 
 @section('page-description')

@@ -29,7 +29,7 @@
             <div class="column c-middle">
                 <div class="logo-main">
                     <img src="/img/logo/logo-rounded.png" alt="OneSecretFantasy" />
-                    <h1>OneSecretFantasy</h1>
+                    <h1>One Secret Fantasy</h1>
                     <span>Make your dreams come true.</span>
 
                     @if(Session::get('subscribed') == null)
