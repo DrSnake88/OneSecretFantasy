@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" />
+    <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="Made forum category image optional">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/forum/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/forum/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -109,20 +108,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/forum/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.333334" vertical-offset="148" max-vertical-offset="1110">
-              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.6137339" vertical-offset="148" max-vertical-offset="1110">
+              <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015_06_15_111537_create_forum_categories_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015_06_15_111537_create_forum_categories_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28969958" vertical-offset="0" max-vertical-offset="932">
+            <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="675">
               <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding>
                 <marker date="1436300790000" expanded="true" signature="705:772" placeholder="ALTER TABLE forum_categories..." />
@@ -194,8 +193,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ForumTopicController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/forum/categories/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/forum/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/forum/index.blade.php" />
       </list>
     </option>
   </component>
@@ -822,12 +821,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00023" summary="CMS - Forum Manager">
-      <created>1435533643636</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1435533643636</updated>
-    </task>
     <task id="LOCAL-00024" summary="Forum Section Name - now not unique required">
       <created>1435598352343</created>
       <option name="number" value="00024" />
@@ -1116,7 +1109,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436300581205</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Made forum category image optional">
+      <created>1436300885684</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1436300885684</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1253,7 +1252,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Non object bug fix" />
     <MESSAGE value="Added dynamic sitemap" />
     <MESSAGE value="Fixed blog slug usage, in blog overview blogs where still linked to id" />
     <MESSAGE value="Removed index.html link from side menu" />
@@ -1278,7 +1276,8 @@
     <MESSAGE value="Updated OneSecretFantasy to One Secret Fantasy" />
     <MESSAGE value="Updated Admin Forum controllers to enable slugify usage" />
     <MESSAGE value="Create forum category now asks for section id" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create forum category now asks for section id" />
+    <MESSAGE value="Made forum category image optional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made forum category image optional" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1660,21 +1659,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forum/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.333334" vertical-offset="148" max-vertical-offset="1110">
-          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_15_111537_create_forum_categories_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28969958" vertical-offset="0" max-vertical-offset="932">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="675">
           <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
             <marker date="1436300790000" expanded="true" signature="705:772" placeholder="ALTER TABLE forum_categories..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/forum/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6137339" vertical-offset="148" max-vertical-offset="1110">
+          <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
