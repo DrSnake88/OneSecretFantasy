@@ -54,9 +54,11 @@
                         @foreach ($blogs as $blog)
                         <div class="item col-md-4 col-sm-6">
                             <div class="post-tile">
+                                @if (isset($blog->image))
                                 <a href="{{ route('blogs.show', $blog->slug) }}" class="post-thumb waves-effect">
                                     <img src="{{ $blog->image }}" alt="{{ $blog->title }}">
                                 </a>
+                                @endif
                                 <div class="post-body">
                                     <div class="post-title">
                                         <a href="{{ route('blogs.show', $blog->slug) }}"><h3>{{ $blog->title }}</h3></a>
