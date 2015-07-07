@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\ForumTopic as Topic;
+use Cocur\Slugify\Slugify;
 use Illuminate\Http\Request;
 
 class ForumTopicController extends Controller {
