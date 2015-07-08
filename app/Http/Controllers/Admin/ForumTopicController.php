@@ -58,9 +58,9 @@ class ForumTopicController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($slug)
 	{
-		$topic = Topic::findOrFail($id);
+		$topic = Topic::where('slug', '=', $slug);
 
 		return view('admin.forum.topics.show', compact('topic'));
 	}
