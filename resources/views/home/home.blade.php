@@ -142,7 +142,7 @@
                         </div>
                         <div class="tab-pane transition scale fade" id="unparalleled-ai">
                             <h3>Unparalleled AI</h3>
-                            <p>Every NPC has a very advanced AI system, where he / she learns and responds accordingly. They make there own decisions and experience their own fantasies.</p>
+                            <p>Every NPC has a very advanced AI system, where it learns and responds accordingly. They make there own decisions and experience their own fantasies.</p>
                         </div>
                     </div>
                 </div>
