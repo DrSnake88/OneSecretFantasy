@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <form action="{{ route('admin.media.pictures.update', $picture->id) }}" method="POST">
+            {!! Form::open(array('route'=>['admin.media.pictures.store', $picture->id], 'files'=>true)) !!}
                 <input type="hidden" name="_method" value="PUT">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -18,8 +18,8 @@
                     <p class="form-control-static">{{$picture->id}}</p>
                 </div>
                 <div class="form-group">
-                     <label for="image">IMAGE</label>
-                     <input type="text" name="image" class="form-control" value="{{$picture->image}}"/>
+                    <label for="body">IMAGE</label>
+                    <input type="file" name="image" id="image" />
                 </div>
                     <div class="form-group">
                      <label for="title">TITLE</label>

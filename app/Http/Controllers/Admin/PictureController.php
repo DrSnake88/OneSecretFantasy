@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\MediaPicture as Picture;
+use App\MediaPicture;
 use Illuminate\Http\Request;
 
 class PictureController extends Controller {
@@ -40,7 +41,21 @@ class PictureController extends Controller {
 	{
 		$picture = new Picture();
 
-		$picture->image = $request->input("image");
+        if ($request->hasFile('image')) {
+            $last_picture = MediaPicture::orderBy('created_at', 'DESC')->first();
+            $file = $request->file('image');
+            if ($last_picture) {
+                $id = $last_picture->id + 1;
+                $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
+            } else {
+                $name = str_replace('/', '', bcrypt('1')) . '.' . $file->getClientOriginalExtension();
+            }
+            $path = '/img/media/pictures/' . $name;
+            $file->move(public_path() . '/img/media/pictures', $name);
+            $picture->image = $path;
+        }
+
+
         $picture->title = $request->input("title");
         $picture->caption = $request->input("caption");
         $picture->tags = $request->input("tags");
@@ -87,7 +102,14 @@ class PictureController extends Controller {
 	{
 		$picture = Picture::findOrFail($id);
 
-		$picture->image = $request->input("image");
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
+            $path = '/img/media/pictures/' . $name;
+            $file->move(public_path() . '/img/media/pictures', $name);
+            $picture->image = $path;
+        }
+
         $picture->title = $request->input("title");
         $picture->caption = $request->input("caption");
         $picture->tags = $request->input("tags");
