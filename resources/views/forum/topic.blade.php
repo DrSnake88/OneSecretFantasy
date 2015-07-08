@@ -41,7 +41,7 @@
                         <div class="inner">
                             <h1>{{ $topic->name }}</h1>
 
-                            <a href="#" class="btn btn-flat btn-success waves-effect waves-primary btn-sm pull-right">ADD REPLY</a>
+                            <a href="#reply" class="btn btn-flat btn-success waves-effect waves-primary btn-sm pull-right">ADD REPLY</a>
 
                             @foreach($replies as $reply)
                             {{--REPLY--}}
@@ -74,6 +74,7 @@
                                         <h3 class="text-gray text-light">{{ Session::get('message') }}</h3>
                                     @endif
                                     <h3 class="text-gray text-right text-light">Leave a reply</h3>
+                                    <a name="reply"></a>
                                     {!! Form::open(['route' => 'reply.store', 'id' => 'comment-form', 'class' => 'space-top space-bottom']) !!}
                                     {!! Form::hidden('topic_id', $topic->id) !!}
                                         <div class="form-control topic">
