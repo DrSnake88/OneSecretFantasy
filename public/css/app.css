@@ -15277,6 +15277,9 @@ body {
   transition: -webkit-transform 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86), visibility 400ms;
   transition: transform 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86), visibility 400ms; }
 
+#search-input {
+  color: #757575 !important; }
+
 .modal-dialog {
   margin: 55px auto 50px; }
 
