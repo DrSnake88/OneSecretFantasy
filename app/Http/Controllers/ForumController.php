@@ -7,6 +7,7 @@ use App\ForumTopic;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use Cocur\Slugify\Slugify;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
@@ -58,10 +59,15 @@ class ForumController extends Controller {
         ]);
 
         if (Auth::check()) {
+            $slugify = new Slugify();
+
             $category = ForumCategory::findOrFail($request->category_id);
             $last_topic = ForumTopic::orderBy('created_at', 'DESC')->first();
 
-            $slug = $last_topic->id . '-'. str_replace(' ', '-', $request->title);
+            if ($last_topic) $new_id = $last_topic->id;
+            else $new_id = 1;
+
+            $slug = $new_id . '-'. $slugify->slugify($request->title);
 
             $topic = ForumTopic::create(['name' => $request->title, 'slug' => $slug, 'user_id' => Auth::user()->id, 'category_id' => $category->id]);
             $topic->save();
