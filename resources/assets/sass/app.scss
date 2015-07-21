@@ -22,9 +22,16 @@ body {
   color: $primary-color;
 }
 
+// LOADING SCREEN
+#preloader .logo {
+  width: 120px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
 // INTRO
 .intro {
-  background-image: url("/img/wallpapers/pirate_girl_1.jpg");
+  background-image: url("/img/wallpapers/Dinner_date_1_example.jpg");
 }
 
 .intro, .content-wrap {
