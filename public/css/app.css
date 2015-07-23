@@ -15276,7 +15276,7 @@ body {
   white-space: nowrap; }
 
 .intro {
-  background-image: url("/img/wallpapers/Dinner_date_1_example.jpg"); }
+  background-image: url("/img/wallpapers/dinner_date.jpg"); }
 
 .intro, .content-wrap {
   transition: -webkit-transform 400ms cubic-bezier(0.785, 0.135, 0.15, 0.86), visibility 400ms;
