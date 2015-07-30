@@ -479,12 +479,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00035" summary="Removed subscription box in sign up form">
-      <created>1435911340015</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1435911340015</updated>
-    </task>
     <task id="LOCAL-00036" summary="Limited username in menu bar">
       <created>1435911592504</created>
       <option name="number" value="00036" />
@@ -773,7 +767,13 @@
       <option name="project" value="LOCAL" />
       <updated>1438288253495</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Updated wallpaper">
+      <created>1438288989171</created>
+      <option name="number" value="00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1438288989171</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
