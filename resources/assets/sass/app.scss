@@ -32,6 +32,8 @@ body {
 // INTRO
 .intro {
   background-image: url("/img/wallpapers/header_secret.png");
+  background-size: contain;
+  background-color: #0b040c;
 }
 
 .intro, .content-wrap {
