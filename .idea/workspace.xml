@@ -92,8 +92,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40669855" vertical-offset="2370" max-vertical-offset="3210">
-              <caret line="175" column="3" selection-start-line="175" selection-start-column="3" selection-end-line="175" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.19138756" vertical-offset="390" max-vertical-offset="3210">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -480,12 +480,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00038" summary="Removed excerpt support in blogcontroller Admin">
-      <created>1435911799139</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1435911799139</updated>
-    </task>
     <task id="LOCAL-00039" summary="Removed excerpt support in blogcontroller Admin">
       <created>1435921897911</created>
       <option name="number" value="00039" />
@@ -774,7 +768,13 @@
       <option name="project" value="LOCAL" />
       <updated>1438516988067</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="background sizing">
+      <created>1438587615368</created>
+      <option name="number" value="00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1438587615368</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -911,7 +911,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Removed double image field, blog edit" />
     <MESSAGE value="Added tags default value, blogs edit" />
     <MESSAGE value="updated gettags function, added failsafe method when no splitter has been entered" />
     <MESSAGE value="Set blog title as page description" />
@@ -936,7 +935,8 @@
     <MESSAGE value="Fixed loading screen" />
     <MESSAGE value="Updated wallpaper" />
     <MESSAGE value="Fixed menu bar width on small mobile browsers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed menu bar width on small mobile browsers" />
+    <MESSAGE value="background sizing" />
+    <option name="LAST_COMMIT_MESSAGE" value="background sizing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1309,8 +1309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40669855" vertical-offset="2370" max-vertical-offset="3210">
-          <caret line="175" column="3" selection-start-line="175" selection-start-column="3" selection-end-line="175" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.19138756" vertical-offset="390" max-vertical-offset="3210">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding />
         </state>
       </provider>
