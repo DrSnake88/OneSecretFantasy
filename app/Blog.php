@@ -16,8 +16,8 @@ class Blog extends Model {
     }
 
     public function getTags() {
-        if (str_contains(';', $this->tags)) return explode(";", $this->tags);
-        else if (str_contains(',', $this->tags)) return explode(",", $this->tags);
+        if (strpos($this->tags, ';') !== FALSE) return explode(";", $this->tags);
+        else if (strpos($this->tags, ',') !== FALSE) return explode(",", $this->tags);
         else return [$this->tags];
     }
 
