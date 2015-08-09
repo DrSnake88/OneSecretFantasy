@@ -65,6 +65,56 @@ class PictureController extends Controller {
 		return redirect()->route('admin.media.pictures.index')->with('message', 'Item created successfully.');
 	}
 
+    public function multiple(Request $request){
+        // getting all of the post data
+        $files = $request->file('images');
+        // Making counting of uploaded images
+        $file_count = count($files);
+        // start count how many uploaded
+        $uploadcount = 0;
+        foreach($files as $file) {
+            $picture = new Picture();
+
+            $last_picture = MediaPicture::orderBy('created_at', 'DESC')->first();
+
+            if ($last_picture) {
+                $id = $last_picture->id + 1;
+                $name = str_replace('/', '', bcrypt($id)) . '.' . $file->getClientOriginalExtension();
+            } else {
+                $name = str_replace('/', '', bcrypt('1')) . '.' . $file->getClientOriginalExtension();
+            }
+            $path = '/img/media/pictures/' . $name;
+            $file->move(public_path() . '/img/media/pictures', $name);
+            $picture->image = $path;
+
+
+            $picture->title = $file->getClientOriginalName();
+            $picture->caption = $file->getClientOriginalName();
+            $picture->tags = $file->getClientOriginalName();
+
+            $picture->save();
+
+            $uploadcount ++;
+
+            /*
+            $rules = array('file' => 'required'); //'required|mimes:png,gif,jpeg,txt,pdf,doc'
+            $validator = Validator::make(array('file'=> $file), $rules);
+            if($validator->passes()){
+                $destinationPath = 'uploads';
+                $filename = $file->getClientOriginalName();
+                $upload_success = $file->move($destinationPath, $filename);
+                $uploadcount ++;
+            }*/
+        }
+
+        if($uploadcount == $file_count){
+            return redirect()->route('admin.media.pictures.index')->with('message', 'Items created successfully.');
+        }
+        else {
+            return Redirect::back()->withInput()->withErrors();
+        }
+    }
+
 	/**
 	 * Display the specified resource.
 	 *

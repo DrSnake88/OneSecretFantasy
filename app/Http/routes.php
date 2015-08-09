@@ -61,6 +61,7 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function (
     Route::resource("admin/blogs/comments",'Admin\BlogCommentController');
     Route::resource("admin/blogs",'Admin\BlogController');
 
+    Route::post('admin/media/pictures/mutliple', ['as' => 'admin.media.pictures.multiple', 'uses' => 'Admin\PictureController@multiple']);
     Route::resource("admin/media/pictures",'Admin\PictureController');
     Route::resource("admin/media/videos",'Admin\VideoController');
 

@@ -36,13 +36,35 @@
                         <form action="{{ route('admin.media.pictures.destroy', $picture->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };"><input type="hidden" name="_method" value="DELETE"><input type="hidden" name="_token" value="{{ csrf_token() }}"> <button class="btn btn-danger" type="submit">Delete</button></form>
                     </td>
                 </tr>
-
                 @endforeach
 
                 </tbody>
             </table>
 
+
+
             <a class="btn btn-success" href="{{ route('admin.media.pictures.create') }}">Create</a>
+            <hr>
+            UPLOAD MULTIPLE FILES:
+            <div class="span7 offset1">
+                @if(Session::has('success'))
+                    <div class="alert-box success">
+                        <h2>{!! Session::get('success') !!}</h2>
+                    </div>
+                @endif
+                {!! Form::open(array('route'=>['admin.media.pictures.multiple'],'method'=>'POST', 'files'=>true)) !!}
+                <div class="control-group">
+                    <div class="controls">
+                        {!! Form::file('images[]', array('multiple'=>true)) !!}
+                        <p class="errors">{!!$errors->first('images')!!}</p>
+                        @if(Session::has('error'))
+                            <p class="errors">{!! Session::get('error') !!}</p>
+                        @endif
+                    </div>
+                </div>
+                {!! Form::submit('Submit', array('class'=>'btn btn-success send-btn')) !!}
+                {!! Form::close() !!}
+            </div>
         </div>
     </div>
 
