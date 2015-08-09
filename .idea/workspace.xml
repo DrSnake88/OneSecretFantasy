@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -549,12 +549,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00044" summary="Non object bug fix">
-      <created>1435926625502</created>
-      <option name="number" value="00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1435926625502</updated>
-    </task>
     <task id="LOCAL-00045" summary="Added dynamic sitemap">
       <created>1435940590250</created>
       <option name="number" value="00045" />
@@ -843,7 +837,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439122425598</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Removed margin from post meta">
+      <created>1439122476635</created>
+      <option name="number" value="00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1439122476635</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -980,7 +980,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added structured markup to blog pages" />
     <MESSAGE value="Added social sharing through AddThis" />
     <MESSAGE value="Updated homepage" />
     <MESSAGE value="Changed media subtitle" />
@@ -1005,7 +1004,8 @@
     <MESSAGE value="Implement CKEditor for blog posts.&#10;Styled blog posts" />
     <MESSAGE value="Removed image bottem padding in blog posts" />
     <MESSAGE value="Added margin to blog posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added margin to blog posts" />
+    <MESSAGE value="Removed margin from post meta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed margin from post meta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
