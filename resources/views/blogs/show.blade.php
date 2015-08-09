@@ -35,7 +35,7 @@
                         <div class="inner" id="article">
                             <h2 itemprop="name" id="title">{{ $blog->title }}</h2>
                             @if (isset($blog->image))
-                                <img itemprop="image" src="{{ $blog->image }}" class="space-top space-bottom-2x" alt="{{ $blog->title }}">
+                                <img itemprop="image" src="{{ $blog->image }}" class="space-top" alt="{{ $blog->title }}">
                             @endif
                             <div class="row">
                                 <span itemprop="articleBody" id="body">
