@@ -71,8 +71,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93620414" vertical-offset="1213" max-vertical-offset="4680">
-              <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.8883573" vertical-offset="1198" max-vertical-offset="4620">
+              <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -549,18 +549,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00042" summary="Added sidewide slug support for SEO friendly URL's">
-      <created>1435925037623</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1435925037623</updated>
-    </task>
-    <task id="LOCAL-00043" summary="slug added to store and update">
-      <created>1435925728112</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1435925728112</updated>
-    </task>
     <task id="LOCAL-00044" summary="Non object bug fix">
       <created>1435926625502</created>
       <option name="number" value="00044" />
@@ -843,7 +831,19 @@
       <option name="project" value="LOCAL" />
       <updated>1439122111264</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Added margin to blog posts">
+      <created>1439122389998</created>
+      <option name="number" value="00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1439122389998</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Added margin to blog posts">
+      <created>1439122425598</created>
+      <option name="number" value="00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1439122425598</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -980,7 +980,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Set blog title as page description" />
     <MESSAGE value="Added structured markup to blog pages" />
     <MESSAGE value="Added social sharing through AddThis" />
     <MESSAGE value="Updated homepage" />
@@ -1005,7 +1004,8 @@
     <MESSAGE value="background sizing" />
     <MESSAGE value="Implement CKEditor for blog posts.&#10;Styled blog posts" />
     <MESSAGE value="Removed image bottem padding in blog posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed image bottem padding in blog posts" />
+    <MESSAGE value="Added margin to blog posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added margin to blog posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1382,8 +1382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93620414" vertical-offset="1213" max-vertical-offset="4680">
-          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.8883573" vertical-offset="1198" max-vertical-offset="4620">
+          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
           <folding />
         </state>
       </provider>
