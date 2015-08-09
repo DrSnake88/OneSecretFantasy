@@ -158,6 +158,9 @@ return [
 
         // Socialite
         'Laravel\Socialite\SocialiteServiceProvider',
+
+        // File Manager
+        'Tsawler\Laravelfilemanager\LaravelFilemanagerServiceProvider',
 	],
 
 	/*

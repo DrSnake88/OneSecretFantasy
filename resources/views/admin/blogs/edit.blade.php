@@ -30,7 +30,10 @@
                     <script>
                         // Replace the <textarea id="editor1"> with a CKEditor
                         // instance, using default configuration.
-                        CKEDITOR.replace( 'body' );
+                        CKEDITOR.replace( 'body', {
+                            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+                            filebrowserBrowseUrl: '/laravel-filemanager?type=Files'
+                        });
                     </script>
                 </div>
 
