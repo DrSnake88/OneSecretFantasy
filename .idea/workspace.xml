@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.346939" vertical-offset="3123" max-vertical-offset="4590">
-              <caret line="242" column="18" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.93620414" vertical-offset="1213" max-vertical-offset="4680">
+              <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4601227" vertical-offset="255" max-vertical-offset="2775">
+            <state vertical-scroll-proportion="-12.5" vertical-offset="255" max-vertical-offset="2775">
               <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
               <folding />
             </state>
@@ -193,8 +193,8 @@
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/blogs/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/blogs/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/blogs/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       </list>
     </option>
   </component>
@@ -549,12 +549,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00041" summary="Made blog links routed">
-      <created>1435922703596</created>
-      <option name="number" value="00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1435922703596</updated>
-    </task>
     <task id="LOCAL-00042" summary="Added sidewide slug support for SEO friendly URL's">
       <created>1435925037623</created>
       <option name="number" value="00042" />
@@ -843,7 +837,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439121949664</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Removed image bottem padding in blog posts">
+      <created>1439122111264</created>
+      <option name="number" value="00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1439122111264</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -980,7 +980,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="updated gettags function, added failsafe method when no splitter has been entered" />
     <MESSAGE value="Set blog title as page description" />
     <MESSAGE value="Added structured markup to blog pages" />
     <MESSAGE value="Added social sharing through AddThis" />
@@ -1005,7 +1004,8 @@
     <MESSAGE value="Fixed menu bar width on small mobile browsers" />
     <MESSAGE value="background sizing" />
     <MESSAGE value="Implement CKEditor for blog posts.&#10;Styled blog posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement CKEditor for blog posts.&#10;Styled blog posts" />
+    <MESSAGE value="Removed image bottem padding in blog posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed image bottem padding in blog posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1372,18 +1372,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.346939" vertical-offset="3123" max-vertical-offset="4590">
-          <caret line="242" column="18" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="18" />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="255" max-vertical-offset="2775">
+          <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/blogs/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4601227" vertical-offset="255" max-vertical-offset="2775">
-          <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.93620414" vertical-offset="1213" max-vertical-offset="4680">
+          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
           <folding />
         </state>
       </provider>
