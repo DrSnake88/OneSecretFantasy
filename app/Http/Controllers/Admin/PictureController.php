@@ -68,6 +68,7 @@ class PictureController extends Controller {
     public function multiple(Request $request){
         // getting all of the post data
         $files = $request->file('images');
+
         // Making counting of uploaded images
         $file_count = count($files);
         // start count how many uploaded
