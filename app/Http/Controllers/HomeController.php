@@ -38,7 +38,7 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-        $pictures = MediaPicture::orderBy('created_at', 'DESC')->take(2)->get();
+        $pictures = MediaPicture::orderBy('created_at', 'DESC')->where('featured', '=', 1)->take(2)->get();
         $videos = MediaVideo::orderBy('created_at', 'DESC')->take(1)->get();
 
         $blogs = Blog::orderBy('created_at', 'DESC')->take(3)->get();
