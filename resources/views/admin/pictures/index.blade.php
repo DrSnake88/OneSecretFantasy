@@ -13,6 +13,7 @@
                     <tr>
                         <th>ID</th>
                         <th>IMAGE</th>
+                        <th>LINK</th>
                         <th>TITLE</th>
                         <th>CAPTION</th>
                         <th>TAGS</th>
@@ -25,7 +26,8 @@
                 @foreach($pictures as $picture)
                 <tr>
                     <td>{{$picture->id}}</td>
-                    <td>{{$picture->image}}</td>
+                    <td><img width="150px" src="{{$picture->image}}"></img></td>
+                    <td><a href="{{$picture->image}}">Link</a></td>
                     <td>{{$picture->title}}</td>
                     <td>{{$picture->caption}}</td>
                     <td>{{$picture->tags}}</td>
