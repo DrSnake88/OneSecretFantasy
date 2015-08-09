@@ -23,6 +23,11 @@
                 <div class="form-group">
                      <label for="body">BODY</label>
                      <textarea rows="10" name="body" class="form-control" value=""></textarea>
+                    <script>
+                        // Replace the <textarea id="editor1"> with a CKEditor
+                        // instance, using default configuration.
+                        CKEDITOR.replace( 'body' );
+                    </script>
                 </div>
                 <div class="form-group">
                     <label for="body">IMAGE</label>
@@ -32,6 +37,7 @@
                     <label for="tags">TAGS</label>
                     <input type="text" name="tags" class="form-control" value=""/>
                 </div>
+
 
 
             <a class="btn btn-default" href="{{ route('admin.blogs.index') }}">Back</a>

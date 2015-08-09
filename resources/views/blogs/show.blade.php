@@ -32,13 +32,13 @@
                 <!-- Post Content -->
                 <div class="col-lg-9 col-lg-push-3 col-sm-8 col-sm-push-4 padding-bottom">
                     <div itemscope itemtype="http://schema.org/Article" class="single-post box-float">
-                        <div class="inner">
-                            <h1 itemprop="name">{{ $blog->title }}</h1>
+                        <div class="inner" id="article">
+                            <h2 itemprop="name" id="title">{{ $blog->title }}</h2>
                             @if (isset($blog->image))
                                 <img itemprop="image" src="{{ $blog->image }}" class="space-top space-bottom-2x" alt="{{ $blog->title }}">
                             @endif
                             <div class="row">
-                                <span itemprop="articleBody">
+                                <span itemprop="articleBody" id="body">
                                     {!! $blog->body !!}
                                 </span>
                             </div>

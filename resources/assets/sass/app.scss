@@ -57,6 +57,64 @@ body {
   opacity: 0.5;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
+  line-height: 1;
+  font-size: 10px;
+  opacity: 0.8;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+// BLOG POSTS
+#article {
+  padding: 60px 80px 0 80px;
+
+  #body {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 40px;
+
+
+  }
+
+  h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    margin-left: -3px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-bottom: 8px;
+    color: rgba(0,0,0,0.8);
+  }
+}
+
 // SEARCH
 #search-input {
   color: #757575 !important;
@@ -157,6 +215,40 @@ body.navbarOpen {
 // BREADCRUMBS
 .breadcrumb > li + li::before {
   content: "/";
+}
+
+// LISTS
+ul, ol {
+  margin:auto -3em 1em 0;
+  padding:0;
+  position:relative;
+  left:-3em;
+  overflow:hidden;
+}
+
+li {
+  margin-top:0.25em;
+  margin-bottom:0.25em;
+}
+
+ul ul, ul ol,
+ol ol, ol ul {
+  margin-left:1em;
+  padding-left:0;
+}
+
+ul li, ol li {
+  margin-left:7em;
+  font-size:16px;
+  line-height: 1.5;
+}
+
+li li {
+  margin-left:1em;
+}
+
+ul {
+  list-style: outside;
 }
 
 // FORUM
