@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.43711656" vertical-offset="0" max-vertical-offset="652">
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -654,12 +654,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00051" summary="Added dynamic description and keyword tags">
-      <created>1436043823459</created>
-      <option name="number" value="00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1436043823459</updated>
-    </task>
     <task id="LOCAL-00052" summary="Fixed show blog bug">
       <created>1436044001392</created>
       <option name="number" value="00052" />
@@ -948,7 +942,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439131329554</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Removed token check in admin panel">
+      <created>1439132427225</created>
+      <option name="number" value="00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1439132427225</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1494,7 +1494,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43711656" vertical-offset="0" max-vertical-offset="652">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding />
         </state>
       </provider>

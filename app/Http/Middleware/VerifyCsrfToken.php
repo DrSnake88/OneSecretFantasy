@@ -18,7 +18,7 @@ class VerifyCsrfToken extends BaseVerifier {
 	}
 
     protected $except = [
-        'admin/media/pictures*'
+        'admin/media/pictures/*'
     ];
 
 }
