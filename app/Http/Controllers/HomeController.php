@@ -44,6 +44,10 @@ class HomeController extends Controller {
         $blogs = Blog::orderBy('created_at', 'DESC')->take(3)->get();
         $tweets = json_decode(Twitter::getUserTimeline(['screen_name' => 'OSFtheGame', 'count' => 2, 'format' => 'json']));
 
+        foreach ($blogs as $blog) {
+            $blog->image = str_replace('/img/blog/', '/img/blog/thumb/', $blog->image);
+        }
+
 		return view('home/home', compact('pictures', 'videos', 'blogs', 'tweets'));
 	}
 

@@ -32,6 +32,7 @@
                         // instance, using default configuration.
                         CKEDITOR.replace( 'body', {
                             filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+//                            filebrowserUploadUrl: '/laravel-filemanager?type=Files',
                             filebrowserBrowseUrl: '/laravel-filemanager?type=Files'
                         });
                     </script>

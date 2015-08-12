@@ -161,6 +161,8 @@ return [
 
         // File Manager
         'Tsawler\Laravelfilemanager\LaravelFilemanagerServiceProvider',
+
+        'Intervention\Image\ImageServiceProvider'
 	],
 
 	/*
@@ -221,6 +223,8 @@ return [
 
         // Socialite
         'Socialite' => 'Laravel\Socialite\Facades\Socialite',
+
+        'Image' => 'Intervention\Image\Facades\Image'
 	],
 
 ];
