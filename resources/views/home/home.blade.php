@@ -35,7 +35,7 @@
                         @foreach($tweets as $tweet)
                         <div class="tweet tweet-float">
                             <a href="{{ \Thujohn\Twitter\Facades\Twitter::linkUser('@OSFtheGame') }}" target="_blank" class="author">@OSFtheGame</a>
-                            <p>{{ $tweet->text }}</p>
+                            <p>{!! $tweet->text !!}</p>
                         </div>
                         @endforeach
 
