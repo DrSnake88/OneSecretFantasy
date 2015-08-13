@@ -44,6 +44,7 @@ jQuery(document).ready(function($) {
 			}
 		});
 
+        initAddThis();
 		// No-touch Devices
 	} else {
 
@@ -618,6 +619,11 @@ function initialize() {
 		map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 		
 		codeAddress();
+}
+
+function initAddThis()
+{
+    addthis.init()
 }
 
 function codeAddress() {

@@ -25,6 +25,9 @@
     RewriteCond %{HTTP_HOST} !^www.onesecretfantasy.com$ [NC]
     RewriteRule ^(.*)$ http://www.onesecretfantasy.com/$1 [L,R=301]
 
+    RewriteCond %{HTTP_HOST} ^104\.43\.233\.195
+    RewriteRule (.*) http://www.onesecretfantasy.com/$1 [R=301,L]
+
     RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
     RewriteRule .* – [F,L]
 
