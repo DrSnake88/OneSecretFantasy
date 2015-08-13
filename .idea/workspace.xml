@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -97,8 +96,8 @@
       <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9309816" vertical-offset="8" max-vertical-offset="735">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5981595" vertical-offset="0" max-vertical-offset="735">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -736,12 +735,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00066" summary="Blog tags where being slugged, removed">
-      <created>1436282193731</created>
-      <option name="number" value="00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1436282193731</updated>
-    </task>
     <task id="LOCAL-00067" summary="Hide img alt if no img present in blogs">
       <created>1436299419539</created>
       <option name="number" value="00067" />
@@ -1030,7 +1023,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439476071337</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Moved CSS to footer">
+      <created>1439477168607</created>
+      <option name="number" value="00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1439477168607</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1167,7 +1166,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added picture upload to media picture admin page" />
     <MESSAGE value="Fixed loading screen" />
     <MESSAGE value="Updated wallpaper" />
     <MESSAGE value="Fixed menu bar width on small mobile browsers" />
@@ -1192,7 +1190,8 @@
     <MESSAGE value="Made links in tweets clickable" />
     <MESSAGE value="Added Google Analytics" />
     <MESSAGE value="Fixed GA code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed GA code" />
+    <MESSAGE value="Moved CSS to footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved CSS to footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1579,8 +1578,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9309816" vertical-offset="8" max-vertical-offset="735">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5981595" vertical-offset="0" max-vertical-offset="735">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
           <folding />
         </state>
       </provider>
