@@ -34,7 +34,7 @@
 
                     @if(Session::get('subscribed') == null)
                     <!-- Sign up form -->
-                    {{--{!! Form::open(['route' => 'subscriber.store', 'id' => 'subscribe-form']) !!}--}}
+{{--                    {!! Form::open(['route' => 'subscriber.store', 'id' => 'subscribe-form']) !!}--}}
                     {!! Form::open(['url' => '//onesecretfantasy.us8.list-manage.com/subscribe/post?u=86ac611bda021b84f6a76d655&amp;id=b54a5005c6', 'id' => 'subscribe-form']) !!}
                         <div class="form-control">
                             <input type="email" name="EMAIL" id="subscribe_email" required aria-required="true">

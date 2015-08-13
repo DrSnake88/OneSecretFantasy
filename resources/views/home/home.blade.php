@@ -5,11 +5,11 @@
 @stop
 
 @section('page-description')
-    Make your fantasies come to life
+    Make your fantasies come to life with One Secret Fantasy
 @stop
 
 @section('page-keywords')
-    onesecretfantasy, dreams, fantasies
+    One Secret Fantasy, dreams, fantasies
 @stop
 
 @section('content')

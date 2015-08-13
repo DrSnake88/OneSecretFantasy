@@ -3,6 +3,15 @@
         Options -MultiViews
     </IfModule>
 
+    <IfModule mod_expires.c>
+        ExpiresActive on
+
+        ExpiresByType image/jpg "access plus 1 month"
+        ExpiresByType image/jpeg "access plus 1 month"
+        ExpiresByType image/gif "access plus 1 month"
+        ExpiresByType image/png "access plus 1 month"
+    </IfModule>
+
     RewriteEngine On
 
     # Redirect Trailing Slashes...
@@ -12,4 +21,7 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    RewriteCond %{HTTP_HOST} !^www.onesecretfantasy.com$ [NC]
+    RewriteRule ^(.*)$ http://www.onesecretfantasy.com/$1 [L,R=301]
 </IfModule>

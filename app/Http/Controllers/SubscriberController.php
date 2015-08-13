@@ -39,16 +39,18 @@ class subscriberController extends Controller {
 	public function store(Request $request)
 	{
         $this->validate($request, [
-            'email'   => 'required|email'
+            'EMAIL'   => 'required|email'
         ]);
 
 		$subscriber = new Subscriber();
-        $subscriber->email = $request->email;
+        $subscriber->email = $request->EMAIL;
 		
 
 		$subscriber->save();
 
-		return redirect()->back()->with('subscribed', 'Successfully subscribed.');
+//        ->with('subscribed', 'Successfully subscribed.')
+		return redirect()->away("//onesecretfantasy.us8.list-manage.com/subscribe/post?u=86ac611bda021b84f6a76d655&amp;id=b54a5005c6")
+            ->with($request->EMAIL);
 	}
 
 	/**
