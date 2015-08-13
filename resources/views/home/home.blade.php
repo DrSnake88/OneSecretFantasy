@@ -88,7 +88,7 @@
                 <div class="devices">
                     <div class="tablet">
 
-                        <img src="/img/people/banner1.jpg" alt="Tablet">
+                        <img src="/img/people/Home1.png" alt="Dating">
 
                         {{--<img class="reflection" src="/img/features/tablet-reflection.png" alt="Reflection">
                         <div class="mask">
@@ -102,7 +102,7 @@
 
                     </div>
                     <div class="phone">
-                        <img src="/img/people/post3.jpg" alt="iPhone">
+                        <img src="/img/people/Home2.png" alt="Woman">
 
                         {{--
                         <div class="mask">
