@@ -12,7 +12,7 @@
 
         <!-- Logo -->
         <a href="/" class="logo">
-            <img src="/img/logo/logo-square.png" alt="One Secret Fantasy">
+            <div class="logo-menu"></div>
             One Secret Fantasy
         </a>
         <!-- Toolbar -->

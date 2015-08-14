@@ -28,7 +28,8 @@
             <!-- Middle Column -->
             <div class="column c-middle">
                 <div class="logo-main">
-                    <img src="/img/logo/logo-rounded.png" alt="OneSecretFantasy" />
+                    <div class="logo-bg"></div>
+                    {{--<img src="/img/logo/logo-rounded.png" alt="OneSecretFantasy" />--}}
                     <h1>One Secret Fantasy</h1>
                     <span>Make your dreams come true.</span>
 

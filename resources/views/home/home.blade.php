@@ -53,7 +53,7 @@
                     <div class="light-color posts">
                         @foreach ($blogs as $blog)
                         <div class="item col-md-4 col-sm-6">
-                            <div class="post-tile">
+                            <div class="post-tile home-blog-tile">
                                 @if (isset($blog->image))
                                 <a href="{{ route('blogs.show', $blog->slug) }}" class="post-thumb waves-effect" style="background:url({{ $blog->image }}); height:150px;">
 

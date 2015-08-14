@@ -154,6 +154,11 @@ blockquote p {
   }
 }
 
+// HOME
+.home-blog-tile {
+  min-height: 220px;
+}
+
 // SEARCH
 #search-input {
   color: #757575 !important;
@@ -186,6 +191,23 @@ body.navbarOpen {
 .offcanvas-nav a.nav-link, .offcanvas-nav .nav-link a {
 //  font-size: 14px;
     margin-right: 0px;
+}
+
+// LOGO
+.logo-bg {
+  width: 450px;
+  height: 140px;
+  background: url('/img/logo/logo-rounded.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-menu {
+  width: 48px;
+  height: 48px;
+  background: url('/img/logo/logo-square.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .offcanvas-logo {
