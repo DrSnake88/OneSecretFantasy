@@ -43,7 +43,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement("script");
-        element.src = "{{ asset('/js/vendor.js') }}";
+        element.src = "js/vendor.js";
         document.body.appendChild(element);
     }
     if (window.addEventListener)

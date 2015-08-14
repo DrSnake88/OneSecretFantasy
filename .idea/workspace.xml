@@ -76,8 +76,8 @@
       <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35582823" vertical-offset="173" max-vertical-offset="900">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.654908" vertical-offset="248" max-vertical-offset="900">
+              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -793,12 +793,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00073" summary="Made forum category image optional">
-      <created>1436301111790</created>
-      <option name="number" value="00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1436301111790</updated>
-    </task>
     <task id="LOCAL-00074" summary="Updated forum show topic, to slog instead of id">
       <created>1436354277407</created>
       <option name="number" value="00074" />
@@ -1087,7 +1081,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439571379771</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Deferred JS file">
+      <created>1439576312988</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1439576312988</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1224,7 +1224,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Removed image bottem padding in blog posts" />
     <MESSAGE value="Added margin to blog posts" />
     <MESSAGE value="Removed margin from post meta" />
     <MESSAGE value="Tags display fixed" />
@@ -1249,7 +1248,8 @@
     <MESSAGE value="Added min-height to blog posts on home page" />
     <MESSAGE value="Fixed menu bar logo location" />
     <MESSAGE value="added post-body pointer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added post-body pointer" />
+    <MESSAGE value="Deferred JS file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deferred JS file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1639,8 +1639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35582823" vertical-offset="173" max-vertical-offset="900">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.654908" vertical-offset="248" max-vertical-offset="900">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
           <folding />
         </state>
       </provider>
