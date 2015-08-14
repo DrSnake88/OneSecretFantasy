@@ -5,9 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/splash.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/splash.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -104,8 +101,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6969697" vertical-offset="1933" max-vertical-offset="5025">
-              <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.6969697" vertical-offset="2833" max-vertical-offset="5130">
+              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -801,12 +798,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00069" summary="Updated OneSecretFantasy to One Secret Fantasy">
-      <created>1436300146578</created>
-      <option name="number" value="00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1436300146579</updated>
-    </task>
     <task id="LOCAL-00070" summary="Updated Admin Forum controllers to enable slugify usage">
       <created>1436300464052</created>
       <option name="number" value="00070" />
@@ -1095,7 +1086,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439541254139</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Added min-height to blog posts on home page">
+      <created>1439569271479</created>
+      <option name="number" value="00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1439569271479</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1232,7 +1229,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fixed menu bar width on small mobile browsers" />
     <MESSAGE value="background sizing" />
     <MESSAGE value="Implement CKEditor for blog posts.&#10;Styled blog posts" />
     <MESSAGE value="Removed image bottem padding in blog posts" />
@@ -1257,7 +1253,8 @@
     <MESSAGE value="Moved CSS to footer" />
     <MESSAGE value="JS - Async" />
     <MESSAGE value="Removed page loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed page loader" />
+    <MESSAGE value="Added min-height to blog posts on home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added min-height to blog posts on home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1650,8 +1647,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6969697" vertical-offset="1933" max-vertical-offset="5025">
-          <caret line="158" column="20" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.6969697" vertical-offset="2833" max-vertical-offset="5130">
+          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
           <folding />
         </state>
       </provider>
