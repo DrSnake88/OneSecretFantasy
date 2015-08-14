@@ -195,7 +195,7 @@ body.navbarOpen {
 
 // LOGO
 .logo-bg {
-  width: 450px;
+  width: 100%;
   height: 140px;
   background: url('/img/logo/logo-rounded.png');
   background-position: center;
@@ -304,9 +304,6 @@ div.topic textarea {
   }
 }
 @media screen and (max-width: 768px) {
-  .logo-bg {
-    width: 100%;
-  }
 
 }
 @media screen and (max-width: 680px) {

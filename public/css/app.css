@@ -15475,6 +15475,10 @@ div.topic textarea {
   .intro {
     background-size: cover; } }
 
+@media screen and (max-width: 768px) {
+  .logo-bg {
+    width: 100%; } }
+
 @media screen and (max-width: 480px) {
   .offcanvas-nav .nav-link ul, .offcanvas-nav .nav-link ul:first-child {
     margin-right: 0; } }
