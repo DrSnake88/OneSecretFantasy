@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -74,12 +73,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33282208" vertical-offset="188" max-vertical-offset="1080">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-25.291666" vertical-offset="128" max-vertical-offset="1080">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <folding>
+                <marker date="1439580212000" expanded="true" signature="2585:3104" placeholder="..." />
+                <marker date="1439580212000" expanded="true" signature="2619:2851" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.631579" vertical-offset="265" max-vertical-offset="5130">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.44976076" vertical-offset="4323" max-vertical-offset="5175">
+              <caret line="307" column="15" selection-start-line="307" selection-start-column="15" selection-end-line="307" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -127,8 +129,8 @@
       <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.041666" vertical-offset="23" max-vertical-offset="720">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            <state vertical-scroll-proportion="-24.666666" vertical-offset="23" max-vertical-offset="720">
+              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -196,9 +198,9 @@
         <option value="$PROJECT_DIR$/resources/views/_partials/splash.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       </list>
     </option>
   </component>
@@ -794,18 +796,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00075" summary="Slugified forum topic">
-      <created>1436354497104</created>
-      <option name="number" value="00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1436354497104</updated>
-    </task>
-    <task id="LOCAL-00076" summary="updated add reply link to scroll to reply form">
-      <created>1436354783661</created>
-      <option name="number" value="00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1436354783661</updated>
-    </task>
     <task id="LOCAL-00077" summary="updated search input color">
       <created>1436355190248</created>
       <option name="number" value="00077" />
@@ -1088,7 +1078,19 @@
       <option name="project" value="LOCAL" />
       <updated>1439576612085</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Undeferred JS file / Deferred CSS">
+      <created>1439579657680</created>
+      <option name="number" value="00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1439579657680</updated>
+    </task>
+    <task id="LOCAL-00125" summary="Undeferred JS file / Undeferred CSS">
+      <created>1439580234106</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1439580234106</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1225,8 +1227,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added margin to blog posts" />
-    <MESSAGE value="Removed margin from post meta" />
     <MESSAGE value="Tags display fixed" />
     <MESSAGE value="New list styling bound to articles only" />
     <MESSAGE value="Added multiple file upload to images" />
@@ -1250,7 +1250,9 @@
     <MESSAGE value="Fixed menu bar logo location" />
     <MESSAGE value="added post-body pointer" />
     <MESSAGE value="Deferred JS file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deferred JS file" />
+    <MESSAGE value="Undeferred JS file / Deferred CSS" />
+    <MESSAGE value="Undeferred JS file / Undeferred CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Undeferred JS file / Undeferred CSS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1622,26 +1624,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.291666" vertical-offset="128" max-vertical-offset="1080">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <marker date="1439580212000" expanded="true" signature="2585:3104" placeholder="..." />
+            <marker date="1439580212000" expanded="true" signature="2619:2851" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.041666" vertical-offset="23" max-vertical-offset="720">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        <state vertical-scroll-proportion="-24.666666" vertical-offset="23" max-vertical-offset="720">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.631579" vertical-offset="265" max-vertical-offset="5130">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/_partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33282208" vertical-offset="188" max-vertical-offset="1080">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.44976076" vertical-offset="4323" max-vertical-offset="5175">
+          <caret line="307" column="15" selection-start-line="307" selection-start-column="15" selection-end-line="307" selection-end-column="15" />
           <folding />
         </state>
       </provider>
