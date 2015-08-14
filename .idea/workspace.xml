@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -101,8 +99,8 @@
       <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6969697" vertical-offset="2833" max-vertical-offset="5130">
-              <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.36204147" vertical-offset="2128" max-vertical-offset="5130">
+              <caret line="157" column="26" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -798,12 +796,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00070" summary="Updated Admin Forum controllers to enable slugify usage">
-      <created>1436300464052</created>
-      <option name="number" value="00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1436300464052</updated>
-    </task>
     <task id="LOCAL-00071" summary="Create forum category now asks for section id">
       <created>1436300581205</created>
       <option name="number" value="00071" />
@@ -1092,7 +1084,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439569271479</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Fixed menu bar logo location">
+      <created>1439569999997</created>
+      <option name="number" value="00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1439569999997</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1229,7 +1227,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="background sizing" />
     <MESSAGE value="Implement CKEditor for blog posts.&#10;Styled blog posts" />
     <MESSAGE value="Removed image bottem padding in blog posts" />
     <MESSAGE value="Added margin to blog posts" />
@@ -1254,7 +1251,8 @@
     <MESSAGE value="JS - Async" />
     <MESSAGE value="Removed page loader" />
     <MESSAGE value="Added min-height to blog posts on home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added min-height to blog posts on home page" />
+    <MESSAGE value="Fixed menu bar logo location" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed menu bar logo location" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1608,14 +1606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.666666" vertical-offset="23" max-vertical-offset="720">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/_partials/splash.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.541667" vertical-offset="125" max-vertical-offset="2265">
@@ -1645,10 +1635,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/_partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.666666" vertical-offset="23" max-vertical-offset="720">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6969697" vertical-offset="2833" max-vertical-offset="5130">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.36204147" vertical-offset="2128" max-vertical-offset="5130">
+          <caret line="157" column="26" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
           <folding />
         </state>
       </provider>
