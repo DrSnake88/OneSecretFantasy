@@ -15370,7 +15370,7 @@ blockquote p {
   #article ul {
     list-style: outside; }
 
-.home-blog-tile {
+.home-blog-tile > .post-body {
   min-height: 220px; }
 
 #search-input {
