@@ -38,6 +38,6 @@
         {{--<script src="/js/pace.min.js"></script>--}}
     {{--@endif--}}
 
-{{--    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">--}}
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     @yield('page-scripts')
 </head>
