@@ -98,13 +98,13 @@ jQuery(document).ready(function($) {
 
 		/** Animating Intro Section
 		*********************************/
-		$(window).scroll( function() {
-	    if ($(window).scrollTop() > 15) {
-	      intro.addClass('transformed');
-	    } else {
-	      intro.removeClass('transformed');
-	    }
-	  });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 15) {
+                intro.addClass('transformed');
+            } else {
+                intro.removeClass('transformed');
+            }
+        });
 
 
 		/** Sticky Navbar and Footer

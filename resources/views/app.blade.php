@@ -3,13 +3,16 @@
     @include('_partials.header')
     <body class="fixed-footer">
         @include('_partials.analytics')
-        <!-- Preloader -->
-        <div id="preloader">
-            <div class="logo">
-                <img src="/img/logo/logo-rounded.png" alt="One Secret Fantasy"/>
-                <span>One Secret Fantasy</span>
-            </div>
-        </div>
+
+        {{--@if(Request::is('/'))--}}
+        {{--<!-- Preloader -->--}}
+        {{--<div id="preloader">--}}
+            {{--<div class="logo">--}}
+                {{--<img src="/img/logo/logo-rounded.png" alt="One Secret Fantasy"/>--}}
+                {{--<span>One Secret Fantasy</span>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--@endif--}}
 
         @include('_partials.sideMenu')
         @include('_partials.modals')
