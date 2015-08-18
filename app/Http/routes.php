@@ -16,6 +16,49 @@
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
 
+Route::get('blogs/feed', function(){
+
+    // create new feed
+    $feed = Feed::make();
+
+    // cache the feed for 60 minutes (second parameter is optional)
+    $feed->setCache(60);
+
+    // check if there is cached feed and build new only if is not
+    if (!$feed->isCached())
+    {
+        // creating rss feed with our most recent 20 posts
+        $blogs = DB::table('blogs')->orderBy('created_at', 'desc')->take(20)->get();
+
+        // set your feed's title, description, link, pubdate and language
+        $feed->title = 'One Secret Fantasy Blog';
+        $feed->description = 'Gain every update on One Secret Fantasy';
+        $feed->logo = 'http://www.onesecretfantasy.com/img/logo/logo-rounded.png';
+        $feed->link = URL::to('blogs');
+        $feed->setDateFormat('datetime'); // 'datetime', 'timestamp' or 'carbon'
+        $feed->pubdate = $blogs[0]->created_at;
+        $feed->lang = 'en';
+        $feed->setShortening(true); // true or false
+        $feed->setTextLimit(100); // maximum length of description text
+
+        foreach ($blogs as $blog)
+        {
+            // set item's title, author, url, pubdate, description and content
+            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $blog->title, $blog->body);
+        }
+
+    }
+
+    // first param is the feed format
+    // optional: second param is cache duration (value of 0 turns off caching)
+    // optional: you can set custom cache key with 3rd param as string
+    return $feed->render('atom');
+
+    // to return your feed as a string set second param to -1
+    // $xml = $feed->render('atom', -1);
+
+});
+
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 Route::get('/contact', 'HomeController@contact');
 

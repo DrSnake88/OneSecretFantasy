@@ -15,7 +15,8 @@
 		"phpspec/phpspec": "~2.2",
 		"cocur/slugify": "~1.2",
         "intervention/image": "2.*",
-		"tsawler/laravel-filemanager": "0.5.*"
+		"tsawler/laravel-filemanager": "0.5.*",
+		"roumen/feed": "~2.9"
 	},
 	"require-dev": {
         "phpunit/phpunit": "~4.0",

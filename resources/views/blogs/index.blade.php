@@ -27,7 +27,7 @@
             <hr class="with-shadow">
             <!-- Badge -->
             <div class="badge badge-primary">
-                <span class="icon"><i class="fa fa-rss"></i></span>
+                <a href="feed"><span class="icon"><i class="fa fa-rss"></i></span></a>
                 Every update related to the game or the development team.
             </div>
             <div class="masonry-grid">

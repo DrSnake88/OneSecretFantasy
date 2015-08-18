@@ -162,7 +162,10 @@ return [
         // File Manager
         'Tsawler\Laravelfilemanager\LaravelFilemanagerServiceProvider',
 
-        'Intervention\Image\ImageServiceProvider'
+        'Intervention\Image\ImageServiceProvider',
+
+        // RSS
+        'Roumen\Feed\FeedServiceProvider',
 	],
 
 	/*
@@ -224,7 +227,10 @@ return [
         // Socialite
         'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 
-        'Image' => 'Intervention\Image\Facades\Image'
+        'Image' => 'Intervention\Image\Facades\Image',
+
+        // RSS
+        'Feed' => 'Roumen\Feed\Facades\Feed',
 	],
 
 ];

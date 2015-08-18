@@ -64,3 +64,27 @@
     {{--if (raf) raf(cb);--}}
     {{--else window.addEventListener('load', cb);--}}
 {{--</script>--}}
+
+<script>
+
+    var content = $('.content-wrap');
+
+    // Window resize event
+    $(window).resize(function() {
+
+        /** Keeping Logo and Phone at the bottom of teh page
+         **********************************************************/
+        $('.intro .column-wrap').css('height', $(window).height());
+
+        /** Pushing Content down to the height equal to Intro section height + height necessary to finish animation
+         *************************************************************************************************************/
+        content.css('margin-top', intro.height()*1.5);
+
+        /** Content 'margin-bottom' equals footer height to reveal footer
+         ********************************************************************************/
+        if($('.fixed-footer').length > 0) {
+            content.css('margin-bottom', footer.outerHeight());
+        }
+
+    });
+</script>
