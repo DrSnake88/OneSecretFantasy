@@ -22,7 +22,7 @@ Route::get('blogs/feed', function(){
     $feed = Feed::make();
 
     // cache the feed for 60 minutes (second parameter is optional)
-    $feed->setCache(60);
+    $feed->setCache(0);
 
     // check if there is cached feed and build new only if is not
     if (!$feed->isCached())
@@ -44,7 +44,7 @@ Route::get('blogs/feed', function(){
         foreach ($blogs as $blog)
         {
             // set item's title, author, url, pubdate, description and content
-            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $blog->title, $blog->body);
+            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $blog->title . '<br>'.URL::to($blog->image) , $blog->body);
         }
 
     }
