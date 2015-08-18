@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="responsive logo">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
+    <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/blogs/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/blogs/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -93,21 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09202454" vertical-offset="150" max-vertical-offset="1950">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="150" max-vertical-offset="1950">
               <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="270" max-vertical-offset="1605">
-              <caret line="29" column="86" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.41411042" vertical-offset="270" max-vertical-offset="1605">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -196,8 +191,8 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/blogs/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/blogs/index.blade.php" />
       </list>
     </option>
   </component>
@@ -793,12 +788,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00079" summary="added picture upload to media picture admin page">
-      <created>1436356255615</created>
-      <option name="number" value="00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1436356255615</updated>
-    </task>
     <task id="LOCAL-00080" summary="Fixed loading screen">
       <created>1437505122516</created>
       <option name="number" value="00080" />
@@ -1087,7 +1076,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439580709594</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Added Blog Feed">
+      <created>1439901987169</created>
+      <option name="number" value="00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1439901987169</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1224,7 +1219,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="New list styling bound to articles only" />
     <MESSAGE value="Added multiple file upload to images" />
     <MESSAGE value="Added picture preview to picture media overview" />
     <MESSAGE value="Removed token check in admin panel" />
@@ -1249,7 +1243,8 @@
     <MESSAGE value="Undeferred JS file / Deferred CSS" />
     <MESSAGE value="Undeferred JS file / Undeferred CSS" />
     <MESSAGE value="responsive logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="responsive logo" />
+    <MESSAGE value="Added Blog Feed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Blog Feed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1631,18 +1626,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="270" max-vertical-offset="1605">
-          <caret line="29" column="86" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
+        <state vertical-scroll-proportion="-2.5" vertical-offset="150" max-vertical-offset="1950">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09202454" vertical-offset="150" max-vertical-offset="1950">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.41411042" vertical-offset="270" max-vertical-offset="1605">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding />
         </state>
       </provider>
