@@ -30,7 +30,7 @@
         <!-- Featured Posts -->
         <div class="box-float">
             @for($i = 0; $i < count($related); $i++)
-            <a href="/blogs/{{ $related[$i]->id }}" class="featured-post {{ getCssBgName($i) }} waves-effect waves-light">
+            <a href="/blogs/{{ $related[$i]->slug }}" class="featured-post {{ getCssBgName($i) }} waves-effect waves-light">
                 <div class="content">
                     <div class="arrow"><i class="flaticon-right244"></i></div>
                     <h3>{{ $related[$i]->title }}</h3>

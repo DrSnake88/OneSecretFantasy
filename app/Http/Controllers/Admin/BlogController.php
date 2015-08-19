@@ -61,7 +61,7 @@ class BlogController extends Controller {
             $path = '/img/blog/' . $name;
             $file->move(public_path() . '/img/blog', $name);
 
-            Image::make( public_path($file->getRealPath()) )->fit(220, 150)->save('/img/blog/thumb/' . $name)->destroy();
+            Image::make( public_path($file->getRealPath()) )->fit(220, 150)->save(public_path() . '/img/blog/thumb/' . $name)->destroy();
 
             $blog->image = $path;
         }
@@ -118,10 +118,12 @@ class BlogController extends Controller {
             $file = $request->file('image');
             $name = str_replace('/', '', bcrypt($blog->id)) . '.' . $file->getClientOriginalExtension();
             $path = '/img/blog/' . $name;
-            Image::make( $file->getRealPath() )->fit(220, 150)->save(public_path() . '/img/blog/thumb/' . $name);
+
             $file->move(public_path() . '/img/blog', $name);
 
-            //Image::make( $file->getRealPath() )->fit(220, 150)->save('/img/blog/thumb/' . $name)->destroy();
+            Image::make( public_path($file->getRealPath()) )->fit(220, 150)->save(public_path() . '/img/blog/thumb/' . $name);
+
+//            Image::make( public_path($file->getRealPath()) )->fit(220, 150)->save('/img/blog/thumb/' . $name)->destroy();
 
             $blog->image = $path;
         }
