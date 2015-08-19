@@ -169,7 +169,7 @@
                                     <p>Ever dreamed of going on a date with someone, who you could never get in real life...?
                                         <br/>
                                         Yes, so did we.</p>
-                                    <a href="{{ route('blogs.show', 'date-your-fantasy-partner') }}" class="link">See more</a>
+                                    <a href="{{ route('blogs.show', 'your-fantasy-partner-is-waiting') }}" class="link">See more</a>
                                 </div>
                                 <div class="icon icon-bigger va-middle">
                                     <i class="fa fa-heart"></i>
@@ -185,7 +185,7 @@
                                     <h3>Become a superstar</h3>
                                     <p>Dreaming about standing on that stage, singing your heart out to thousands of fans?<br/>
                                         Now you can!</p>
-                                    <a href="{{ route('blogs.show', 'become-a-superstar') }}" class="link">See more</a>
+                                    {{--<a href="{{ route('blogs.show', 'become-a-superstar') }}" class="link">See more</a>--}}
                                 </div>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                                     <p>We have always wanted to visit Bali, new Zealand and a lot of other beautiful places.
                                         <br/>
                                         But face it, it is very expensive...</p>
-                                    <a href="{{ route('blogs.show', 'visit-locations-you-have-never-visited-before') }}" class="link">See more</a>
+{{--                                    <a href="{{ route('blogs.show', 'visit-locations-you-have-never-visited-before') }}" class="link">See more</a>--}}
                                 </div>
                                 <div class="icon icon-bigger va-middle">
                                     <i class="fa fa-plane" style="width: 73px;"></i>
@@ -214,7 +214,7 @@
                                     <h3>Every action has a reaction</h3>
                                     <p>No, we are not talking about physics here, but about YOU!
                                         Cause you can and will change the world u live and play in.</p>
-                                    <a href="{{ route('blogs.show', 'every-action-has-a-reaction') }}" class="link">See more</a>
+                                    {{--<a href="{{ route('blogs.show', 'every-action-has-a-reaction') }}" class="link">See more</a>--}}
                                 </div>
                             </div>
                         </div>

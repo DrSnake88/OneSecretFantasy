@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/helpers.php" afterPath="$PROJECT_DIR$/app/Http/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/_partials/leftSidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/_partials/leftSidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -80,16 +78,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rss.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/roumen/feed/src/views/rss.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="555">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/blogs/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,11 +108,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/helpers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0690184" vertical-offset="0" max-vertical-offset="652">
+            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="255">
               <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49846625" vertical-offset="2930" max-vertical-offset="4440">
+              <caret line="217" column="38" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -183,7 +181,6 @@
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/splash.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/mainMenu.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/_partials/footer.blade.php" />
@@ -195,6 +192,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
         <option value="$PROJECT_DIR$/resources/views/_partials/leftSidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/helpers.php" />
+        <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
       </list>
     </option>
   </component>
@@ -614,12 +612,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00082" summary="Updated wallpaper">
-      <created>1438287021418</created>
-      <option name="number" value="00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1438287021418</updated>
-    </task>
     <task id="LOCAL-00083" summary="Updated wallpaper">
       <created>1438288253495</created>
       <option name="number" value="00083" />
@@ -908,7 +900,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439924023578</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Related blogs now have 3 bgs">
+      <created>1439999603606</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1439999603606</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1045,7 +1043,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Removed token check in admin panel" />
     <MESSAGE value="add featured to pictures to display on home page" />
     <MESSAGE value="Integrated mailchimp to signup form" />
     <MESSAGE value="Added Blog Image upload resizer" />
@@ -1070,7 +1067,8 @@
     <MESSAGE value="Added Blog Feed" />
     <MESSAGE value="Updated blog feed link" />
     <MESSAGE value="Fixed blog image upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed blog image upload" />
+    <MESSAGE value="Related blogs now have 3 bgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Related blogs now have 3 bgs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1325,19 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665" vertical-offset="587" max-vertical-offset="4440">
-          <caret line="55" column="64" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
-          <folding>
-            <element signature="e#2366#2423#0#HTML" expanded="true" />
-            <element signature="e#3224#3258#0#HTML" expanded="true" />
-            <element signature="e#9661#9681#0#HTML" expanded="true" />
-            <element signature="e#11161#11181#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="98" max-vertical-offset="750">
@@ -1468,8 +1453,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0690184" vertical-offset="0" max-vertical-offset="652">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="255">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49846625" vertical-offset="2930" max-vertical-offset="4440">
+          <caret line="217" column="38" selection-start-line="217" selection-start-column="38" selection-end-line="217" selection-end-column="38" />
           <folding />
         </state>
       </provider>
