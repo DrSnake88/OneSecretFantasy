@@ -43,8 +43,10 @@ Route::get('blogs/feed', function(){
 
         foreach ($blogs as $blog)
         {
+            $image = '<p><img src="' . URL::to($blog->image) . '">';
+            $description = $image . $blog->title;
             // set item's title, author, url, pubdate, description and content
-            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, URL::to($blog->image), $blog->body);
+            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $description, $blog->body);
         }
 
     }

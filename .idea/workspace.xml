@@ -31,9 +31,11 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1380368" vertical-offset="450" max-vertical-offset="1950">
-              <caret line="46" column="132" selection-start-line="46" selection-start-column="132" selection-end-line="46" selection-end-column="132" />
-              <folding />
+            <state vertical-scroll-proportion="0.16104294" vertical-offset="435" max-vertical-offset="1980">
+              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+              <folding>
+                <marker date="1440097340000" expanded="true" signature="1610:1727" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -682,12 +684,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00087" summary="background sizing">
-      <created>1438587615368</created>
-      <option name="number" value="00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1438587615368</updated>
-    </task>
     <task id="LOCAL-00088" summary="background sizing">
       <created>1438591302250</created>
       <option name="number" value="00088" />
@@ -976,7 +972,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440083726347</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="updated blog image desc">
+      <created>1440097143556</created>
+      <option name="number" value="00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1440097143556</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1113,7 +1115,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added SEO fixes" />
     <MESSAGE value="updated htaccess" />
     <MESSAGE value="updated addthis" />
     <MESSAGE value="Changes homepage imagery" />
@@ -1138,7 +1139,8 @@
     <MESSAGE value="Changed image making process in blogs" />
     <MESSAGE value="Updated blog links on home page" />
     <MESSAGE value="Updated blog image links" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated blog image links" />
+    <MESSAGE value="updated blog image desc" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated blog image desc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1531,9 +1533,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1380368" vertical-offset="450" max-vertical-offset="1950">
-          <caret line="46" column="132" selection-start-line="46" selection-start-column="132" selection-end-line="46" selection-end-column="132" />
-          <folding />
+        <state vertical-scroll-proportion="0.16104294" vertical-offset="435" max-vertical-offset="1980">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding>
+            <marker date="1440097340000" expanded="true" signature="1610:1727" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
