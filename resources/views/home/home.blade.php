@@ -185,7 +185,7 @@
                                     <h3>Become a superstar</h3>
                                     <p>Dreaming about standing on that stage, singing your heart out to thousands of fans?<br/>
                                         Now you can!</p>
-                                    {{--<a href="{{ route('blogs.show', 'become-a-superstar') }}" class="link">See more</a>--}}
+                                    <a href="{{ route('blogs.show', 'become-a-superstar') }}" class="link">See more</a>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
                                     <p>We have always wanted to visit Bali, new Zealand and a lot of other beautiful places.
                                         <br/>
                                         But face it, it is very expensive...</p>
-{{--                                    <a href="{{ route('blogs.show', 'visit-locations-you-have-never-visited-before') }}" class="link">See more</a>--}}
+                                    <a href="{{ route('blogs.show', 'enjoy-the-most-beautiful-sights-this-world-has-to-offer') }}" class="link">See more</a>
                                 </div>
                                 <div class="icon icon-bigger va-middle">
                                     <i class="fa fa-plane" style="width: 73px;"></i>
