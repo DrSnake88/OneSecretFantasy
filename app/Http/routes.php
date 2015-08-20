@@ -44,7 +44,7 @@ Route::get('blogs/feed', function(){
         foreach ($blogs as $blog)
         {
             // set item's title, author, url, pubdate, description and content
-            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $blog->title . '<br>'.URL::to($blog->image) , $blog->body);
+            $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $blog->title . '<br><img src=\''.env('APP_DOMAIN') . $blog->image .'\'></img>', $blog->body);
         }
 
     }
