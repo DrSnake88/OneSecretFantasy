@@ -55,7 +55,7 @@
                         <div class="item col-md-4 col-sm-6">
                             <div class="post-tile home-blog-tile">
                                 @if (isset($blog->image))
-                                <a href="{{ route('blogs.show', $blog->slug) }}" class="post-thumb waves-effect" style="background:url({{ $blog->image }}); background-size:cover;">
+                                <a href="{{ route('blogs.show', $blog->slug) }}" class="post-thumb waves-effect" style="background:url({{ $blog->image }}); background-size:cover; height:210px;">
 
                                 </a>
                                 @endif

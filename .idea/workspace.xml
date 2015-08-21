@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+    <list default="true" id="ed69f6f0-f0e5-494f-add3-3364dca918fb" name="Default" comment="^">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OneSecretFantasy.iws" />
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.425" vertical-offset="4350" max-vertical-offset="5190">
+            <state vertical-scroll-proportion="-3.3552632" vertical-offset="4350" max-vertical-offset="5190">
               <caret line="307" column="3" selection-start-line="307" selection-start-column="3" selection-end-line="307" selection-end-column="3" />
               <folding />
             </state>
@@ -120,13 +120,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.041666" vertical-offset="470" max-vertical-offset="4440">
-              <caret line="57" column="178" selection-start-line="57" selection-start-column="178" selection-end-line="57" selection-end-column="178" />
+            <state vertical-scroll-proportion="0.5904908" vertical-offset="470" max-vertical-offset="4440">
+              <caret line="57" column="192" selection-start-line="57" selection-start-column="192" selection-end-line="57" selection-end-column="192" />
               <folding>
-                <element signature="e#2366#2432#0#HTML" expanded="true" />
+                <element signature="e#2366#2446#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,9 +194,9 @@
         <option value="$PROJECT_DIR$/app/Http/helpers.php" />
         <option value="$PROJECT_DIR$/vendor/roumen/feed/src/Roumen/Feed/Feed.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/BlogController.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
       </list>
     </option>
   </component>
@@ -686,12 +686,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00090" summary="Removed image bottem padding in blog posts">
-      <created>1439122111264</created>
-      <option name="number" value="00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1439122111264</updated>
-    </task>
     <task id="LOCAL-00091" summary="Added margin to blog posts">
       <created>1439122389998</created>
       <option name="number" value="00091" />
@@ -980,7 +974,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440169104389</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Updated blog images and blog size">
+      <created>1440169168376</created>
+      <option name="number" value="00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1440169168376</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1519,13 +1519,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.041666" vertical-offset="470" max-vertical-offset="4440">
-          <caret line="57" column="178" selection-start-line="57" selection-start-column="178" selection-end-line="57" selection-end-column="178" />
-          <folding>
-            <element signature="e#2366#2432#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-3.3552632" vertical-offset="4350" max-vertical-offset="5190">
+          <caret line="307" column="3" selection-start-line="307" selection-start-column="3" selection-end-line="307" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1537,11 +1535,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/resources/views/home/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.425" vertical-offset="4350" max-vertical-offset="5190">
-          <caret line="307" column="3" selection-start-line="307" selection-start-column="3" selection-end-line="307" selection-end-column="3" />
-          <folding />
+        <state vertical-scroll-proportion="0.5904908" vertical-offset="470" max-vertical-offset="4440">
+          <caret line="57" column="192" selection-start-line="57" selection-start-column="192" selection-end-line="57" selection-end-column="192" />
+          <folding>
+            <element signature="e#2366#2446#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
