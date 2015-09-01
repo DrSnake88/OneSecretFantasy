@@ -1,10 +1,15 @@
 <?php namespace App\Http\Controllers\Admin;
 
+use App\Blog;
+use App\BlogComment;
+use App\ContactRequest;
+use App\ForumReply;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\MediaVideo as Video;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class HomeController extends Controller {
 
@@ -15,7 +20,11 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('admin.index');
+        $blogs = BlogComment::where('user_id', '!=', 1)->limit(5)->get();
+        $forums = ForumReply::where('user_id', '!=', 1)->limit(5)->get();
+        $contact = ContactRequest::limit(5)->get();
+
+		return view('admin.index', compact('blogs', 'forums', 'contact'));
 	}
 
 	/**
