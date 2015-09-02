@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('page-title')
-    {{ $blog->title }} - One Secret Fantasy
+    {{ $blog->title }}
 @stop
 
 @section('page-description')
