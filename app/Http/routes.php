@@ -15,6 +15,7 @@
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Str;
 
 Route::get('blogs/feed', function(){
 
@@ -43,8 +44,10 @@ Route::get('blogs/feed', function(){
 
         foreach ($blogs as $blog)
         {
-            $image = '<p><img src="' . URL::to($blog->image) . '">';
-            $description = $image . $blog->title;
+            $image = '<img src="' . URL::to($blog->image) . '">';
+            $description = '<p>' . $image . '</p>';
+            $description .= '<p>' . Str::words($blog->body, 100) . '</p>';
+
             // set item's title, author, url, pubdate, description and content
             $feed->add($blog->title, 'One Secret Fantasy', URL::to('/blogs/'. $blog->slug), $blog->created_at, $description, $blog->body);
         }
