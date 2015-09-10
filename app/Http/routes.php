@@ -44,7 +44,7 @@ Route::get('blogs/feed', function(){
 
         foreach ($blogs as $blog)
         {
-            $image = '<img style="width:100%;" src="' . URL::to($blog->image) . '">';
+            $image = '<img width="100%" style="width:100%;" src="' . URL::to($blog->image) . '">';
             $description = '<p>' . $image . '</p>';
             $description .= '<p>' . Str::words($blog->body, 100) . '</p>';
 
