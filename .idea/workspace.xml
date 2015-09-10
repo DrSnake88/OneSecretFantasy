@@ -103,8 +103,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69018406" vertical-offset="150" max-vertical-offset="2010">
-              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.57515335" vertical-offset="150" max-vertical-offset="2010">
+              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -618,12 +618,6 @@
       <option name="number" value="Default" />
       <updated>1434662905427</updated>
     </task>
-    <task id="LOCAL-00098" summary="Added picture preview to picture media overview">
-      <created>1439126005836</created>
-      <option name="number" value="00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1439126005836</updated>
-    </task>
     <task id="LOCAL-00099" summary="Removed token check in admin panel">
       <created>1439131329553</created>
       <option name="number" value="00099" />
@@ -912,7 +906,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441194909742</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="Updated blog feed">
+      <created>1441915328460</created>
+      <option name="number" value="00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1441915328460</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <option name="createChangelist" value="false" />
     <option name="createBranch" value="false" />
     <servers>
@@ -1010,6 +1010,7 @@
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1026,7 +1027,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32215446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1049,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="JS - Async" />
     <MESSAGE value="Removed page loader" />
     <MESSAGE value="Added min-height to blog posts on home page" />
     <MESSAGE value="Fixed menu bar logo location" />
@@ -1074,7 +1073,8 @@
     <MESSAGE value="updated h2 on mobile" />
     <MESSAGE value="Added overview of latest blog comments, forum replies and contact request" />
     <MESSAGE value="Removed site name from page title" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed site name from page title" />
+    <MESSAGE value="Updated blog feed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated blog feed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1448,8 +1448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69018406" vertical-offset="150" max-vertical-offset="2010">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.57515335" vertical-offset="150" max-vertical-offset="2010">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
           <folding />
         </state>
       </provider>
