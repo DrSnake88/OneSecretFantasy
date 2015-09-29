@@ -32,6 +32,9 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=A0vQ0kpxbR">
     <meta name="theme-color" content="#ffffff">
 
+    <script src="//load.sumome.com/" data-sumo-site-id="c8a0b68d0ade5666969636d0bb71ac0d99fb0040ff6b7b4e2c567322d7399e80" async="async"></script>
+
+
 
     {{--@if(Request::is('/'))--}}
         {{--<!-- Preloader (Pace.js) -->--}}
